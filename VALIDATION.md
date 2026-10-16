@@ -128,3 +128,9 @@ Release 通用版本构建、临时签名校验与 `git diff --check` 通过，`
 屏幕选项的可用性仍绑定总开关：关闭时置灰、不可切换，但保留已保存的勾选偏好；开启后才可切换。动作入口的总开关检查继续保留，防止关闭状态误改偏好。登录项管理和电源断言逻辑未变。
 
 Release 通用版本构建、临时签名校验及 `git diff --check` 通过，`build/KeepAwake.app` 已更新。本次是菜单缩进的低影响调整，未新增或重复运行管理类测试；实际菜单视觉与置灰交互仍未完成自动化验证。
+
+## 补齐应用图标
+
+发现模板的 AppIcon 图集只有占位配置、没有图片。已补齐 10 个 macOS 尺寸资源及可复现的生成脚本。根据用户反馈，应用图标直接复用菜单栏开启状态的 `cup.and.saucer.fill`，添加浅色圆角背景，取代之前另画的杯型；菜单栏 SF Symbols 保持原样。已检查图标预览与各图片尺寸，并确认 Release 产物包含 `AppIcon.icns`，`CFBundleIconFile` 与 `CFBundleIconName` 均指向 AppIcon，打包后的 ICNS 可正常解析。
+
+Release 通用二进制（arm64、x86_64）构建通过，应用及 ZIP 解压后的临时签名校验通过。已更新 `build/KeepAwake.app` 与 `build/KeepAwake.zip`。本次只补图标资源，未重复运行管理类测试；未替换或停止用户正在运行的已安装应用，Finder 的实际图标显示仍需替换安装后确认。

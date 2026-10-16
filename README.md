@@ -47,6 +47,8 @@ open build/KeepAwake.app
 
 ## 实现
 
+应用图标与菜单栏开启状态使用相同的 `cup.and.saucer.fill` 咖啡杯造型，应用图标加上浅色圆角背景，包含 macOS 所需的 16–1024 像素尺寸，供 Finder 与 Spotlight 显示。可运行 `xcrun swift Scripts/GenerateAppIcon.swift` 重新生成；菜单栏仍使用原来的单色 SF Symbols。
+
 `KeepAwakeApp.swift` 使用 AppKit `NSStatusItem` 区分左键与右键鼠标事件；左键直接切换总开关，右键或 Control＋点击临时展开 `NSMenu`。菜单关闭后解除菜单绑定，保证下一次左键仍然直接切换。使用普通原生 `NSMenuItem` 的文字与勾选状态，以及单色 SF Symbols；操作完成后同步更新勾选、可用状态和图标，不设置自定义菜单视图、字体、行高或间距。`LSUIElement = YES` 隐藏 Dock 图标，应用没有主窗口。
 
 `SleepAssertionManager.swift` 在主线程集中管理系统与显示器两个断言 ID，并通过可观察状态更新菜单和图标。仅成功创建的 ID 会被保存；运行中修改屏幕选项不会重建系统断言。系统断言先创建，显示器创建失败时撤销本次开启。仅屏幕选项通过 `UserDefaults` 保存。
