@@ -113,14 +113,24 @@ final class SleepAssertionManager: ObservableObject {
 
     /// Attempt both releases even if one fails; process exit is the final cleanup.
     func releaseForTermination() -> [String] {
+        releaseAssertions(context: "退出时")
+    }
+
+    /// End the temporary session without changing the saved display preference.
+    /// Retain failed IDs so wake handling or a manual disable can retry cleanup.
+    func releaseForSystemSleep() -> [String] {
+        releaseAssertions(context: "系统睡眠时")
+    }
+
+    private func releaseAssertions(context: String) -> [String] {
         var errors: [String] = []
         let displayResult = releaseDisplayAssertion()
         if displayResult != kIOReturnSuccess {
-            errors.append("退出时释放显示器断言失败：\(code(displayResult))")
+            errors.append("\(context)释放显示器断言失败：\(code(displayResult))")
         }
         let systemResult = releaseSystemAssertion()
         if systemResult != kIOReturnSuccess {
-            errors.append("退出时释放系统断言失败：\(code(systemResult))")
+            errors.append("\(context)释放系统断言失败：\(code(systemResult))")
         }
         return errors
     }

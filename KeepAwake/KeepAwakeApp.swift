@@ -18,6 +18,7 @@ struct KeepAwakeApp {
 final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let manager = SleepAssertionManager()
     private let loginManager = LoginItemManager()
+    private var sleepMonitor: SystemSleepMonitor?
     private var statusItem: NSStatusItem?
     private let menu = NSMenu(title: "Keep Awake")
     private let enabledItem = NSMenuItem(title: "保持唤醒", action: #selector(toggleAwake(_:)), keyEquivalent: "")
@@ -50,9 +51,15 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
         updatePresentation()
+        sleepMonitor = SystemSleepMonitor(
+            manager: manager,
+            onStateChange: { [weak self] in self?.updatePresentation() },
+            onWakeError: { [weak self] in self?.showErrorIfNeeded($0) }
+        )
     }
 
     func applicationWillTerminate(_ notification: Notification) {
+        sleepMonitor?.stop()
         for error in manager.releaseForTermination() {
             NSLog("Keep Awake: %@", error)
         }
@@ -137,6 +144,7 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         statusItem?.button?.setAccessibilityLabel("Keep Awake：\(state)")
         statusItem?.button?.setAccessibilityHelp("点击切换保持唤醒；右键或 Control＋点击打开设置菜单")
         enabledItem.state = manager.isEnabled ? .on : .off
+        enabledItem.toolTip = "系统睡眠时自动关闭；唤醒后需要重新开启"
         displayItem.state = manager.preventDisplaySleep ? .on : .off
         displayItem.isEnabled = manager.isEnabled
         displayItem.toolTip = manager.isEnabled ? nil : "先开启“保持唤醒”后可调整；当前勾选保留已保存的偏好"

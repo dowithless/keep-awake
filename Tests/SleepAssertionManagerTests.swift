@@ -1,4 +1,4 @@
-import Foundation
+import AppKit
 import IOKit.pwr_mgt
 import XCTest
 @testable import KeepAwakeCore
@@ -273,6 +273,174 @@ final class SleepAssertionManagerTests: XCTestCase {
             XCTAssertTrue(manager.isEnabled)
             XCTAssertTrue(manager.releaseForTermination().isEmpty)
             XCTAssertFalse(manager.isEnabled)
+        }
+    }
+
+    @MainActor
+    func testSystemSleepEndsSessionAndPreservesEitherDisplayPreference() async {
+        for displayAwake in [true, false] {
+            withFixture { manager, fake, defaults in
+                let center = NotificationCenter()
+                var changes = 0
+                let monitor = SystemSleepMonitor(
+                    manager: manager, notificationCenter: center,
+                    onStateChange: { changes += 1 }, onWakeError: { XCTFail($0) }
+                )
+                defer { monitor.stop() }
+                XCTAssertNil(manager.setPreventDisplaySleep(displayAwake))
+                XCTAssertNil(manager.setEnabled(true))
+                center.post(name: NSWorkspace.willSleepNotification, object: nil)
+                XCTAssertFalse(manager.isEnabled)
+                XCTAssertTrue(fake.active.isEmpty)
+                XCTAssertEqual(changes, 1)
+                XCTAssertEqual(manager.prefersDisplayAwake, displayAwake)
+                XCTAssertEqual(defaults.bool(forKey: SleepAssertionManager.displayPreferenceKey), displayAwake)
+                let creates = fake.createCount
+                center.post(name: NSWorkspace.didWakeNotification, object: nil)
+                XCTAssertFalse(manager.isEnabled)
+                XCTAssertEqual(fake.createCount, creates)
+
+                // The next session must be explicitly enabled and use the saved preference.
+                XCTAssertNil(manager.setEnabled(true))
+                XCTAssertEqual(manager.displayAssertionID != nil, displayAwake)
+                center.post(name: NSWorkspace.didWakeNotification, object: nil)
+                XCTAssertTrue(manager.isEnabled)
+            }
+        }
+    }
+
+    @MainActor
+    func testScreenSleepAndInactiveSessionDoNotEndSession() async {
+        withFixture { manager, fake, _ in
+            let center = NotificationCenter()
+            let monitor = SystemSleepMonitor(
+                manager: manager, notificationCenter: center,
+                onStateChange: { XCTFail("Unexpected state change") }, onWakeError: { XCTFail($0) }
+            )
+            defer { monitor.stop() }
+            XCTAssertNil(manager.setEnabled(true))
+            for name in [NSWorkspace.screensDidSleepNotification, NSWorkspace.screensDidWakeNotification,
+                         NSWorkspace.sessionDidResignActiveNotification, NSWorkspace.didWakeNotification] {
+                center.post(name: name, object: nil)
+            }
+            XCTAssertTrue(manager.isEnabled)
+            XCTAssertEqual(fake.active.count, 2)
+            XCTAssertTrue(fake.releaseAttempts.isEmpty)
+        }
+    }
+
+    @MainActor
+    func testSleepAndWakeWhileOffAndRepeatedSleepAreIdempotent() async {
+        withFixture { manager, fake, _ in
+            let center = NotificationCenter()
+            let monitor = SystemSleepMonitor(
+                manager: manager, notificationCenter: center,
+                onStateChange: {}, onWakeError: { XCTFail($0) }
+            )
+            defer { monitor.stop() }
+            center.post(name: NSWorkspace.willSleepNotification, object: nil)
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            XCTAssertTrue(fake.releaseAttempts.isEmpty)
+            XCTAssertEqual(fake.createCount, 0)
+            XCTAssertNil(manager.setEnabled(true))
+            for _ in 0..<3 { center.post(name: NSWorkspace.willSleepNotification, object: nil) }
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            XCTAssertFalse(manager.isEnabled)
+            XCTAssertEqual(fake.releaseAttempts.count, 2)
+        }
+    }
+
+    @MainActor
+    func testSleepAttemptsBothReleasesAndWakeRetriesOnlyFailedAssertion() async throws {
+        for failDisplay in [true, false] {
+            try withFixture { manager, fake, _ in
+                let center = NotificationCenter()
+                var changes = 0
+                let monitor = SystemSleepMonitor(
+                    manager: manager, notificationCenter: center,
+                    onStateChange: { changes += 1 }, onWakeError: { XCTFail($0) }
+                )
+                defer { monitor.stop() }
+                XCTAssertNil(manager.setEnabled(true))
+                let systemID = try XCTUnwrap(manager.systemAssertionID)
+                let displayID = try XCTUnwrap(manager.displayAssertionID)
+                let failedID = failDisplay ? displayID : systemID
+                fake.failedReleases[failedID] = 1
+                center.post(name: NSWorkspace.willSleepNotification, object: nil)
+                XCTAssertEqual(fake.releaseAttempts, [displayID, systemID])
+                XCTAssertEqual(Set(fake.active.keys), [failedID])
+                XCTAssertTrue(manager.isEnabled)
+                center.post(name: NSWorkspace.didWakeNotification, object: nil)
+                XCTAssertEqual(fake.releaseAttempts, [displayID, systemID, failedID])
+                XCTAssertFalse(manager.isEnabled)
+                XCTAssertTrue(fake.active.isEmpty)
+                XCTAssertEqual(changes, 2)
+                XCTAssertEqual(fake.createCount, 2)
+            }
+        }
+    }
+
+    @MainActor
+    func testPersistentSleepCleanupFailureReportsAfterWakeAndAllowsManualRetry() async throws {
+        try withFixture { manager, fake, _ in
+            let center = NotificationCenter()
+            var errors: [String] = []
+            let monitor = SystemSleepMonitor(
+                manager: manager, notificationCenter: center,
+                onStateChange: {}, onWakeError: { errors.append($0) }
+            )
+            defer { monitor.stop() }
+            XCTAssertNil(manager.setEnabled(true))
+            let systemID = try XCTUnwrap(manager.systemAssertionID)
+            let displayID = try XCTUnwrap(manager.displayAssertionID)
+            fake.failedReleases = [systemID: 2, displayID: 2]
+            center.post(name: NSWorkspace.willSleepNotification, object: nil)
+            XCTAssertTrue(errors.isEmpty)
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            XCTAssertEqual(errors.count, 1)
+            XCTAssertTrue(manager.isEnabled)
+            XCTAssertNotNil(manager.systemAssertionID)
+            XCTAssertNotNil(manager.displayAssertionID)
+            XCTAssertTrue(manager.prefersDisplayAwake)
+            XCTAssertNil(manager.setEnabled(false))
+            XCTAssertFalse(manager.isEnabled)
+        }
+    }
+
+    @MainActor
+    func testManualCleanupBeforeWakeDoesNotReleaseAgain() async throws {
+        try withFixture { manager, fake, _ in
+            let center = NotificationCenter()
+            let monitor = SystemSleepMonitor(
+                manager: manager, notificationCenter: center,
+                onStateChange: {}, onWakeError: { XCTFail($0) }
+            )
+            defer { monitor.stop() }
+            XCTAssertNil(manager.setEnabled(true))
+            fake.failedReleases[try XCTUnwrap(manager.systemAssertionID)] = 1
+            center.post(name: NSWorkspace.willSleepNotification, object: nil)
+            XCTAssertNil(manager.setEnabled(false))
+            let attempts = fake.releaseAttempts
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            XCTAssertEqual(fake.releaseAttempts, attempts)
+            XCTAssertFalse(manager.isEnabled)
+        }
+    }
+
+    @MainActor
+    func testStoppedMonitorIgnoresSleepAndWake() async {
+        withFixture { manager, fake, _ in
+            let center = NotificationCenter()
+            let monitor = SystemSleepMonitor(
+                manager: manager, notificationCenter: center,
+                onStateChange: { XCTFail("Stopped monitor callback") }, onWakeError: { XCTFail($0) }
+            )
+            monitor.stop()
+            XCTAssertNil(manager.setEnabled(true))
+            center.post(name: NSWorkspace.willSleepNotification, object: nil)
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            XCTAssertTrue(manager.isEnabled)
+            XCTAssertTrue(fake.releaseAttempts.isEmpty)
         }
     }
 }

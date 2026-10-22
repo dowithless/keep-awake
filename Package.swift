@@ -10,7 +10,7 @@ let package = Package(
             name: "KeepAwakeCore",
             path: "KeepAwake",
             exclude: ["KeepAwakeApp.swift", "Assets.xcassets"],
-            sources: ["SleepAssertionManager.swift", "LoginItemManager.swift"]
+            sources: ["SleepAssertionManager.swift", "LoginItemManager.swift", "SystemSleepMonitor.swift"]
         ),
         .testTarget(name: "KeepAwakeCoreTests", dependencies: ["KeepAwakeCore"], path: "Tests")
     ]

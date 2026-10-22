@@ -1,4 +1,4 @@
-import Foundation
+import AppKit
 import IOKit.pwr_mgt
 
 @main
@@ -61,6 +61,32 @@ struct KeepAwakeLiveProbe {
             try checkNoError(manager.setEnabled(false))
         }
         print("PASS: 20 live activation/display/disable cycles completed")
+        let center = NotificationCenter()
+        var sleepError: String?
+        let monitor = SystemSleepMonitor(
+            manager: manager, notificationCenter: center,
+            onStateChange: {}, onWakeError: { sleepError = $0 }
+        )
+        defer { monitor.stop() }
+        for displayAwake in [true, false] {
+            try checkNoError(manager.setPreventDisplaySleep(displayAwake))
+            try checkNoError(manager.setEnabled(true))
+            let sleepSystemID = manager.systemAssertionID
+            let sleepDisplayID = manager.displayAssertionID
+            center.post(name: NSWorkspace.screensDidSleepNotification, object: nil)
+            center.post(name: NSWorkspace.sessionDidResignActiveNotification, object: nil)
+            try require(present(sleepSystemID), "Screen/session notification ended the session")
+            try require(!displayAwake || present(sleepDisplayID), "Screen notification released display assertion")
+            center.post(name: NSWorkspace.willSleepNotification, object: nil)
+            try require(!manager.isEnabled && !present(sleepSystemID) && !present(sleepDisplayID),
+                        "System sleep notification did not release live assertions")
+            center.post(name: NSWorkspace.didWakeNotification, object: nil)
+            try require(!manager.isEnabled && sleepError == nil, "Wake restored a session or failed cleanup")
+            try require(manager.prefersDisplayAwake == displayAwake, "Sleep changed display preference")
+            try pmsetSnapshot(0)
+        }
+        print("PASS: simulated sleep notifications release real assertions in both display modes; wake stays off")
+        try checkNoError(manager.setPreventDisplaySleep(true))
         try checkNoError(manager.setEnabled(true))
         let finalSystemID = manager.systemAssertionID
         let finalDisplayID = manager.displayAssertionID
