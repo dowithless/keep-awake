@@ -56,18 +56,20 @@ final class LoginItemManager {
             if enabled && actual == .enabled { return .success }
             if enabled && actual == .requiresApproval { return .requiresApproval }
             if !enabled && (actual == .notRegistered || actual == .notFound) { return .success }
-            let action = enabled ? "开启" : "关闭"
-            return .failure("未能\(action)登录时启动：\(error.localizedDescription)\n菜单将显示系统当前状态。")
+            let message = enabled
+                ? L10n.format("Could not enable Launch at Login: %@\nThe menu shows the current system status.", error.localizedDescription)
+                : L10n.format("Could not disable Launch at Login: %@\nThe menu shows the current system status.", error.localizedDescription)
+            return .failure(message)
         }
 
         let updated = status
         if enabled {
             if updated == .enabled { return .success }
             if updated == .requiresApproval { return .requiresApproval }
-            return .failure("系统尚未确认登录时启动已开启。请将应用放到“应用程序”文件夹后重试，并检查系统的登录项设置。")
+            return .failure(L10n.text("macOS has not confirmed Launch at Login. Move the app to Applications, retry, and check Login Items in System Settings."))
         }
         if updated == .notRegistered || updated == .notFound { return .success }
-        return .failure("系统尚未确认登录时启动已关闭，请重试或在系统的登录项设置中检查。")
+        return .failure(L10n.text("macOS has not confirmed that Launch at Login is off. Retry or check Login Items in System Settings."))
     }
 
     func openSystemSettings() {

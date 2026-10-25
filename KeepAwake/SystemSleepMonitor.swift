@@ -55,8 +55,7 @@ final class SystemSleepMonitor: NSObject {
         let errors = manager.releaseForSystemSleep()
         onStateChange()
         if !errors.isEmpty {
-            onWakeError(errors.joined(separator: "\n")
-                + "\n保持唤醒尚未完全关闭。请点击关闭重试，或退出应用。")
+            onWakeError(L10n.text("Keep Awake could not fully turn off after system sleep. Turn it off again to retry, or quit the app."))
         }
     }
 }

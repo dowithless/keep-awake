@@ -18,13 +18,16 @@ struct KeepAwakeApp {
 final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let manager = SleepAssertionManager()
     private let loginManager = LoginItemManager()
+    private let purchaseManager = AppPurchaseManager()
+    private var helpController: HelpWindowController?
     private var sleepMonitor: SystemSleepMonitor?
     private var statusItem: NSStatusItem?
     private let menu = NSMenu(title: "Keep Awake")
-    private let enabledItem = NSMenuItem(title: "保持唤醒", action: #selector(toggleAwake(_:)), keyEquivalent: "")
-    private let displayItem = NSMenuItem(title: "同时保持屏幕常亮", action: #selector(toggleDisplay(_:)), keyEquivalent: "")
-    private let loginItem = NSMenuItem(title: "登录时启动", action: #selector(toggleLoginItem(_:)), keyEquivalent: "")
-    private let loginSettingsItem = NSMenuItem(title: "在系统设置中允许…", action: #selector(openLoginSettings(_:)), keyEquivalent: "")
+    private let purchaseItem = NSMenuItem(title: L10n.text("Verify App Store Purchase…"), action: #selector(verifyPurchase(_:)), keyEquivalent: "")
+    private let enabledItem = NSMenuItem(title: L10n.text("Keep Awake"), action: #selector(toggleAwake(_:)), keyEquivalent: "")
+    private let displayItem = NSMenuItem(title: L10n.text("Keep Display Awake"), action: #selector(toggleDisplay(_:)), keyEquivalent: "")
+    private let loginItem = NSMenuItem(title: L10n.text("Launch at Login"), action: #selector(toggleLoginItem(_:)), keyEquivalent: "")
+    private let loginSettingsItem = NSMenuItem(title: L10n.text("Allow in System Settings…"), action: #selector(openLoginSettings(_:)), keyEquivalent: "")
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         menu.autoenablesItems = false
@@ -39,7 +42,13 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(loginItem)
         menu.addItem(loginSettingsItem)
         menu.addItem(.separator())
-        let quitItem = NSMenuItem(title: "退出 Keep Awake", action: #selector(quit(_:)), keyEquivalent: "q")
+        purchaseItem.target = self
+        menu.addItem(purchaseItem)
+        let helpItem = NSMenuItem(title: L10n.text("About & Help…"), action: #selector(showHelp(_:)), keyEquivalent: "")
+        helpItem.target = self
+        menu.addItem(helpItem)
+        menu.addItem(.separator())
+        let quitItem = NSMenuItem(title: L10n.text("Quit Keep Awake"), action: #selector(quit(_:)), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
 
@@ -51,6 +60,12 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
         updatePresentation()
+        purchaseManager.onStateChange = { [weak self] in self?.updatePresentation() }
+        Task { [weak self] in
+            guard let self else { return }
+            await purchaseManager.verify()
+            updatePresentation()
+        }
         sleepMonitor = SystemSleepMonitor(
             manager: manager,
             onStateChange: { [weak self] in self?.updatePresentation() },
@@ -87,6 +102,10 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     @objc private func toggleAwake(_ sender: Any?) {
+        guard manager.isEnabled || purchaseManager.state.allowsUse else {
+            showErrorIfNeeded(purchaseMessage())
+            return
+        }
         let error = manager.setEnabled(!manager.isEnabled)
         updatePresentation()
         showErrorIfNeeded(error)
@@ -114,10 +133,10 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             DispatchQueue.main.async { [self] in
                 let alert = NSAlert()
                 alert.alertStyle = .informational
-                alert.messageText = "需要系统允许登录时启动"
-                alert.informativeText = "请在系统设置的登录项中允许 Keep Awake。你也可以在右键菜单中取消“登录时启动”。登录启动后，保持唤醒仍默认关闭。"
-                alert.addButton(withTitle: "打开系统设置")
-                alert.addButton(withTitle: "稍后")
+                alert.messageText = L10n.text("Permission Needed for Launch at Login")
+                alert.informativeText = L10n.text("Allow Keep Awake in Login Items in System Settings. You can also turn off Launch at Login in the menu. Launching at login leaves Keep Awake off.")
+                alert.addButton(withTitle: L10n.text("Open System Settings"))
+                alert.addButton(withTitle: L10n.text("Later"))
                 NSApplication.shared.activate(ignoringOtherApps: true)
                 if alert.runModal() == .alertFirstButtonReturn {
                     loginManager.openSystemSettings()
@@ -133,21 +152,26 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     private func updatePresentation() {
-        let state = manager.isEnabled ? "已开启" : "已关闭"
+        let state = manager.isEnabled ? L10n.text("On") : L10n.text("Off")
         let image = NSImage(
             systemSymbolName: manager.isEnabled ? "cup.and.saucer.fill" : "cup.and.saucer",
-            accessibilityDescription: "Keep Awake：\(state)"
+            accessibilityDescription: L10n.format("Keep Awake: %@", state)
         )
         image?.isTemplate = true
         statusItem?.button?.image = image
-        statusItem?.button?.toolTip = "Keep Awake：\(state)\n左键切换；右键或 Control＋点击打开菜单"
-        statusItem?.button?.setAccessibilityLabel("Keep Awake：\(state)")
-        statusItem?.button?.setAccessibilityHelp("点击切换保持唤醒；右键或 Control＋点击打开设置菜单")
+        statusItem?.button?.toolTip = L10n.format("Keep Awake: %@\nLeft-click to toggle; right-click or Control-click for the menu", state)
+        statusItem?.button?.setAccessibilityLabel(L10n.format("Keep Awake: %@", state))
+        statusItem?.button?.setAccessibilityHelp(L10n.text("Click to toggle Keep Awake; right-click or Control-click to open the menu"))
+        purchaseItem.isHidden = purchaseManager.state.allowsUse
+        purchaseItem.isEnabled = purchaseManager.state != .checking
+        purchaseItem.title = purchaseManager.state == .checking ? L10n.text("Checking App Store Purchase…") : L10n.text("Verify App Store Purchase…")
+        if !purchaseManager.state.allowsUse { statusItem?.button?.toolTip = purchaseMessage() }
+        enabledItem.isEnabled = manager.isEnabled || purchaseManager.state.allowsUse
         enabledItem.state = manager.isEnabled ? .on : .off
-        enabledItem.toolTip = "系统睡眠时自动关闭；唤醒后需要重新开启"
+        enabledItem.toolTip = L10n.text("Turns off when the Mac sleeps; turn it on again after waking")
         displayItem.state = manager.preventDisplaySleep ? .on : .off
         displayItem.isEnabled = manager.isEnabled
-        displayItem.toolTip = manager.isEnabled ? nil : "先开启“保持唤醒”后可调整；当前勾选保留已保存的偏好"
+        displayItem.toolTip = manager.isEnabled ? nil : L10n.text("Turn on Keep Awake first. The checkmark shows your saved preference.")
 
         let loginStatus = loginManager.status
         switch loginStatus {
@@ -158,9 +182,31 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         default:
             loginItem.state = .off
         }
-        loginItem.title = loginStatus == .requiresApproval ? "登录时启动（待系统允许）" : "登录时启动"
-        loginItem.toolTip = loginStatus == .requiresApproval ? "系统尚未允许；点击可取消注册，或在系统设置中允许" : nil
+        loginItem.title = loginStatus == .requiresApproval ? L10n.text("Launch at Login (Approval Needed)") : L10n.text("Launch at Login")
+        loginItem.toolTip = loginStatus == .requiresApproval ? L10n.text("Approval is pending. Click to unregister, or allow it in System Settings.") : nil
         loginSettingsItem.isHidden = loginStatus != .requiresApproval
+    }
+
+    @objc private func showHelp(_ sender: Any?) {
+        menu.cancelTracking()
+        DispatchQueue.main.async { [self] in
+            if helpController == nil { helpController = HelpWindowController() }
+            helpController?.present()
+        }
+    }
+
+    @objc private func verifyPurchase(_ sender: Any?) {
+        Task { [weak self] in
+            guard let self else { return }
+            await purchaseManager.verify(refresh: true)
+            updatePresentation()
+            if !purchaseManager.state.allowsUse { showErrorIfNeeded(purchaseMessage()) }
+        }
+    }
+
+    private func purchaseMessage() -> String {
+        if purchaseManager.state == .checking { return L10n.text("Checking App Store Purchase…") }
+        return L10n.text("The App Store purchase could not be verified. Connect to the internet and choose Verify App Store Purchase in the menu. If the problem continues, download Keep Awake again using the Apple Account that purchased it.")
     }
 
     private func showErrorIfNeeded(_ error: String?) {
@@ -170,9 +216,9 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         DispatchQueue.main.async {
             let alert = NSAlert()
             alert.alertStyle = .warning
-            alert.messageText = "无法完成操作"
+            alert.messageText = L10n.text("Unable to Complete Operation")
             alert.informativeText = error
-            alert.addButton(withTitle: "好")
+            alert.addButton(withTitle: L10n.text("OK"))
             NSApplication.shared.activate(ignoringOtherApps: true)
             alert.runModal()
         }

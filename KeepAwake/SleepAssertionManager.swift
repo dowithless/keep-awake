@@ -58,7 +58,7 @@ final class SleepAssertionManager: ObservableObject {
                 "Keep Awake: Prevent idle system sleep" as CFString
             )
             guard systemResult == kIOReturnSuccess else {
-                return "未能开启保持唤醒（\(code(systemResult))）。当前保持唤醒已关闭。"
+                return L10n.format("Could not turn on Keep Awake (%@). Keep Awake is off.", code(systemResult))
             }
             systemAssertionID = systemID
 
@@ -67,9 +67,9 @@ final class SleepAssertionManager: ObservableObject {
                 guard displayResult == kIOReturnSuccess else {
                     let rollbackResult = releaseSystemAssertion()
                     if rollbackResult != kIOReturnSuccess {
-                        return "未能开启屏幕常亮（\(code(displayResult))），且系统断言清理失败（\(code(rollbackResult))）。系统仍保持唤醒，屏幕常亮未开启。请再次关闭“保持唤醒”以重试清理，或退出应用。"
+                        return L10n.format("Could not keep the display awake (%@) or release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit.", code(displayResult), code(rollbackResult))
                     }
-                    return "未能开启屏幕常亮（\(code(displayResult))）。已撤销本次开启，当前保持唤醒已关闭。"
+                    return L10n.format("Could not keep the display awake (%@). Activation was rolled back. Keep Awake is off.", code(displayResult))
                 }
                 displayAssertionID = displayID
             }
@@ -80,11 +80,11 @@ final class SleepAssertionManager: ObservableObject {
         // both visible options intact so the user can retry the same operation.
         let displayResult = releaseDisplayAssertion()
         guard displayResult == kIOReturnSuccess else {
-            return "未能关闭屏幕常亮（\(code(displayResult))）。保持唤醒仍开启，请重试或退出应用。"
+            return L10n.format("Could not release the display assertion (%@). Keep Awake is still on. Retry or quit.", code(displayResult))
         }
         let systemResult = releaseSystemAssertion()
         guard systemResult == kIOReturnSuccess else {
-            return "未能释放系统断言（\(code(systemResult))）。系统仍保持唤醒，屏幕常亮已关闭。请再次关闭“保持唤醒”以重试，或退出应用。"
+            return L10n.format("Could not release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit.", code(systemResult))
         }
         return nil
     }
@@ -95,13 +95,13 @@ final class SleepAssertionManager: ObservableObject {
             if prevent && displayAssertionID == nil {
                 let (result, id) = createDisplayAssertion()
                 guard result == kIOReturnSuccess else {
-                    return "未能开启屏幕常亮（\(code(result))）。原有系统保持唤醒继续生效，屏幕选项和已保存偏好未更改。"
+                    return L10n.format("Could not keep the display awake (%@). The Mac stays awake. The display setting and saved preference are unchanged.", code(result))
                 }
                 displayAssertionID = id
             } else if !prevent {
                 let result = releaseDisplayAssertion()
                 guard result == kIOReturnSuccess else {
-                    return "未能关闭屏幕常亮（\(code(result))）。屏幕仍保持常亮，屏幕选项和已保存偏好未更改。请重试。"
+                    return L10n.format("Could not release the display assertion (%@). The display stays awake. Your preference is unchanged. Retry.", code(result))
                 }
             }
         }
@@ -113,24 +113,24 @@ final class SleepAssertionManager: ObservableObject {
 
     /// Attempt both releases even if one fails; process exit is the final cleanup.
     func releaseForTermination() -> [String] {
-        releaseAssertions(context: "退出时")
+        releaseAssertions(context: "On quit")
     }
 
     /// End the temporary session without changing the saved display preference.
     /// Retain failed IDs so wake handling or a manual disable can retry cleanup.
     func releaseForSystemSleep() -> [String] {
-        releaseAssertions(context: "系统睡眠时")
+        releaseAssertions(context: "On system sleep")
     }
 
     private func releaseAssertions(context: String) -> [String] {
         var errors: [String] = []
         let displayResult = releaseDisplayAssertion()
         if displayResult != kIOReturnSuccess {
-            errors.append("\(context)释放显示器断言失败：\(code(displayResult))")
+            errors.append("\(context): could not release display assertion: \(code(displayResult))")
         }
         let systemResult = releaseSystemAssertion()
         if systemResult != kIOReturnSuccess {
-            errors.append("\(context)释放系统断言失败：\(code(systemResult))")
+            errors.append("\(context): could not release system assertion: \(code(systemResult))")
         }
         return errors
     }

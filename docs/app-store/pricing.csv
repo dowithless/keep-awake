@@ -1,0 +1,15 @@
+storefront_or_group,currency,proposed_customer_price,rule,approx_cny_2026_10_23,status
+China mainland,CNY,1,one_unit,1.00,verify_in_App_Store_Connect
+United States,USD,1.00,one_unit,6.67,verify_in_App_Store_Connect
+EUR storefronts,EUR,1.00,one_unit,7.47,verify_each_EUR_storefront
+United Kingdom,GBP,1.00,one_unit,8.92,verify_in_App_Store_Connect
+Canada,CAD,1.00,one_unit,4.77,verify_in_App_Store_Connect
+Australia,AUD,1.00,one_unit,4.68,verify_in_App_Store_Connect
+Brazil,BRL,1.00,one_unit,1.32,verify_in_App_Store_Connect
+Japan,JPY,50,lowest_nonzero_reference,2.13,verify_current_minimum
+South Korea,KRW,400,lowest_nonzero_reference,2.01,verify_current_minimum
+Hong Kong,HKD,2,lowest_nonzero_reference,1.70,verify_current_minimum
+Taiwan,TWD,10,lowest_nonzero_reference,2.05,verify_current_minimum
+Mexico,MXN,5,lowest_nonzero_reference,1.78,verify_current_minimum
+India,INR,9,lowest_nonzero_reference,0.63,verify_current_minimum
+Russia,RUB,15,lowest_nonzero_reference,,verify_current_minimum_and_purchase_availability

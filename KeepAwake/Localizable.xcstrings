@@ -1,0 +1,3840 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "A small menu bar utility that keeps your Mac awake during long tasks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A small menu bar utility that keeps your Mac awake during long tasks."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在长时间任务期间让 Mac 保持唤醒的轻量菜单栏工具。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在長時間工作期間讓 Mac 保持喚醒的輕量選單列工具。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長時間の作業中も Mac をスリープさせない、軽量なメニューバーツールです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "긴 작업 중에도 Mac을 깨어 있게 유지하는 가벼운 메뉴 막대 도구입니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein kleines Menüleistenprogramm, das deinen Mac bei langen Aufgaben wach hält."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un petit utilitaire de barre des menus qui garde votre Mac éveillé pendant les tâches longues."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pequeña utilidad de la barra de menús que mantiene tu Mac despierto durante tareas largas."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um pequeno utilitário da barra de menus que mantém o Mac desperto durante tarefas longas."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Небольшая утилита строки меню, которая не даёт Mac заснуть во время длительных задач."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una piccola utility della barra dei menu che mantiene attivo il Mac durante le attività lunghe."
+          }
+        }
+      }
+    },
+    "About": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアプリについて"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정보"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О приложении"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni"
+          }
+        }
+      }
+    },
+    "About & Help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About & Help"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于与帮助"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於與輔助說明"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアプリとヘルプ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정보 및 도움말"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über & Hilfe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos et aide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de y ayuda"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre e Ajuda"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О приложении и справка"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni e Aiuto"
+          }
+        }
+      }
+    },
+    "About & Help…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About & Help…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于与帮助…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於與輔助說明…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアプリとヘルプ…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정보 및 도움말…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über & Hilfe…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos et aide…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de y ayuda…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre e Ajuda…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О приложении и справка…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni e Aiuto…"
+          }
+        }
+      }
+    },
+    "Allow Keep Awake in Login Items in System Settings. You can also turn off Launch at Login in the menu. Launching at login leaves Keep Awake off.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Keep Awake in Login Items in System Settings. You can also turn off Launch at Login in the menu. Launching at login leaves Keep Awake off."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请在系统设置的登录项中允许 Keep Awake。也可以在菜单中关闭“登录时启动”。登录启动后，保持唤醒仍默认关闭。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在「系統設定」的登入項目中允許 Keep Awake。也可以在選單中關閉「登入時啟動」。登入啟動後，保持喚醒仍預設關閉。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定のログイン項目で Keep Awake を許可してください。メニューの「ログイン時に起動」をオフにすることもできます。ログイン時に起動してもスリープ防止はオフのままです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정의 로그인 항목에서 Keep Awake를 허용하세요. 메뉴에서 '로그인 시 실행'을 끌 수도 있습니다. 로그인 시 실행해도 깨어 있기 기능은 꺼진 상태로 시작합니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube Keep Awake unter „Anmeldeobjekte“ in den Systemeinstellungen. Du kannst „Beim Anmelden starten“ auch im Menü ausschalten. Beim Anmelden bleibt die Wachhaltefunktion zunächst aus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez Keep Awake dans les éléments d’ouverture des Réglages Système. Vous pouvez aussi désactiver « Ouvrir à la connexion » dans le menu. Le maintien en éveil reste désactivé au démarrage."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite Keep Awake en los ítems de inicio de Ajustes del Sistema. También puedes desactivar «Abrir al iniciar sesión» en el menú. Al iniciar sesión, la función de mantener despierto permanece desactivada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permita o Keep Awake nos Itens de Início dos Ajustes do Sistema. Você também pode desativar “Abrir ao iniciar sessão” no menu. Ao iniciar sessão, a função de manter desperto permanece desativada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешите Keep Awake в объектах входа в Системных настройках. Также можно отключить «Открывать при входе» в меню. При входе в систему предотвращение сна остаётся выключенным."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti Keep Awake negli elementi di login delle Impostazioni di Sistema. Puoi anche disattivare “Apri al login” nel menu. All’avvio, la funzione per mantenere attivo il Mac resta disattivata."
+          }
+        }
+      }
+    },
+    "Allow in System Settings…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow in System Settings…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在系统设置中允许…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在系統設定中允許…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定で許可…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정에서 허용…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Systemeinstellungen erlauben…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser dans Réglages Système…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir en Ajustes del Sistema…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir nos Ajustes do Sistema…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешить в Системных настройках…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti in Impostazioni di Sistema…"
+          }
+        }
+      }
+    },
+    "Apple handles App Store purchases, downloads, and purchase verification under its own privacy policy. The developer does not receive your payment card details. Purchase verification may contact Apple.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple handles App Store purchases, downloads, and purchase verification under its own privacy policy. The developer does not receive your payment card details. Purchase verification may contact Apple."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 根据其隐私政策处理 App Store 购买、下载和购买凭证验证。开发者不会收到你的银行卡资料。购买验证可能连接 Apple 服务。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 依其隱私權政策處理 App Store 購買、下載及購買憑證驗證。開發者不會收到你的付款卡資料。購買驗證可能連線至 Apple 服務。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store の購入、ダウンロード、購入確認は、Apple のプライバシーポリシーに基づいて処理されます。開発者にカード情報が渡ることはありません。購入確認の際に Apple に接続する場合があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 자체 개인정보 처리방침에 따라 App Store 구매, 다운로드 및 구매 확인을 처리합니다. 개발자는 결제 카드 정보를 받지 않습니다. 구매 확인 시 Apple에 연결할 수 있습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple verarbeitet App-Store-Käufe, Downloads und Kaufprüfungen gemäß seiner Datenschutzrichtlinie. Der Entwickler erhält keine Zahlungskartendaten. Die Kaufprüfung kann eine Verbindung zu Apple herstellen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gère les achats, téléchargements et vérifications d’achat de l’App Store selon sa propre politique de confidentialité. Le développeur ne reçoit pas vos données de carte bancaire. La vérification peut contacter Apple."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gestiona las compras, descargas y verificaciones de compra del App Store según su propia política de privacidad. El desarrollador no recibe los datos de tu tarjeta. La verificación puede conectarse con Apple."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple processa compras, downloads e verificações de compra da App Store conforme sua própria política de privacidade. O desenvolvedor não recebe os dados do seu cartão. A verificação pode se conectar à Apple."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple обрабатывает покупки, загрузки и проверку покупки в App Store согласно своей политике конфиденциальности. Разработчик не получает данные банковской карты. Проверка покупки может обращаться к Apple."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gestisce acquisti, download e verifiche degli acquisti dell’App Store secondo la propria informativa sulla privacy. Lo sviluppatore non riceve i dati della carta. La verifica può contattare Apple."
+          }
+        }
+      }
+    },
+    "Approval is pending. Click to unregister, or allow it in System Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approval is pending. Click to unregister, or allow it in System Settings."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统尚未允许；点击可取消注册，或在系统设置中允许。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚待系統允許；按一下可取消註冊，或在系統設定中允許。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムの許可待ちです。クリックで登録を解除するか、システム設定で許可してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 승인을 기다리는 중입니다. 클릭하여 등록을 취소하거나 시스템 설정에서 허용하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Genehmigung steht aus. Klicke zum Abmelden oder erlaube es in den Systemeinstellungen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation en attente. Cliquez pour désinscrire l’app ou autorisez-la dans Réglages Système."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La autorización está pendiente. Haz clic para cancelar el registro o permite la app en Ajustes del Sistema."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A aprovação está pendente. Clique para cancelar o registro ou permita o app nos Ajustes do Sistema."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидается разрешение системы. Нажмите для отмены регистрации или разрешите запуск в Системных настройках."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorizzazione in attesa. Fai clic per annullare la registrazione oppure consenti l’app in Impostazioni di Sistema."
+          }
+        }
+      }
+    },
+    "Checking App Store Purchase…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking App Store Purchase…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在验证 App Store 购买…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在驗證 App Store 購買…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store の購入を確認中…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store 구매 확인 중…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App-Store-Kauf wird geprüft…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification de l’achat App Store…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificando compra del App Store…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificando compra da App Store…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверка покупки в App Store…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica acquisto App Store…"
+          }
+        }
+      }
+    },
+    "Click to toggle Keep Awake; right-click or Control-click to open the menu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click to toggle Keep Awake; right-click or Control-click to open the menu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击切换保持唤醒；右键或 Control＋点击打开菜单"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按一下切換保持喚醒；按右鍵或按住 Control 點按以開啟選單"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリックでスリープ防止を切り替え、右クリックまたは Control＋クリックでメニューを開きます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "클릭하여 깨어 있기 전환, 오른쪽 클릭 또는 Control-클릭으로 메뉴 열기"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klicken zum Umschalten; Rechtsklick oder Control-Klick öffnet das Menü"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cliquez pour activer ou désactiver ; clic droit ou Contrôle-clic pour ouvrir le menu"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz clic para activar o desactivar; clic derecho o Control-clic para abrir el menú"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clique para ativar ou desativar; clique com o botão direito ou Control para abrir o menu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нажмите для переключения; правая кнопка или Control-нажатие открывает меню"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai clic per attivare o disattivare; clic destro o Ctrl-clic per aprire il menu"
+          }
+        }
+      }
+    },
+    "Contact Support": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contact Support"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "联系支持"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聯絡支援"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポートに問い合わせ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원 문의"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support kontaktieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacter l’assistance"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contactar con soporte"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contatar Suporte"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Связаться с поддержкой"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contatta l’assistenza"
+          }
+        }
+      }
+    },
+    "Could not disable Launch at Login: %@\nThe menu shows the current system status.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not disable Launch at Login: %@\nThe menu shows the current system status."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能关闭登录时启动：%@\n菜单显示系统当前状态。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法關閉登入時啟動：%@\n選單顯示系統目前的狀態。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時の起動を無効にできませんでした：%@\nメニューには現在のシステム状態が表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 실행을 끌 수 없습니다: %@\n메뉴에 현재 시스템 상태가 표시됩니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start beim Anmelden konnte nicht deaktiviert werden: %@\nDas Menü zeigt den aktuellen Systemstatus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de désactiver l’ouverture à la connexion : %@\nLe menu indique l’état actuel du système."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo desactivar la apertura al iniciar sesión: %@\nEl menú muestra el estado actual del sistema."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível desativar a abertura ao iniciar sessão: %@\nO menu mostra o estado atual do sistema."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось отключить запуск при входе: %@\nВ меню показано текущее состояние системы."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile disattivare l’apertura al login: %@\nIl menu mostra lo stato attuale del sistema."
+          }
+        }
+      }
+    },
+    "Could not enable Launch at Login: %@\nThe menu shows the current system status.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not enable Launch at Login: %@\nThe menu shows the current system status."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能开启登录时启动：%@\n菜单显示系统当前状态。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟登入時啟動：%@\n選單顯示系統目前的狀態。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時の起動を有効にできませんでした：%@\nメニューには現在のシステム状態が表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 실행을 켤 수 없습니다: %@\n메뉴에 현재 시스템 상태가 표시됩니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start beim Anmelden konnte nicht aktiviert werden: %@\nDas Menü zeigt den aktuellen Systemstatus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’activer l’ouverture à la connexion : %@\nLe menu indique l’état actuel du système."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo activar la apertura al iniciar sesión: %@\nEl menú muestra el estado actual del sistema."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ativar a abertura ao iniciar sessão: %@\nO menu mostra o estado atual do sistema."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось включить запуск при входе: %@\nВ меню показано текущее состояние системы."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile attivare l’apertura al login: %@\nIl menu mostra lo stato attuale del sistema."
+          }
+        }
+      }
+    },
+    "Could not keep the display awake (%@) or release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not keep the display awake (%@) or release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能开启屏幕常亮（%@），且系统断言清理失败（%@）。Mac 仍保持唤醒，显示器可休眠。请再次关闭“保持唤醒”或退出应用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟螢幕常亮（%@），且無法釋放系統電源斷言（%@）。Mac 仍保持喚醒，顯示器可進入睡眠。請再次關閉「保持喚醒」或結束應用程式。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面のスリープ防止（%@）とシステムアサーションの解放（%@）に失敗しました。Mac はスリープしませんが、画面はスリープできます。スリープ防止をもう一度オフにするか、アプリを終了してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 깨우기(%@) 및 시스템 전원 어설션 해제(%@)에 실패했습니다. Mac은 깨어 있고 디스플레이는 잠자기할 수 있습니다. 깨어 있기를 다시 끄거나 앱을 종료하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display konnte nicht wach gehalten (%@) und System-Anforderung nicht freigegeben werden (%@). Der Mac bleibt wach, das Display darf schlafen. Schalte die Wachhaltefunktion erneut aus oder beende die App."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de garder l’écran éveillé (%@) et de libérer l’assertion système (%@). Le Mac reste éveillé ; l’écran peut se mettre en veille. Désactivez à nouveau le maintien en éveil ou quittez l’app."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo mantener la pantalla despierta (%@) ni liberar la aserción del sistema (%@). El Mac sigue despierto; la pantalla puede entrar en reposo. Desactiva de nuevo la función o sal de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível manter a tela desperta (%@) nem liberar a asserção do sistema (%@). O Mac continua desperto; a tela pode repousar. Desative a função novamente ou encerre o app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось запретить сон дисплея (%@) и снять системный запрет сна (%@). Mac не спит, дисплей может заснуть. Повторно отключите предотвращение сна или завершите приложение."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile mantenere attivo lo schermo (%@) e rilasciare l’asserzione di sistema (%@). Il Mac resta attivo; lo schermo può andare in stop. Disattiva di nuovo la funzione o chiudi l’app."
+          }
+        }
+      }
+    },
+    "Could not keep the display awake (%@). Activation was rolled back. Keep Awake is off.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not keep the display awake (%@). Activation was rolled back. Keep Awake is off."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能开启屏幕常亮（%@）。已撤销本次开启，保持唤醒已关闭。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟螢幕常亮（%@）。已撤銷本次啟用，保持喚醒已關閉。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面のスリープを防止できませんでした（%@）。有効化を取り消しました。スリープ防止はオフです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이를 깨어 있게 유지할 수 없습니다(%@). 활성화를 취소했습니다. 깨어 있기가 꺼져 있습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display konnte nicht wach gehalten werden (%@). Die Aktivierung wurde zurückgenommen. Die Wachhaltefunktion ist aus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de garder l’écran éveillé (%@). L’activation a été annulée. Le maintien en éveil est désactivé."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo mantener la pantalla despierta (%@). Se revirtió la activación. La función de mantener despierto está desactivada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível manter a tela desperta (%@). A ativação foi revertida. A função de manter desperto está desativada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось запретить сон дисплея (%@). Включение отменено. Предотвращение сна выключено."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile mantenere attivo lo schermo (%@). L’attivazione è stata annullata. La funzione per mantenere attivo il Mac è disattivata."
+          }
+        }
+      }
+    },
+    "Could not keep the display awake (%@). The Mac stays awake. The display setting and saved preference are unchanged.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not keep the display awake (%@). The Mac stays awake. The display setting and saved preference are unchanged."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能开启屏幕常亮（%@）。Mac 仍保持唤醒，屏幕设置和已保存偏好未更改。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟螢幕常亮（%@）。Mac 仍保持喚醒，螢幕設定和已儲存的偏好未變更。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面のスリープを防止できませんでした（%@）。Mac のスリープ防止は継続します。画面設定と保存済みの設定は変更されていません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이를 깨어 있게 유지할 수 없습니다(%@). Mac은 계속 깨어 있습니다. 디스플레이 설정과 저장된 환경설정은 변경되지 않았습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display konnte nicht wach gehalten werden (%@). Der Mac bleibt wach. Display-Einstellung und gespeicherte Präferenz bleiben unverändert."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de garder l’écran éveillé (%@). Le Mac reste éveillé. Le réglage de l’écran et la préférence enregistrée sont inchangés."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo mantener la pantalla despierta (%@). El Mac sigue despierto. No se han cambiado el ajuste de pantalla ni la preferencia guardada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível manter a tela desperta (%@). O Mac continua desperto. O ajuste da tela e a preferência salva não foram alterados."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось запретить сон дисплея (%@). Mac продолжает работать. Настройка дисплея и сохранённые предпочтения не изменены."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile mantenere attivo lo schermo (%@). Il Mac resta attivo. L’impostazione dello schermo e la preferenza salvata non sono cambiate."
+          }
+        }
+      }
+    },
+    "Could not release the display assertion (%@). Keep Awake is still on. Retry or quit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not release the display assertion (%@). Keep Awake is still on. Retry or quit."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能释放显示器断言（%@）。保持唤醒仍开启，请重试或退出应用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法釋放顯示器電源斷言（%@）。保持喚醒仍開啟，請重試或結束應用程式。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面アサーションを解放できませんでした（%@）。スリープ防止はオンのままです。再試行するか終了してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 전원 어설션을 해제할 수 없습니다(%@). 깨어 있기가 계속 켜져 있습니다. 재시도하거나 종료하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display-Anforderung konnte nicht freigegeben werden (%@). Die Wachhaltefunktion bleibt an. Erneut versuchen oder beenden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de libérer l’assertion d’écran (%@). Le maintien en éveil reste actif. Réessayez ou quittez."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo liberar la aserción de pantalla (%@). La función de mantener despierto sigue activada. Reintenta o sal de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível liberar a asserção da tela (%@). A função de manter desperto continua ativa. Tente novamente ou encerre o app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось снять запрет сна дисплея (%@). Предотвращение сна остаётся включённым. Повторите попытку или завершите приложение."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile rilasciare l’asserzione dello schermo (%@). La funzione resta attiva. Riprova o chiudi l’app."
+          }
+        }
+      }
+    },
+    "Could not release the display assertion (%@). The display stays awake. Your preference is unchanged. Retry.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not release the display assertion (%@). The display stays awake. Your preference is unchanged. Retry."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能释放显示器断言（%@）。屏幕仍保持常亮，偏好未更改，请重试。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法釋放顯示器電源斷言（%@）。螢幕仍保持常亮，偏好未變更，請重試。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面アサーションを解放できませんでした（%@）。画面のスリープ防止は継続し、保存済みの設定は変更されていません。再試行してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 전원 어설션을 해제할 수 없습니다(%@). 화면이 계속 켜져 있습니다. 환경설정은 변경되지 않았습니다. 재시도하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display-Anforderung konnte nicht freigegeben werden (%@). Das Display bleibt wach. Die Präferenz ist unverändert. Erneut versuchen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de libérer l’assertion d’écran (%@). L’écran reste éveillé. Votre préférence est inchangée. Réessayez."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo liberar la aserción de pantalla (%@). La pantalla sigue despierta. Tu preferencia no ha cambiado. Reintenta."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível liberar a asserção da tela (%@). A tela continua desperta. Sua preferência não foi alterada. Tente novamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось снять запрет сна дисплея (%@). Дисплей не спит. Сохранённая настройка не изменена. Повторите попытку."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile rilasciare l’asserzione dello schermo (%@). Lo schermo resta attivo. La preferenza non è cambiata. Riprova."
+          }
+        }
+      }
+    },
+    "Could not release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not release the system assertion (%@). The Mac stays awake; the display may sleep. Turn off Keep Awake again or quit."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能释放系统断言（%@）。Mac 仍保持唤醒，显示器可休眠。请再次关闭“保持唤醒”或退出应用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法釋放系統電源斷言（%@）。Mac 仍保持喚醒，顯示器可進入睡眠。請再次關閉「保持喚醒」或結束應用程式。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムアサーションを解放できませんでした（%@）。Mac はスリープしませんが、画面はスリープできます。スリープ防止をもう一度オフにするか、終了してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 전원 어설션을 해제할 수 없습니다(%@). Mac은 깨어 있고 디스플레이는 잠자기할 수 있습니다. 깨어 있기를 다시 끄거나 종료하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System-Anforderung konnte nicht freigegeben werden (%@). Der Mac bleibt wach, das Display darf schlafen. Schalte die Wachhaltefunktion erneut aus oder beende die App."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de libérer l’assertion système (%@). Le Mac reste éveillé ; l’écran peut se mettre en veille. Désactivez à nouveau le maintien en éveil ou quittez."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo liberar la aserción del sistema (%@). El Mac sigue despierto; la pantalla puede entrar en reposo. Desactiva de nuevo la función o sal de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível liberar a asserção do sistema (%@). O Mac continua desperto; a tela pode repousar. Desative a função novamente ou encerre o app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось снять системный запрет сна (%@). Mac не спит, дисплей может заснуть. Повторно отключите предотвращение сна или завершите приложение."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile rilasciare l’asserzione di sistema (%@). Il Mac resta attivo; lo schermo può andare in stop. Disattiva di nuovo la funzione o chiudi l’app."
+          }
+        }
+      }
+    },
+    "Could not turn on Keep Awake (%@). Keep Awake is off.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not turn on Keep Awake (%@). Keep Awake is off."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未能开启保持唤醒（%@）。保持唤醒已关闭。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟保持喚醒（%@）。保持喚醒已關閉。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ防止をオンにできませんでした（%@）。スリープ防止はオフです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "깨어 있기를 켤 수 없습니다(%@). 깨어 있기가 꺼져 있습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachhaltefunktion konnte nicht aktiviert werden (%@). Sie ist aus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’activer le maintien en éveil (%@). Il est désactivé."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo activar la función de mantener despierto (%@). Está desactivada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível ativar a função de manter desperto (%@). Ela está desativada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось включить предотвращение сна (%@). Оно выключено."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile mantenere attivo il Mac (%@). La funzione è disattivata."
+          }
+        }
+      }
+    },
+    "Help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帮助"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輔助說明"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルプ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도움말"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilfe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajuda"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Справка"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aiuto"
+          }
+        }
+      }
+    },
+    "Keep Awake": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持唤醒"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持喚醒"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープを防止"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "깨어 있기"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wach halten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garder éveillé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantener despierto"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manter Desperto"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предотвращать сон"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni attivo"
+          }
+        }
+      }
+    },
+    "Keep Awake could not fully turn off after system sleep. Turn it off again to retry, or quit the app.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake could not fully turn off after system sleep. Turn it off again to retry, or quit the app."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统睡眠后未能完全关闭保持唤醒。请再次关闭以重试，或退出应用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系統睡眠後未能完全關閉保持喚醒。請再次關閉以重試，或結束應用程式。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムのスリープ後、スリープ防止を完全に解除できませんでした。もう一度オフにするか、アプリを終了してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 잠자기 후 깨어 있기를 완전히 끄지 못했습니다. 다시 끄거나 앱을 종료하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Wachhaltefunktion konnte nach dem Ruhezustand nicht vollständig beendet werden. Schalte sie erneut aus oder beende die App."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le maintien en éveil n’a pas pu être entièrement arrêté après la veille du système. Désactivez-le à nouveau ou quittez l’app."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo desactivar completamente la función tras el reposo del sistema. Desactívala de nuevo o sal de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível desativar totalmente a função após o repouso do sistema. Desative-a novamente ou encerre o app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось полностью отключить предотвращение сна после сна системы. Отключите его ещё раз или завершите приложение."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non è stato possibile disattivare completamente la funzione dopo lo stop del sistema. Disattivala di nuovo o chiudi l’app."
+          }
+        }
+      }
+    },
+    "Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake 不阻止主动睡眠或主动锁屏，不会解锁 Mac，也不保证合盖后继续运行。系统和组织的安全策略仍然适用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake 不會阻止手動睡眠或手動鎖定，不會解鎖 Mac，也不保證闔上螢幕後繼續運作。系統和組織的安全政策仍然適用。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake は手動のスリープやロックを防がず、Mac のロックを解除しません。蓋を閉じた状態での動作は保証しません。システムや組織のセキュリティポリシーは引き続き適用されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake는 수동 잠자기나 수동 잠금을 막거나 Mac의 잠금을 해제하지 않으며, 덮개를 닫은 상태의 작동을 보장하지 않습니다. 시스템 및 조직의 보안 정책은 계속 적용됩니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake verhindert weder manuelles Sperren noch manuellen Ruhezustand, entsperrt den Mac nicht und garantiert keinen Betrieb mit geschlossenem Deckel. Sicherheitsrichtlinien des Systems und deiner Organisation gelten weiterhin."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake n’empêche pas la veille ou le verrouillage manuels, ne déverrouille pas votre Mac et ne garantit pas le fonctionnement couvercle fermé. Les règles de sécurité du système et de votre organisation restent applicables."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake no impide el reposo o bloqueo manual, no desbloquea tu Mac ni garantiza el funcionamiento con la tapa cerrada. Las políticas de seguridad del sistema y de tu organización siguen vigentes."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Keep Awake não impede o repouso ou bloqueio manual, não desbloqueia o Mac e não garante o funcionamento com a tampa fechada. As políticas de segurança do sistema e da organização continuam válidas."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake не препятствует ручному переходу в сон и блокировке, не разблокирует Mac и не гарантирует работу с закрытой крышкой. Политики безопасности системы и организации продолжают действовать."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake non impedisce lo stop o il blocco manuali, non sblocca il Mac e non garantisce il funzionamento con il coperchio chiuso. Restano valide le politiche di sicurezza del sistema e dell’organizzazione."
+          }
+        }
+      }
+    },
+    "Keep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake 在本机运行，无需账户。应用不会向开发者发送个人数据、使用统计或广告标识符。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake 在本機運作，無需帳號。應用程式不會向開發者傳送個人資料、使用統計或廣告識別碼。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake はアカウント不要でローカルに動作します。個人データ、使用状況の統計、広告識別子を開発者に送信しません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake는 계정 없이 이 Mac에서 작동합니다. 앱은 개인 데이터, 사용 통계 또는 광고 식별자를 개발자에게 전송하지 않습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake arbeitet lokal ohne Benutzerkonto. Die App sendet keine personenbezogenen Daten, Nutzungsanalysen oder Werbekennungen an den Entwickler."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake fonctionne localement sans compte. L’app n’envoie au développeur aucune donnée personnelle, analyse d’utilisation ni identifiant publicitaire."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake funciona localmente sin una cuenta. La app no envía al desarrollador datos personales, análisis de uso ni identificadores publicitarios."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Keep Awake funciona localmente, sem conta. O app não envia dados pessoais, análises de uso ou identificadores de publicidade ao desenvolvedor."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake работает локально без учётной записи. Приложение не отправляет разработчику личные данные, статистику использования или рекламные идентификаторы."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake funziona localmente senza account. L’app non invia allo sviluppatore dati personali, analisi di utilizzo o identificatori pubblicitari."
+          }
+        }
+      }
+    },
+    "Keep Awake: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake : %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@"
+          }
+        }
+      }
+    },
+    "Keep Awake: %@\nLeft-click to toggle; right-click or Control-click for the menu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nLeft-click to toggle; right-click or Control-click for the menu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@\n左键切换；右键或 Control＋点击打开菜单"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@\n按左鍵切換；按右鍵或按住 Control 點按以開啟選單"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake：%@\n左クリックで切り替え、右クリックまたは Control＋クリックでメニューを表示"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\n왼쪽 클릭으로 전환, 오른쪽 클릭 또는 Control-클릭으로 메뉴 열기"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nLinksklick zum Umschalten; Rechtsklick oder Control-Klick öffnet das Menü"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake : %@\nClic gauche pour basculer ; clic droit ou Contrôle-clic pour le menu"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nClic izquierdo para activar o desactivar; clic derecho o Control-clic para el menú"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nClique esquerdo para alternar; clique direito ou Control-clique para o menu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nЛевая кнопка — переключить; правая кнопка или Control-нажатие — меню"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake: %@\nClic sinistro per attivare o disattivare; clic destro o Ctrl-clic per il menu"
+          }
+        }
+      }
+    },
+    "Keep Display Awake": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Display Awake"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同时保持屏幕常亮"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同時保持螢幕常亮"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面のスリープも防止"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이도 깨어 있게 유지"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display ebenfalls wach halten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Garder aussi l’écran éveillé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantener también la pantalla despierta"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manter a Tela Desperta Também"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не выключать дисплей"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni attivo anche lo schermo"
+          }
+        }
+      }
+    },
+    "Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“同时保持屏幕常亮”还会阻止显示器空闲休眠。关闭该选项后，Mac 继续保持唤醒，显示器可休眠。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「同時保持螢幕常亮」也會阻止顯示器閒置睡眠。關閉後，Mac 繼續保持喚醒，顯示器可進入睡眠。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「画面のスリープも防止」は、無操作時の画面スリープも防ぎます。オフにすると、Mac を動作させたまま画面をスリープできます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'디스플레이도 깨어 있게 유지'는 유휴 상태의 디스플레이 잠자기도 방지합니다. 끄면 Mac은 깨어 있는 상태에서 디스플레이가 잠자기할 수 있습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Display ebenfalls wach halten“ verhindert auch den Display-Ruhezustand bei Inaktivität. Ist die Option aus, darf das Display schlafen, während der Mac wach bleibt."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Garder aussi l’écran éveillé » empêche également la veille de l’écran en cas d’inactivité. Désactivez cette option pour laisser l’écran se mettre en veille tout en gardant le Mac éveillé."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Mantener también la pantalla despierta» impide el reposo de la pantalla por inactividad. Desactívalo para permitir que la pantalla repose mientras el Mac sigue despierto."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Manter a Tela Desperta Também” impede o repouso da tela por inatividade. Desative a opção para deixar a tela repousar enquanto o Mac continua desperto."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Не выключать дисплей» также предотвращает сон дисплея при бездействии. Отключите эту опцию, чтобы дисплей мог спать, пока Mac продолжает работать."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mantieni attivo anche lo schermo” impedisce anche lo stop dello schermo per inattività. Disattivalo per consentire lo stop dello schermo mentre il Mac resta attivo."
+          }
+        }
+      }
+    },
+    "Later": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Later"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍后"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍後"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あとで"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나중에"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Später"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus tard"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más tarde"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais Tarde"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позже"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Più tardi"
+          }
+        }
+      }
+    },
+    "Launch at Login": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at Login"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录时启动"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時啟動"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時に起動"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 실행"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Anmelden starten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir à la connexion"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir al iniciar sesión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir ao Iniciar Sessão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открывать при входе"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri al login"
+          }
+        }
+      }
+    },
+    "Launch at Login (Approval Needed)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at Login (Approval Needed)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录时启动（待系统允许）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時啟動（待系統允許）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時に起動（許可が必要）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 실행(승인 필요)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Anmelden starten (Genehmigung nötig)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir à la connexion (autorisation requise)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir al iniciar sesión (requiere autorización)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir ao Iniciar Sessão (Aprovação Necessária)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открывать при входе (нужно разрешение)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri al login (autorizzazione richiesta)"
+          }
+        }
+      }
+    },
+    "Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左键点击菜单栏咖啡杯可切换保持唤醒。右键或 Control＋点击打开菜单。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以滑鼠左鍵按一下選單列咖啡杯可切換保持喚醒。按右鍵或按住 Control 點按可開啟選單。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メニューバーのカップを左クリックするとスリープ防止を切り替えます。右クリックまたは Control＋クリックでメニューを開きます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메뉴 막대의 컵을 왼쪽 클릭하여 깨어 있기를 전환하세요. 오른쪽 클릭 또는 Control-클릭으로 메뉴를 엽니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klicke mit der linken Maustaste auf die Tasse in der Menüleiste, um die Wachhaltefunktion umzuschalten. Rechtsklick oder Control-Klick öffnet das Menü."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cliquez avec le bouton gauche sur la tasse dans la barre des menus pour activer ou désactiver le maintien en éveil. Un clic droit ou Contrôle-clic ouvre le menu."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz clic izquierdo en la taza de la barra de menús para activar o desactivar la función. Un clic derecho o Control-clic abre el menú."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clique com o botão esquerdo na xícara da barra de menus para ativar ou desativar a função. Clique com o botão direito ou com Control para abrir o menu."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нажмите левой кнопкой на чашку в строке меню, чтобы переключить предотвращение сна. Правая кнопка или Control-нажатие открывает меню."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai clic sinistro sulla tazza nella barra dei menu per attivare o disattivare la funzione. Un clic destro o Ctrl-clic apre il menu."
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aceptar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ОК"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Off": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已关闭"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已關閉"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꺼짐"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Désactivé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выключено"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disattivato"
+          }
+        }
+      }
+    },
+    "On": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已开启"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已開啟"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "켜짐"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activé"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activado"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включено"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attivato"
+          }
+        }
+      }
+    },
+    "One purchase. All features. No subscription or in-app purchases.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One purchase. All features. No subscription or in-app purchases."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一次购买，完整功能，无订阅或应用内购买。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一次購買，完整功能，無訂閱或 App 內購買。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一度の購入ですべての機能。サブスクリプションやアプリ内課金はありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 번 구매로 모든 기능을 사용하세요. 구독이나 앱 내 구입이 없습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Kauf. Alle Funktionen. Kein Abo und keine In-App-Käufe."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un seul achat. Toutes les fonctions. Aucun abonnement ni achat intégré."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una compra. Todas las funciones. Sin suscripciones ni compras dentro de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma compra. Todos os recursos. Sem assinatura ou compras dentro do app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Одна покупка. Все функции. Без подписок и встроенных покупок."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un acquisto. Tutte le funzioni. Nessun abbonamento o acquisto in-app."
+          }
+        }
+      }
+    },
+    "Open System Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open System Settings"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开系统设置"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打開系統設定"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定を開く"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정 열기"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemeinstellungen öffnen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir Réglages Système"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Ajustes del Sistema"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Ajustes do Sistema"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть Системные настройки"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri Impostazioni di Sistema"
+          }
+        }
+      }
+    },
+    "Opening a support or privacy website uses your browser. Information you choose to send to support is handled separately from the app.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opening a support or privacy website uses your browser. Information you choose to send to support is handled separately from the app."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持或隐私网页会在浏览器中打开。你主动发送给支持渠道的信息与应用本身的数据处理分开。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支援或隱私權網頁會在瀏覽器中開啟。你主動傳送給支援管道的資訊與應用程式的資料處理分開。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポートやプライバシーのウェブサイトはブラウザで開きます。サポートに自ら送信する情報は、アプリとは別に扱われます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원 또는 개인정보 웹사이트는 브라우저에서 열립니다. 지원 채널에 직접 전송한 정보는 앱과 별도로 처리됩니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support- und Datenschutzwebsites werden im Browser geöffnet. Informationen, die du freiwillig an den Support sendest, werden getrennt von der App verarbeitet."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les sites d’assistance et de confidentialité s’ouvrent dans votre navigateur. Les informations que vous choisissez d’envoyer à l’assistance sont traitées séparément de l’app."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las páginas de soporte o privacidad se abren en tu navegador. La información que decidas enviar a soporte se trata por separado de la app."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os sites de suporte ou privacidade abrem no navegador. As informações que você optar por enviar ao suporte são tratadas separadamente do app."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сайты поддержки и конфиденциальности открываются в браузере. Сведения, которые вы сами отправляете в поддержку, обрабатываются отдельно от приложения."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I siti di assistenza e privacy si aprono nel browser. Le informazioni che scegli di inviare all’assistenza vengono trattate separatamente dall’app."
+          }
+        }
+      }
+    },
+    "Permission Needed for Launch at Login": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permission Needed for Launch at Login"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要系统允许登录时启动"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時啟動需要系統允許"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時の起動には許可が必要です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 실행 권한 필요"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genehmigung für Start beim Anmelden nötig"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation requise pour l’ouverture à la connexion"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se requiere permiso para abrir al iniciar sesión"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissão Necessária para Abrir ao Iniciar Sessão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужно разрешение для запуска при входе"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorizzazione richiesta per l’apertura al login"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐私"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隱私權"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인정보"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutz"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacidad"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacidade"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Конфиденциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy"
+          }
+        }
+      }
+    },
+    "Privacy Policy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐私政策"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隱私權政策"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシーポリシー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인정보 처리방침"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutzrichtlinie"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Politique de confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Política de privacidad"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Política de Privacidade"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Политика конфиденциальности"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informativa sulla privacy"
+          }
+        }
+      }
+    },
+    "Quit Keep Awake": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit Keep Awake"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出 Keep Awake"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "結束 Keep Awake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake を終了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake 종료"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Awake beenden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter Keep Awake"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salir de Keep Awake"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encerrar Keep Awake"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завершить Keep Awake"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esci da Keep Awake"
+          }
+        }
+      }
+    },
+    "Standard License": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard License"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "标准许可协议"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標準授權協議"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標準使用許諾契約"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표준 사용권 계약"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standardlizenz"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licence standard"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licencia estándar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licença Padrão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стандартная лицензия"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licenza standard"
+          }
+        }
+      }
+    },
+    "System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统睡眠会结束本次保持唤醒。电脑唤醒后，需要时请重新开启。登录启动不会自动开启保持唤醒。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系統睡眠會結束本次保持喚醒。Mac 喚醒後，需要時請重新開啟。登入啟動不會自動開啟保持喚醒。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムがスリープすると現在のセッションは終了します。復帰後、必要に応じて再度オンにしてください。ログイン時の起動でセッションが自動開始されることはありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 잠자기는 현재 세션을 종료합니다. 깨어난 후 필요할 때 다시 켜세요. 로그인 시 실행은 세션을 자동으로 시작하지 않습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Ruhezustand beendet die aktuelle Sitzung. Aktiviere die Wachhaltefunktion nach dem Aufwachen bei Bedarf erneut. Der Start beim Anmelden beginnt nie automatisch eine Sitzung."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La veille du système termine la session en cours. Après le réveil, réactivez le maintien en éveil si nécessaire. L’ouverture à la connexion ne démarre jamais de session automatiquement."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El reposo del sistema termina la sesión actual. Al despertar, activa de nuevo la función cuando la necesites. Abrir al iniciar sesión nunca inicia una sesión automáticamente."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O repouso do sistema encerra a sessão atual. Após despertar, ative a função novamente quando precisar. Abrir ao iniciar sessão nunca começa uma sessão automaticamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сон системы завершает текущий сеанс. После пробуждения при необходимости включите предотвращение сна снова. Запуск при входе никогда не начинает сеанс автоматически."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo stop del sistema termina la sessione attuale. Al risveglio, riattiva la funzione quando serve. L’apertura al login non avvia mai una sessione automaticamente."
+          }
+        }
+      }
+    },
+    "The App Store purchase could not be verified. Connect to the internet and choose Verify App Store Purchase in the menu. If the problem continues, download Keep Awake again using the Apple Account that purchased it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The App Store purchase could not be verified. Connect to the internet and choose Verify App Store Purchase in the menu. If the problem continues, download Keep Awake again using the Apple Account that purchased it."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法验证 App Store 购买。请联网后在菜单中选择“验证 App Store 购买”。若问题持续，请使用购买时的 Apple 账户重新下载 Keep Awake。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法驗證 App Store 購買。請連上網路後在選單中選擇「驗證 App Store 購買」。若問題持續，請使用購買時的 Apple 帳號重新下載 Keep Awake。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store の購入を確認できませんでした。インターネットに接続し、メニューの「App Store の購入を確認」を選んでください。解決しない場合は、購入した Apple Account で Keep Awake を再ダウンロードしてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store 구매를 확인할 수 없습니다. 인터넷에 연결하고 메뉴에서 'App Store 구매 확인'을 선택하세요. 문제가 계속되면 구매한 Apple 계정으로 Keep Awake를 다시 다운로드하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der App-Store-Kauf konnte nicht geprüft werden. Verbinde dich mit dem Internet und wähle „App-Store-Kauf prüfen“ im Menü. Besteht das Problem weiter, lade Keep Awake mit dem Apple Account des Kaufs erneut herunter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’achat App Store n’a pas pu être vérifié. Connectez-vous à Internet et choisissez « Vérifier l’achat App Store » dans le menu. Si le problème persiste, retéléchargez Keep Awake avec le compte Apple utilisé pour l’achat."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo verificar la compra del App Store. Conéctate a Internet y elige «Verificar compra del App Store» en el menú. Si el problema continúa, descarga Keep Awake de nuevo con la cuenta de Apple usada para comprarlo."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível verificar a compra da App Store. Conecte-se à internet e escolha “Verificar Compra da App Store” no menu. Se o problema continuar, baixe o Keep Awake novamente com a Conta Apple usada na compra."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось проверить покупку в App Store. Подключитесь к интернету и выберите «Проверить покупку в App Store» в меню. Если проблема сохраняется, загрузите Keep Awake заново с Аккаунтом Apple, использованным при покупке."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile verificare l’acquisto App Store. Connettiti a internet e scegli “Verifica acquisto App Store” nel menu. Se il problema persiste, scarica di nuovo Keep Awake con l’Apple Account usato per l’acquisto."
+          }
+        }
+      }
+    },
+    "Turn on Keep Awake first. The checkmark shows your saved preference.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn on Keep Awake first. The checkmark shows your saved preference."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先开启“保持唤醒”后可调整；勾选表示已保存的偏好。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請先開啟「保持喚醒」；勾選標記表示已儲存的偏好。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先にスリープ防止をオンにしてください。チェックマークは保存済みの設定を示します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "먼저 깨어 있기를 켜세요. 체크 표시는 저장된 환경설정을 나타냅니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktiviere zuerst die Wachhaltefunktion. Das Häkchen zeigt deine gespeicherte Präferenz."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activez d’abord le maintien en éveil. La coche indique votre préférence enregistrée."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa primero la función de mantener despierto. La marca muestra tu preferencia guardada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ative primeiro a função de manter desperto. A marca indica sua preferência salva."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сначала включите предотвращение сна. Флажок показывает сохранённую настройку."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attiva prima la funzione per mantenere attivo il Mac. Il segno di spunta mostra la preferenza salvata."
+          }
+        }
+      }
+    },
+    "Turns off when the Mac sleeps; turn it on again after waking": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turns off when the Mac sleeps; turn it on again after waking"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统睡眠时自动关闭；唤醒后需重新开启"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系統睡眠時自動關閉；喚醒後需重新開啟"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac のスリープ時にオフになります。復帰後は再度オンにしてください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac이 잠자기하면 꺼집니다. 깨어난 후 다시 켜세요"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird beim Ruhezustand ausgeschaltet; danach erneut aktivieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se désactive à la veille du Mac ; réactivez après le réveil"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se desactiva al entrar en reposo; vuelve a activarlo al despertar"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativa quando o Mac repousa; ative novamente ao despertar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выключается при сне Mac; после пробуждения включите снова"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si disattiva quando il Mac va in stop; riattiva dopo il risveglio"
+          }
+        }
+      }
+    },
+    "Unable to Complete Operation": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to Complete Operation"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法完成操作"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法完成操作"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作を完了できません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작업을 완료할 수 없음"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorgang konnte nicht abgeschlossen werden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de terminer l’opération"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo completar la operación"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não Foi Possível Concluir a Operação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось выполнить операцию"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile completare l’operazione"
+          }
+        }
+      }
+    },
+    "Verify App Store Purchase…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verify App Store Purchase…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "验证 App Store 购买…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "驗證 App Store 購買…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store の購入を確認…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store 구매 확인…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App-Store-Kauf prüfen…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier l’achat App Store…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar compra del App Store…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificar Compra da App Store…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить покупку в App Store…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica acquisto App Store…"
+          }
+        }
+      }
+    },
+    "Version %@ (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ (%@)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 %@（%@）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 %@（%@）"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バージョン %@（%@）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버전 %@(%@)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ (%@)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ (%@)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión %@ (%@)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versão %@ (%@)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Версия %@ (%@)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione %@ (%@)"
+          }
+        }
+      }
+    },
+    "Your display preference is stored on this Mac. Login items are managed by macOS. Operation errors may appear in local system logs; the app does not upload them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your display preference is stored on this Mac. Login items are managed by macOS. Operation errors may appear in local system logs; the app does not upload them."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示器偏好保存在本机，登录项由 macOS 管理。操作错误可能写入本机系统日志，应用不会上传这些日志。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示器偏好儲存在本機，登入項目由 macOS 管理。操作錯誤可能寫入本機系統日誌，應用程式不會上傳日誌。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面の設定はこの Mac に保存され、ログイン項目は macOS が管理します。操作エラーはローカルのシステムログに記録される場合がありますが、アプリはアップロードしません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 환경설정은 이 Mac에 저장됩니다. 로그인 항목은 macOS가 관리합니다. 작업 오류가 로컬 시스템 로그에 기록될 수 있지만 앱은 업로드하지 않습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Display-Präferenz wird auf diesem Mac gespeichert. macOS verwaltet die Anmeldeobjekte. Fehler können im lokalen Systemprotokoll erscheinen; die App lädt sie nicht hoch."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre préférence d’écran est enregistrée sur ce Mac. macOS gère les éléments d’ouverture. Les erreurs peuvent apparaître dans les journaux locaux du système ; l’app ne les téléverse pas."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu preferencia de pantalla se guarda en este Mac. macOS gestiona los ítems de inicio. Los errores pueden aparecer en los registros locales del sistema; la app no los sube."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua preferência de tela é salva neste Mac. O macOS gerencia os itens de início. Erros podem aparecer nos registros locais do sistema; o app não os envia."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройка дисплея хранится на этом Mac. Объектами входа управляет macOS. Ошибки могут попадать в локальные системные журналы; приложение их не отправляет."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La preferenza dello schermo è salvata su questo Mac. macOS gestisce gli elementi di login. Gli errori possono apparire nei log locali di sistema; l’app non li carica."
+          }
+        }
+      }
+    },
+    "macOS has not confirmed Launch at Login. Move the app to Applications, retry, and check Login Items in System Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS has not confirmed Launch at Login. Move the app to Applications, retry, and check Login Items in System Settings."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 尚未确认登录时启动已开启。请将应用移到“应用程序”文件夹后重试，并检查系统设置中的登录项。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 尚未確認登入時啟動已開啟。請將應用程式移至「應用程式」檔案夾後重試，並檢查系統設定中的登入項目。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS がログイン時の起動を確認していません。アプリを「アプリケーション」に移動して再試行し、システム設定のログイン項目を確認してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS가 로그인 시 실행을 확인하지 않았습니다. 앱을 응용 프로그램 폴더로 이동하여 재시도하고 시스템 설정의 로그인 항목을 확인하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS hat den Start beim Anmelden nicht bestätigt. Verschiebe die App in „Programme“, versuche es erneut und prüfe die Anmeldeobjekte in den Systemeinstellungen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS n’a pas confirmé l’ouverture à la connexion. Déplacez l’app dans Applications, réessayez et vérifiez les éléments d’ouverture dans Réglages Système."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS no ha confirmado la apertura al iniciar sesión. Mueve la app a Aplicaciones, reintenta y revisa los ítems de inicio en Ajustes del Sistema."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS não confirmou a abertura ao iniciar sessão. Mova o app para Aplicativos, tente novamente e confira os Itens de Início nos Ajustes do Sistema."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS не подтвердила запуск при входе. Переместите приложение в папку «Программы», повторите попытку и проверьте объекты входа в Системных настройках."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS non ha confermato l’apertura al login. Sposta l’app in Applicazioni, riprova e controlla gli elementi di login in Impostazioni di Sistema."
+          }
+        }
+      }
+    },
+    "macOS has not confirmed that Launch at Login is off. Retry or check Login Items in System Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS has not confirmed that Launch at Login is off. Retry or check Login Items in System Settings."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 尚未确认登录时启动已关闭。请重试或检查系统设置中的登录项。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 尚未確認登入時啟動已關閉。請重試或檢查系統設定中的登入項目。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS がログイン時の起動の無効化を確認していません。再試行するか、システム設定のログイン項目を確認してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS가 로그인 시 실행 해제를 확인하지 않았습니다. 재시도하거나 시스템 설정의 로그인 항목을 확인하세요."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS hat das Deaktivieren des Starts beim Anmelden nicht bestätigt. Versuche es erneut oder prüfe die Anmeldeobjekte in den Systemeinstellungen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS n’a pas confirmé la désactivation de l’ouverture à la connexion. Réessayez ou vérifiez les éléments d’ouverture dans Réglages Système."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS no ha confirmado que la apertura al iniciar sesión esté desactivada. Reintenta o revisa los ítems de inicio en Ajustes del Sistema."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O macOS não confirmou que a abertura ao iniciar sessão está desativada. Tente novamente ou confira os Itens de Início nos Ajustes do Sistema."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS не подтвердила отключение запуска при входе. Повторите попытку или проверьте объекты входа в Системных настройках."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS non ha confermato che l’apertura al login è disattivata. Riprova o controlla gli elementi di login in Impostazioni di Sistema."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

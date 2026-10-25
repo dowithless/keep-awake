@@ -1,96 +1,80 @@
 # Keep Awake
 
-macOS 原生菜单栏防休眠工具，适合长时间构建、计算，以及需要保持桌面可操作的 GUI 自动化任务。
+macOS 原生菜单栏防休眠工具。产品计划为 **Mac App Store 付费下载、一次购买、完整功能永久使用**；无订阅、无内购、无自建账户。当前代码和商店资料已准备，尚未提交或上线。
 
 ## 使用
 
-- 左键单击菜单栏咖啡杯，直接切换“保持唤醒”，无需先打开菜单。实心杯代表开启，轮廓杯代表关闭。
-- 右键单击或 Control＋点击图标打开原生菜单，可修改屏幕常亮选项、切换总开关或退出。悬停提示会说明当前状态和操作方式。
-- 菜单保持系统原生的“文字＋勾号”外观，字体、行高和间距由系统决定。选择菜单项后按系统默认行为收起。
-- “同时保持屏幕常亮”默认勾选；取消后仍保持系统唤醒，允许显示器按系统策略关闭。
-- “同时保持屏幕常亮”与其他菜单项对齐，不使用缩进。总开关关闭时该选项置灰不可修改，但保留已保存的勾选偏好；开启总开关后恢复可操作并按该偏好生效。
-- 屏幕选项会保存；总开关不会保存，每次启动都关闭。
-- 右键菜单中的“登录时启动”可随时勾选或取消。应用不会在首次运行时自行开启；启用后，在下次登录 macOS 时启动应用，防休眠总开关仍默认关闭。
-- 若显示“登录时启动（待系统允许）”，可选择“在系统设置中允许…”完成允许，或再次点击该选项取消注册。每次打开菜单都以系统当前状态为准，包括用户在系统设置中的更改。
-- 手动退出应用不取消登录启动；取消登录启动也不会退出当前应用或改变防休眠状态。
-- 开启后持续生效，直到手动关闭、系统睡眠或退出。系统睡眠会自动结束本次保持唤醒；电脑再次唤醒后保持关闭，需要时重新开启。应用继续留在菜单栏，屏幕常亮偏好保留。
-- 自动关闭适用于实际发生的系统睡眠，包括主动睡眠、合盖睡眠和低电量等原因的睡眠；单纯锁屏、屏保或显示器熄灭不会触发。不会随 Codex 任务结束而自动关闭。
-- 应用没有 Dock 图标、主窗口或设置窗口；操作失败时使用临时原生错误对话框。
+- 左键点击菜单栏咖啡杯，直接切换“保持唤醒”。实心杯表示开启，轮廓杯表示关闭。
+- 右键或 Control＋点击打开原生菜单。菜单使用系统默认的文字、勾号及间距，选择后正常收起。
+- “同时保持屏幕常亮”默认勾选；取消后 Mac 继续保持唤醒，允许显示器按系统策略关闭。
+- 总开关关闭时屏幕选项置灰；开启后恢复可操作。屏幕偏好会保存，每次启动总开关均关闭。
+- “登录时启动”由用户主动启用；系统待允许时提供设置入口，也可再次点击取消注册。每次展开菜单读取系统实际状态。退出应用不注销登录项，取消登录项不退出应用。
+- 实际系统睡眠结束本次保持唤醒；唤醒后保持关闭，需要时重新开启。屏幕偏好保留。单纯锁屏、屏保或显示器休眠不会结束会话。
+- 无 Dock 图标。菜单新增“关于与帮助”，用小型原生窗口提供版本、帮助和离线隐私说明。
+- 支持英文、简体中文、繁体中文、日文、韩文、德文、法文、西班牙文、葡萄牙文（巴西）、俄语、意大利文。跟随系统或系统为单独 App 选择的语言，英文回退。
 
-## 构建与运行
+## 构建
 
-最低系统版本为 **macOS 13.0**。项目使用 Xcode 26.3 创建；当前项目格式建议使用 Xcode 16 或更新版本打开。macOS 13.0 是运行要求，不代表必须使用旧版 Xcode 构建。没有第三方依赖、网络服务、Homebrew 或常驻子进程。
+最低系统 **macOS 13.0**，Xcode 16 或更新版本；当前使用 Xcode 26.3。无第三方库、Homebrew 或常驻子进程。核心功能本机运行；商店购买校验可能通过 Apple 服务联网。
 
-在 Xcode 中打开 `KeepAwake.xcodeproj`，选择 `KeepAwake` scheme 和 `My Mac` 后运行。若模板中的开发团队不可用，在 Signing & Capabilities 中选择自己的团队或本地签名方式。
+- **KeepAwake scheme / Debug 或 Release**：本地开发、预览及测试，无商店购买校验。
+- **KeepAwake-AppStore scheme / AppStore 配置**：商店归档，编译 APP_STORE 并校验 Apple 应用交易。不要将普通 Release 当作商店正式构建上传。
 
-也可以在项目根目录执行以下命令，生成供本机运行的临时签名 Release 应用：
+本地临时签名构建：
 
 ```sh
 xcodebuild -project KeepAwake.xcodeproj -scheme KeepAwake \
   -configuration Release -destination 'generic/platform=macOS' \
-  -derivedDataPath build/DerivedData \
+  -derivedDataPath build/LocalizationDerivedData \
   CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= CODE_SIGN_STYLE=Manual build
-ditto build/DerivedData/Build/Products/Release/KeepAwake.app build/KeepAwake.app
+ditto build/LocalizationDerivedData/Build/Products/Release/KeepAwake.app build/KeepAwake.app
 open build/KeepAwake.app
 ```
 
-日常使用建议先把 `KeepAwake.app` 拖到“应用程序”文件夹，从该位置打开后再启用“登录时启动”，以便系统关联稳定的应用位置。退出后也可以通过 Finder 或 Spotlight 重新打开应用。
+日常使用建议将应用放在“应用程序”后启用登录启动。临时签名不等于 Mac App Store 分发签名；发布配置、构建变量及待补资料见 [发布准备入口](docs/release/README.md)。
 
-本地临时签名不等于 Developer ID 签名或公证。对外分发需要单独配置签名和公证。保留 Xcode 模板中的 App Sandbox 与 Hardened Runtime。
-
-## 行为与限制
-
-“同时保持屏幕常亮”使用 `PreventUserIdleDisplaySleep` 电源断言，预期同时抑制空闲熄屏和自动屏保。普通的“屏保启动或熄屏后要求密码”通常也因触发条件被阻止而避免；具体屏保及自动锁屏行为应在目标系统上实测。
-
-工具不修改系统安全设置，不阻止主动锁屏、主动睡眠，不保证合盖继续运行，也不覆盖企业强制锁定、低电量或其他系统强制休眠。已经锁定的桌面不会被解锁；已经关闭的显示器也不会被主动点亮。
-
-不监测 Codex 任务。GUI 自动化的稳定性仍取决于测试框架、权限和桌面会话状态，无法保证锁屏、断开显示器或切换图形会话后仍正常执行。取消屏幕常亮后，GUI 自动化可能受到显示器关闭或锁屏影响。
-
-## 实现
-
-应用图标与菜单栏开启状态使用相同的 `cup.and.saucer.fill` 咖啡杯造型，应用图标加上浅色圆角背景，包含 macOS 所需的 16–1024 像素尺寸，供 Finder 与 Spotlight 显示。可运行 `xcrun swift Scripts/GenerateAppIcon.swift` 重新生成；菜单栏仍使用原来的单色 SF Symbols。
-
-`KeepAwakeApp.swift` 使用 AppKit `NSStatusItem` 区分左键与右键鼠标事件；左键直接切换总开关，右键或 Control＋点击临时展开 `NSMenu`。菜单关闭后解除菜单绑定，保证下一次左键仍然直接切换。使用普通原生 `NSMenuItem` 的文字与勾选状态，以及单色 SF Symbols；操作完成后同步更新勾选、可用状态和图标，不设置自定义菜单视图、字体、行高或间距。`LSUIElement = YES` 隐藏 Dock 图标，应用没有主窗口。
-
-`SleepAssertionManager.swift` 在主线程集中管理系统与显示器两个断言 ID，并通过可观察状态更新菜单和图标。仅成功创建的 ID 会被保存；运行中修改屏幕选项不会重建系统断言。系统断言先创建，显示器创建失败时撤销本次开启。仅屏幕选项通过 `UserDefaults` 保存。
-
-释放成功后才清空 ID。关闭时先释放显示器，再释放系统；失败时保持图标开启，屏幕勾选反映实际持有的显示器断言，错误对话框说明可重试的操作。已保存的屏幕偏好不会被失败操作覆盖。退出回调尝试释放两种断言；崩溃或强制终止时依赖系统清理进程所属断言。
-
-`SystemSleepMonitor.swift` 通过 `NSWorkspace.shared.notificationCenter` 监听系统睡眠与唤醒。睡眠前同步尝试释放两种断言，即使其中一个失败也继续清理另一个，并立即刷新界面；不监听显示器睡眠或会话停用。睡眠期间只记录清理错误，唤醒后对未释放的断言再重试一次；仍失败时保留实际开启状态并提示手动重试或退出。正常唤醒不会重新创建断言，也不显示提示。
-
-`LoginItemManager.swift` 使用 macOS 13 起提供的 `SMAppService.mainApp` 注册或注销当前应用的登录项，不创建额外的后台服务或 LaunchAgent。登录项状态由系统管理，不额外保存布尔偏好；注册失败、注销失败或需要系统允许时，不会错误显示为已启用。
-
-## 自动测试
-
-安装 Xcode 并选择其命令行工具后，在项目根目录运行：
+## 测试
 
 ```sh
-swift test
-```
-
-`Package.swift` 仅用于管理类的 XCTest 测试，不参与应用构建。测试使用隔离的偏好域与模拟的 IOKit 调用，覆盖默认状态、偏好恢复、幂等开关、快速切换、显示器独立切换、创建失败回滚、释放失败重试、部分清理失败及退出清理。系统睡眠测试通过隔离的通知中心验证睡眠关闭、唤醒不恢复、屏幕/会话通知不误关、清理失败后唤醒重试与错误反馈。另有登录项管理测试，覆盖注册/注销、重复操作、等待允许、系统外部变更、调用失败及未确认状态。自动测试不修改真实电源状态或系统登录项。
-
-需要检查真实 IOKit 调用时运行：
-
-```sh
+bash Scripts/test.sh
+bash Scripts/test.sh -Xswiftc -DAPP_STORE
+python3 -m unittest discover -s Scripts/tests -v
+python3 Scripts/verify-localizations.py --app build/LocalizationDerivedData/Build/Products/Release/KeepAwake.app
+python3 Scripts/verify-language-selection.py build/LocalizationDerivedData/Build/Products/Release/KeepAwake.app
 bash Scripts/verify-live-assertions.sh
 ```
 
-此探针短暂申请真实断言，通过 IOKit 查询和仅包含自身 PID 的 `pmset` 输出验证创建、单独释放显示器断言、关闭、20 次切换及退出清理。另在隔离通知中心模拟系统睡眠/唤醒，验证两种屏幕模式的真实断言均被释放，唤醒后保持关闭，显示器睡眠/会话停用通知不误关。使用独立偏好域，结束时清理；不会让电脑睡眠或操作应用菜单，也不能代替实际睡眠、屏保/锁屏实测。
+测试将 SwiftPM 缓存限制在 build/；--disable-sandbox 仅针对测试工具自身，不关闭应用的 App Sandbox。模拟测试不更改真实电源或登录项。真实 IOKit 探针短暂申请并释放自身断言，不让电脑睡眠或注销。
 
-## 手动验收
+本地化检查核对源代码／String Catalog 的键、11 语言覆盖、格式占位符、换行、编译后的每个语言资源及商店文案长度。生成的商店文案仍需人工语言校对。
 
-1. 启动应用，确认没有 Dock 图标或主窗口；右键或 Control＋点击图标，确认原生菜单总开关关闭，屏幕选项与其他菜单项对齐、默认勾选但置灰不可操作。左键单击应直接切换，不弹出菜单；反复交替左右键，确认右键打开菜单不改变总开关，菜单关闭后左键仍能直接切换。确认菜单保持原生文字与勾号外观、没有复选框；重新打开菜单后，屏幕选项应正确恢复可操作或置灰。点击外部或按 Esc 应关闭菜单。选择菜单项后应正常收起，无需支持连续操作。
-2. 在终端运行 `pmset -g assertions`。开启“保持唤醒”后，查找本应用进程名/PID，以及 `Keep Awake: Prevent idle system sleep` 和 `Keep Awake: Prevent idle display sleep` 两条断言。
-3. 开启总开关后，确认屏幕选项恢复可操作。取消屏幕选项，确认只剩系统断言；再次勾选，确认系统断言 ID 保持不变。关闭总开关后，两种断言均消失，屏幕选项再次置灰且保留已保存的勾选偏好。
-4. 快速反复切换后再次检查，确认没有本进程遗留的多余断言。
-5. 在开启状态退出，确认本进程断言消失。重新启动，确认总开关关闭、屏幕偏好保持上次选择。
-6. 在浅色和深色菜单栏分别查看轮廓杯/实心杯的状态差异。
-7. 记录系统空闲超时、屏保启动时间及密码要求。在没有鼠标键盘输入且等待超过相关超时后，检查开启屏幕常亮时是否抑制熄屏和自动屏保，以及是否仍保持桌面可操作。取消屏幕常亮后，检查显示器是否按策略关闭且系统继续运行。仅在受控测试环境调整系统设置，测试后恢复。
-8. 在已安装且签名的应用中勾选“登录时启动”，检查菜单与系统登录项一致；如需系统允许，检查“待系统允许”状态及设置入口。取消后确认登录项移除，应用仍继续运行且防休眠状态不变。开启后退出再打开，确认登录项设置保留；在系统设置中关闭后重开右键菜单，确认反映系统状态。最后在受控环境注销并重新登录，分别验证启用时启动且防休眠默认关闭、禁用时不自动启动。
-9. 额外运行一次实际 Codex + GUI 自动化场景，记录框架、时长、无输入时段以及是否出现屏保、锁屏或会话变化。
-10. 开启保持唤醒，分别在屏幕常亮勾选和未勾选时通过苹果菜单执行睡眠，唤醒后确认轮廓杯、总开关关闭、屏幕选项置灰且偏好保留，`pmset -g assertions` 中无本进程断言。重新手动开启后应按原屏幕偏好生效；再睡眠/唤醒一次验证重复使用。另在可合盖睡眠的环境验证相同行为。单纯主动锁屏、启动屏保或熄灭显示器后恢复，应仍保持开启；注意确认期间没有实际进入系统睡眠。
+对实际分发签名的商店导出包：
 
-`pmset` 可能包含其他应用的断言，必须结合 PID、名称和前后变化判断。自动化持续产生输入也可能阻止空闲，不能单凭自动化运行成功判断防休眠有效。
+```sh
+python3 Scripts/check-release-readiness.py /absolute/path/KeepAwake.app
+```
 
-逐项验证结果记录在 [VALIDATION.md](VALIDATION.md)，未执行的场景明确标记为未验证。
+本地临时签名、缺少正式版权／隐私／支持网址时，发布检查会如实失败；这是预期的发布门槛，不影响开发构建使用。
+
+## 实现
+
+- `KeepAwakeApp.swift`：AppKit NSStatusItem + NSMenu，保留左右键行为与系统默认菜单视觉。
+- `SleepAssertionManager.swift`：IOKit 系统／显示器断言，创建失败回滚、释放失败保留实际 ID、可重试。显示器单独切换不重建系统断言。
+- `SystemSleepMonitor.swift`：系统睡眠前清理，唤醒后仅重试失败清理，不自动恢复会话。
+- `LoginItemManager.swift`：SMAppService.mainApp，用户同意后注册，无额外后台服务或 LaunchAgent。
+- `L10n.swift`、`Localizable.xcstrings`：54 组文案，11 种语言；包含错误、tooltip 和辅助功能说明。
+- `AppPurchaseManager.swift`：App Store 构建使用 StoreKit AppTransaction 验证签名、Bundle ID、production/sandbox 环境。缺失／不可信交易不授权；仅用户主动重试会 refresh。应用不保存可伪造的“已付费”偏好或上传交易记录。使用 Apple 缓存支持离线验证，跨启动断网行为仍须商店实测。
+- `HelpWindowController.swift`：原生帮助窗口；离线隐私说明始终可用，正式隐私／支持按钮由实际 HTTPS 构建变量启用。
+- `Scripts/GenerateAppIcon.swift`：沿用原版无热气的 `cup.and.saucer.fill` 咖啡杯与茶碟，搭配浅色圆角背景，生成全部 macOS 尺寸。菜单栏继续使用原有系统单色符号及轮廓／实心两态。
+
+重新生成图标：`xcrun swift -module-cache-path build/ModuleCache Scripts/GenerateAppIcon.swift`。
+
+修改界面文案时更新 String Catalog，再运行 `python3 Scripts/prepare-store-materials.py` 可重新生成商店描述草案；该命令会覆盖 localizations.json，手工校对后应保留修改或将其移到生成器。
+
+## 限制与验收
+
+阻止的是系统／显示器的空闲睡眠。不会阻止主动睡眠或主动锁屏，不解锁桌面，不保证合盖继续运行，不覆盖低电量、企业策略或系统强制休眠。不监测 Codex 任务，不承诺任务结束后自动关闭。
+
+“屏幕常亮”使用 PreventUserIdleDisplaySleep，预期也抑制自动屏保；实际屏保、自动锁屏及系统安全策略需目标设备实测。其他应用的断言和自动化输入也可能阻止空闲，需通过自身 PID 和 IOKit 断言判断效果。
+
+逐项结果见 [VALIDATION.md](VALIDATION.md)。系统睡眠、登录启动、菜单视觉、不同系统／硬件、商店交易与截图的待验收清单见 [发布准备入口](docs/release/README.md)。

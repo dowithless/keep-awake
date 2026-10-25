@@ -1,3 +1,5 @@
+> 最新验证见文末；前文为历史记录。
+
 # 验证记录
 
 日期：2026-10-16（Asia/Shanghai）。环境：macOS 15.8.1，Apple Silicon，Xcode 26.3 / macOS 26.2 SDK。
@@ -146,3 +148,56 @@ Release 通用二进制（arm64、x86_64）构建通过，应用及 ZIP 解压�
 - Release 通用构建成功（arm64、x86_64），临时签名校验通过，`git diff --check` 通过；更新 `build/KeepAwake.app` 与 `build/KeepAwake.zip`。
 - 测试和构建的缓存放在工作区 build 目录；SwiftPM 使用 `--disable-sandbox` 避免测试工具自身的嵌套沙盒限制。应用的 App Sandbox 构建设置保持开启。
 - 未让当前电脑真实睡眠、合盖、锁屏或熄屏；系统通知实际投递、睡眠恢复后的菜单栏交互仍待按 README 第 10 项手动验收。未替换或停止正在运行的已安装应用。
+
+
+## 国际化与付费下载发布准备（2026-10-25）
+
+本轮按用户确认的范围新增 11 语言、一次性付费下载准备、关于与帮助窗口及项目内商店资料。应用图标已按用户后续要求恢复原版。当前尚未上传 App Store Connect、分发 TestFlight、提交审核或公开发布。
+
+### 自动验证与构建
+
+- 普通模式 XCTest **40 项通过，0 失败**：原有 32 项加 8 项购买验证测试。
+- `-DAPP_STORE` 模式 XCTest **40 项通过，0 失败**：覆盖初始锁定、production/sandbox 授权、签名无效、bundle ID 错误、Xcode/未知环境拒绝、StoreKit 异常、显式刷新恢复、同进程已验证状态的断网保留，以及构建默认策略。测试使用注入 API，不表示真实 Apple 交易验证已完成。
+- 最终 Debug 构建成功；Release 与 AppStore 构建成功，均含 **arm64 + x86_64**。无 Swift 源码编译警告。Xcode 有既有的 CoreSimulator、缓存及账户配置环境诊断，未阻止 macOS 构建。
+- Release、AppStore 临时签名 `codesign --verify --deep --strict` 通过；两种产物均持有 App Sandbox 权限，无用户选择文件读取权限。AppStore 配置不含 get-task-allow；使用独立的显式 entitlements，未借助关闭沙盒完成构建。
+- 最终 Info.plist 分别确认 `KeepAwakeDistribution=Local` / `AppStore`，最低 macOS 13.0、LSUIElement=true。商店配置编译参数含 APP_STORE；不是按收据文件有无猜测校验是否启用。
+- `verify-localizations.py`：54 组 × 11 语言，源码键与目录完全匹配；占位符、换行、翻译状态、每种语言的编译资源、隐私清单、商店文案长度均通过。
+- `verify-language-selection.py`：在独立 CLI app-bundle 测试宿主中加载正式 Release 资源，通过每进程 AppleLanguages 验证 11 语言选择和版本占位符；未支持的阿拉伯语请求回退英文。未更改系统或已安装应用的语言设置；这不是原生菜单视觉验收。
+- `verify-live-assertions.sh`：真实 IOKit 两类断言创建／释放、屏幕单独切换、20 次循环、隔离睡眠通知清理及退出清理通过，结束时本探针断言为 0。没有让用户电脑实际睡眠或注销。
+- 应用图标后续已恢复至原版无热气的咖啡杯与茶碟，10 个尺寸资源和生成脚本与原始版本逐字节一致；新图标方案和生成素材已清理。菜单栏符号保持原样。
+- `git diff --check` 通过。
+
+### 发布检查的预期阻塞
+
+对 AppStore 临时签名产物运行 `check-release-readiness.py`，正确列出：实际版权主体未填写、正式隐私网址未填写、正式支持网址未填写、仅临时签名、缺少正式签名团队。没有把本地临时签名当作正式商店分发签名。
+
+应用内有 11 语言离线隐私说明；外部隐私／支持按钮在配置实际 HTTPS 地址后出现。Config/Info.plist 显式展开构建变量，避免自定义 Info.plist 字段被生成器忽略。完整中英文隐私政策在 docs/privacy 中作为草案，发布前需补齐主体、邮箱及支持流程。
+
+### 未验证／待外部条件
+
+- 原生应用自动化连接超时；通过 LaunchServices 启动也返回环境错误，未获得可信的运行 UI 截图。因此菜单、关于窗口、各种语言的视觉布局及正式商店截图仍待实机验收。没有生成冒充实机的截图。
+- 未用真实 App Store/TestFlight 交易验证、重新下载、更新、多台 Mac 或跨启动离线缓存验证；不能用模拟测试替代。
+- 最低 macOS 13、Intel 硬件、真实睡眠／合盖／锁屏／屏保、登录项注册与注销后登录仍需受控实机验证。
+- 11 语言翻译与商店文案为已填写草案，尚未经过各语言母语者校对。完整政策网页目前仅有中英文草案。
+- 后台地区价目表和可售范围没有登录核对；pricing.csv 为公开价格参考表推导的草案，包含俄语市场参考条目，不代表所有商店均已配置。
+- 未替换已安装应用。更新的本地预览产物为 build/KeepAwake.app 和 build/KeepAwake.zip；商店校验构建位于 build/StoreDerivedData/Build/Products/AppStore/KeepAwake.app，缺少交易时不能当作普通本地版本使用。
+
+完整待办、归档方式及构建变量见 [发布准备入口](docs/release/README.md)。
+
+
+## 撤销图标调整（2026-10-25）
+
+按用户要求恢复原版无热气的深灰咖啡杯、茶碟与浅色圆角背景。AppIcon 的 10 张 PNG、Contents.json 及 GenerateAppIcon.swift 均与原始 Git 版本逐字节一致。清理 design 下的两套新图标方案（含两／三缕热气概念、SVG、PNG、提示词、预览及生成脚本）、图标交付 ZIP 和 build 中的临时参考图；同步修正文档中的新图标说明。
+
+- Debug、Release、AppStore 三种配置重新构建通过；Release 和 AppStore 的本地临时签名校验通过。
+- 更新 build/KeepAwake.app 和 build/KeepAwake.zip，ZIP 解压后的签名校验通过；11 语言资源检查通过。
+- 核对非图标 Swift 源文件、Xcode 工程及 Package.swift 的修改前后散列一致。国际化、购买校验、关于与帮助及隐私／商店资料保留；菜单栏继续使用原有轮廓／实心两态。
+- 本轮仅恢复图标及清理设计文件，未重复运行管理类单元测试，也未操作已安装的应用或系统图标缓存。
+
+## 修复工作区审查问题（2026-10-25）
+
+- `KeepAwake-AppStore` 的 Run 改为不附加调试器，继续使用 AppStore 配置；Archive 仍使用 AppStore。普通 KeepAwake scheme 保留 Debug 与 LLDB。XML 配置核对及 AppStore 通用构建通过；未声称完成 Xcode 界面中的 Run 交互验收。
+- 发布检查要求 App Store 分发证书，并验证 Apple 信任链。拒绝 Developer ID、开发证书、临时签名、缺失身份、同名但不受 Apple 信任的证书及损坏签名；保留沙盒、团队与禁止调试权限的检查。读取权限时明确请求 XML 格式。
+- Python 签名回归测试 **8 项通过，0 失败**。证书接受／拒绝分支通过模拟 codesign 结果验证；没有实际分发证书可用，未完成真实分发签名的正向验证。
+- 对实际 AppStore 临时签名产物运行发布检查：11 语言资源通过，正确阻止缺少正式版权／隐私／支持网址、临时签名和缺少正式签名团队的产物。没有出现权限解析错误或将本地产物误报为可发布。
+- `git diff --check` 通过。未修改应用 Swift 源码或图标；本轮不重复运行与这两项修复无关的 Swift 管理类测试。
