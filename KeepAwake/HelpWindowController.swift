@@ -96,10 +96,7 @@ final class HelpWindowController: NSWindowController {
             L10n.text("Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."),
             L10n.text("Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."),
             L10n.text("System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."),
-            L10n.text("Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply."),
-            L10n.text("Keep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer."),
-            L10n.text("Your display preference is stored on this Mac. Login items are managed by macOS. Operation errors may appear in local system logs; the app does not upload them."),
-            L10n.text("Opening a support or privacy website uses your browser. Information you choose to send to support is handled separately from the app.")
+            L10n.text("Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.")
         ].filter { !$0.isEmpty }
         textView.string = paragraphs.joined(separator: "\n\n")
         textView.setAccessibilityLabel(L10n.text("About & Help"))

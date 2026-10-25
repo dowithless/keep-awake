@@ -17,7 +17,7 @@ Keep Awake 保留 Mac App Store 一次性付费下载。自行构建与商店版
 | KEEP_AWAKE_PRIVACY_URL | 正式 HTTPS 隐私政策页 |
 | KEEP_AWAKE_SUPPORT_URL | 正式 HTTPS 支持页 |
 
-xcconfig 中 HTTPS 地址使用 `https:/$()/domain/path`，避免双斜线被解析为注释。也可通过 Xcode 或命令行覆盖构建变量。当前 Bundle ID 为 `neo.dowithless.KeepAwake`；修改后应与签名及商店记录一致。应用仅在配置了有效 HTTPS 地址时显示对应按钮，离线说明始终可用。
+xcconfig 中 HTTPS 地址使用 `https:/$()/domain/path`，避免双斜线被解析为注释。也可通过 Xcode 或命令行覆盖构建变量。当前 Bundle ID 为 `neo.dowithless.KeepAwake`；修改后应与签名及商店记录一致。应用仅在配置了有效 HTTPS 地址时显示对应按钮。隐私政策正文只在公开页面维护，应用通过按钮在浏览器中打开该页面。公开网址待仓库上传 GitHub 后填写。
 
 ```sh
 xcodebuild -project KeepAwake.xcodeproj -scheme KeepAwake-AppStore \
