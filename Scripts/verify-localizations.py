@@ -44,17 +44,8 @@ def check(app=None):
             privacy = plistlib.load(handle)
         assert privacy['NSPrivacyTracking'] is False
         assert privacy['NSPrivacyCollectedDataTypes'] == []
-    metadata = ROOT / 'docs/app-store/localizations.json'
-    if metadata.exists():
-        entries = json.loads(metadata.read_text())['localizations']
-        assert set(entries) == LANGUAGES
-        for language, entry in entries.items():
-            assert len(entry['name']) <= 30, (language, 'name')
-            assert len(entry['subtitle']) <= 30, (language, 'subtitle')
-            assert len(entry['keywords'].encode('utf-8')) <= 100, (language, 'keywords')
-            assert len(entry['description']) <= 4000, (language, 'description')
     print(f'PASS: {len(strings)} strings × {len(LANGUAGES)} languages; source, formats' +
-          (', compiled resources and app metadata' if app else '') + '; store metadata if present')
+          (', compiled resources and app metadata' if app else ''))
 
 
 if __name__ == '__main__':

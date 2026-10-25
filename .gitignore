@@ -7,3 +7,4 @@ DerivedData/
 xcuserdata/
 __pycache__/
 *.pyc
+Config/Local.xcconfig

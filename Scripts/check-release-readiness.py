@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 """Read-only preflight for a signed Mac App Store export. Exits 1 on blockers."""
 import argparse
+import importlib.util
+import json
 import plistlib
 import subprocess
-import sys
 from pathlib import Path
 from urllib.parse import urlparse
-
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import importlib.util
-
 
 APP_STORE_CERTIFICATE_PREFIXES = (
     'Apple Distribution: ',
@@ -54,6 +51,22 @@ def check_signing(app):
     return problems
 
 
+def check_store_metadata(languages):
+    """Store copy is maintained separately from in-app translations."""
+    metadata = Path(__file__).resolve().parents[1] / 'docs/app-store/localizations.json'
+    entries = json.loads(metadata.read_text())['localizations']
+    problems = []
+    if set(entries) != set(languages):
+        problems.append('Store copy must cover the supported app languages.')
+    for language, entry in entries.items():
+        for field, limit in [('name', 30), ('subtitle', 30), ('keywords', 100), ('description', 4000)]:
+            value = entry.get(field, '')
+            length = len(value.encode('utf-8')) if field == 'keywords' else len(value)
+            if not value.strip() or length > limit:
+                problems.append(f'Store copy {language}/{field} is empty or exceeds {limit}.')
+    return problems
+
+
 def main(app):
     problems = []
     with (app / 'Contents/Info.plist').open('rb') as handle:
@@ -74,6 +87,10 @@ def main(app):
         module.check(app)
     except (AssertionError, FileNotFoundError, subprocess.CalledProcessError) as error:
         problems.append(f'Localization/resource check failed: {error}')
+    try:
+        problems.extend(check_store_metadata(module.LANGUAGES))
+    except (OSError, ValueError, KeyError) as error:
+        problems.append(f'Store metadata check failed: {error}')
     for problem in problems:
         print(f'BLOCKER: {problem}')
     if not problems:

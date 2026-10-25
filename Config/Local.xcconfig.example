@@ -1,0 +1,6 @@
+// Copy to Local.xcconfig and fill in your own signing and release values.
+DEVELOPMENT_TEAM =
+KEEP_AWAKE_COPYRIGHT =
+// xcconfig treats // as a comment; use this form for HTTPS URLs.
+KEEP_AWAKE_PRIVACY_URL = https:/$()/example.com/privacy
+KEEP_AWAKE_SUPPORT_URL = https:/$()/example.com/support

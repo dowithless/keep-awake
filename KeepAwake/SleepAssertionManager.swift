@@ -1,4 +1,3 @@
-import Combine
 import Foundation
 import IOKit.pwr_mgt
 
@@ -21,12 +20,12 @@ struct SleepAssertionAPI {
 }
 
 @MainActor
-final class SleepAssertionManager: ObservableObject {
+final class SleepAssertionManager {
     static let displayPreferenceKey = "preventDisplaySleep"
 
-    @Published private(set) var prefersDisplayAwake: Bool
-    @Published private(set) var systemAssertionID: IOPMAssertionID?
-    @Published private(set) var displayAssertionID: IOPMAssertionID?
+    private(set) var prefersDisplayAwake: Bool
+    private(set) var systemAssertionID: IOPMAssertionID?
+    private(set) var displayAssertionID: IOPMAssertionID?
 
     // A display assertion also prevents system idle sleep. Any retained assertion
     // keeps the status icon on, including after unsuccessful cleanup.

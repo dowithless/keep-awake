@@ -9,7 +9,7 @@ Keep Awake is a macOS menu bar utility. Its main experience is the cup icon in t
 5. System sleep ends the current session. After waking, the app remains running with keep-awake mode off.
 6. About & Help opens a small native window containing help and an offline privacy statement. Public privacy/support buttons appear after the actual URLs are configured for the release.
 
-Business model: paid App Store download, all features included. No subscriptions, IAP products, developer account or developer backend. App Store distribution builds validate the app purchase using StoreKit AppTransaction, including Apple-signed sandbox transactions for testing and review. If a purchase cannot be verified, the menu provides Verify App Store Purchase, which explicitly refreshes Apple's transaction. No app license keys or developer login are required.
+Business model: paid App Store download, all features included. No subscriptions, IAP products, developer account or developer backend. The source is available separately for users to build. Both distributions offer the same features; the app has no purchase verification, license keys or developer login.
 
 Power behavior: public IOKit power assertions prevent idle sleep only. The app does not simulate input, unlock the Mac, alter security settings, prevent manual sleep/locking or guarantee closed-lid operation.
 

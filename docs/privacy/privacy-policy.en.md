@@ -22,11 +22,11 @@ Some operation failures may be written to local system logs. The app does not up
 
 Keep Awake is a paid Mac App Store download with no subscriptions or in-app purchases. Apple handles payment, downloads, redownloads and updates. The developer does not receive payment card details.
 
-The store build uses StoreKit AppTransaction to verify an Apple-signed app transaction. Verification may contact Apple; an explicit retry may prompt for Apple Account authentication. The app does not separately store purchase identifiers, transaction credentials or a paid-status boolean, and does not upload transaction data to the developer. Apple's services are covered by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+The app does not verify purchases or access transaction records. Apple's services are covered by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 
 ## Websites and support
 
-Support, privacy and license links open in your default browser only when you select them. The final policy and website must describe any hosting logs, cookies and support information actually processed by those services.
+Support and privacy links open in your default browser only when you select them. The final policy and website must describe any hosting logs, cookies and support information actually processed by those services.
 
 If you contact support, you may voluntarily provide an email address, an issue description or diagnostic information. Before publication, the operator must specify the support channel, purposes, recipients, retention and deletion procedure. The app currently has no feedback-upload feature.
 

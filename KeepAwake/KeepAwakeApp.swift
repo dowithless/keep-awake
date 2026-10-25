@@ -18,12 +18,10 @@ struct KeepAwakeApp {
 final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let manager = SleepAssertionManager()
     private let loginManager = LoginItemManager()
-    private let purchaseManager = AppPurchaseManager()
     private var helpController: HelpWindowController?
     private var sleepMonitor: SystemSleepMonitor?
     private var statusItem: NSStatusItem?
     private let menu = NSMenu(title: "Keep Awake")
-    private let purchaseItem = NSMenuItem(title: L10n.text("Verify App Store Purchase…"), action: #selector(verifyPurchase(_:)), keyEquivalent: "")
     private let enabledItem = NSMenuItem(title: L10n.text("Keep Awake"), action: #selector(toggleAwake(_:)), keyEquivalent: "")
     private let displayItem = NSMenuItem(title: L10n.text("Keep Display Awake"), action: #selector(toggleDisplay(_:)), keyEquivalent: "")
     private let loginItem = NSMenuItem(title: L10n.text("Launch at Login"), action: #selector(toggleLoginItem(_:)), keyEquivalent: "")
@@ -42,8 +40,6 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(loginItem)
         menu.addItem(loginSettingsItem)
         menu.addItem(.separator())
-        purchaseItem.target = self
-        menu.addItem(purchaseItem)
         let helpItem = NSMenuItem(title: L10n.text("About & Help…"), action: #selector(showHelp(_:)), keyEquivalent: "")
         helpItem.target = self
         menu.addItem(helpItem)
@@ -60,12 +56,6 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
         updatePresentation()
-        purchaseManager.onStateChange = { [weak self] in self?.updatePresentation() }
-        Task { [weak self] in
-            guard let self else { return }
-            await purchaseManager.verify()
-            updatePresentation()
-        }
         sleepMonitor = SystemSleepMonitor(
             manager: manager,
             onStateChange: { [weak self] in self?.updatePresentation() },
@@ -102,10 +92,6 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     @objc private func toggleAwake(_ sender: Any?) {
-        guard manager.isEnabled || purchaseManager.state.allowsUse else {
-            showErrorIfNeeded(purchaseMessage())
-            return
-        }
         let error = manager.setEnabled(!manager.isEnabled)
         updatePresentation()
         showErrorIfNeeded(error)
@@ -162,11 +148,6 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         statusItem?.button?.toolTip = L10n.format("Keep Awake: %@\nLeft-click to toggle; right-click or Control-click for the menu", state)
         statusItem?.button?.setAccessibilityLabel(L10n.format("Keep Awake: %@", state))
         statusItem?.button?.setAccessibilityHelp(L10n.text("Click to toggle Keep Awake; right-click or Control-click to open the menu"))
-        purchaseItem.isHidden = purchaseManager.state.allowsUse
-        purchaseItem.isEnabled = purchaseManager.state != .checking
-        purchaseItem.title = purchaseManager.state == .checking ? L10n.text("Checking App Store Purchase…") : L10n.text("Verify App Store Purchase…")
-        if !purchaseManager.state.allowsUse { statusItem?.button?.toolTip = purchaseMessage() }
-        enabledItem.isEnabled = manager.isEnabled || purchaseManager.state.allowsUse
         enabledItem.state = manager.isEnabled ? .on : .off
         enabledItem.toolTip = L10n.text("Turns off when the Mac sleeps; turn it on again after waking")
         displayItem.state = manager.preventDisplaySleep ? .on : .off
@@ -193,20 +174,6 @@ final class KeepAwakeDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             if helpController == nil { helpController = HelpWindowController() }
             helpController?.present()
         }
-    }
-
-    @objc private func verifyPurchase(_ sender: Any?) {
-        Task { [weak self] in
-            guard let self else { return }
-            await purchaseManager.verify(refresh: true)
-            updatePresentation()
-            if !purchaseManager.state.allowsUse { showErrorIfNeeded(purchaseMessage()) }
-        }
-    }
-
-    private func purchaseMessage() -> String {
-        if purchaseManager.state == .checking { return L10n.text("Checking App Store Purchase…") }
-        return L10n.text("The App Store purchase could not be verified. Connect to the internet and choose Verify App Store Purchase in the menu. If the problem continues, download Keep Awake again using the Apple Account that purchased it.")
     }
 
     private func showErrorIfNeeded(_ error: String?) {

@@ -1,5 +1,6 @@
 """Regression coverage for App Store export signature checks."""
 import importlib.util
+import json
 import plistlib
 import subprocess
 import unittest
@@ -98,6 +99,30 @@ class SigningTests(unittest.TestCase):
                     key: True,
                 })
                 self.assertIn('A distribution build must not allow debugging.', problems)
+
+
+class StoreMetadataTests(unittest.TestCase):
+    def check_copy(self, entries, languages=('en',)):
+        with patch.object(readiness.Path, 'read_text', return_value=json.dumps({'localizations': entries})):
+            return readiness.check_store_metadata(languages)
+
+    def entry(self):
+        return dict(name='Keep Awake', subtitle='Keep your Mac awake',
+                    keywords='sleep,display', description='A menu bar utility.')
+
+    def test_valid_copy_is_independent_of_app_string_catalog(self):
+        self.assertEqual(self.check_copy({'en': self.entry()}), [])
+
+    def test_missing_language_blocks_release(self):
+        problems = self.check_copy({'en': self.entry()}, languages=('en', 'zh-Hans'))
+        self.assertTrue(any('supported app languages' in p for p in problems))
+
+    def test_keywords_use_utf8_bytes_and_empty_copy_blocks_release(self):
+        entry = self.entry()
+        entry.update(keywords='字' * 34, description=' ')
+        problems = self.check_copy({'en': entry})
+        self.assertTrue(any('en/keywords' in p for p in problems))
+        self.assertTrue(any('en/description' in p for p in problems))
 
 
 if __name__ == '__main__':

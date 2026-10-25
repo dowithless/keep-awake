@@ -3,7 +3,6 @@ import AppKit
 @MainActor
 final class HelpWindowController: NSWindowController {
     private let textView = NSTextView()
-    private var sections: NSSegmentedControl!
 
     init() {
         let window = NSWindow(
@@ -16,12 +15,6 @@ final class HelpWindowController: NSWindowController {
         window.isReleasedWhenClosed = false
         super.init(window: window)
 
-        sections = NSSegmentedControl(
-            labels: [L10n.text("About"), L10n.text("Help"), L10n.text("Privacy")],
-            trackingMode: .selectOne, target: self, action: #selector(changeSection(_:))
-        )
-        sections.selectedSegment = 0
-        sections.setAccessibilityLabel(L10n.text("About & Help"))
         let scrollView = NSScrollView()
         scrollView.hasVerticalScroller = true
         scrollView.borderType = .bezelBorder
@@ -49,18 +42,18 @@ final class HelpWindowController: NSWindowController {
         if Self.configuredURL("KeepAwakeSupportURL") != nil {
             links.addArrangedSubview(NSButton(title: L10n.text("Contact Support"), target: self, action: #selector(openSupport)))
         }
-        links.addArrangedSubview(NSButton(title: L10n.text("Standard License"), target: self, action: #selector(openLicense)))
+        if links.arrangedSubviews.isEmpty {
+            links.heightAnchor.constraint(equalToConstant: 0).isActive = true
+        }
 
         let content = NSView()
         window.contentView = content
-        for view in [sections!, scrollView, links] {
+        for view in [scrollView, links] {
             view.translatesAutoresizingMaskIntoConstraints = false
             content.addSubview(view)
         }
         NSLayoutConstraint.activate([
-            sections.topAnchor.constraint(equalTo: content.topAnchor, constant: 20),
-            sections.centerXAnchor.constraint(equalTo: content.centerXAnchor),
-            scrollView.topAnchor.constraint(equalTo: sections.bottomAnchor, constant: 16),
+            scrollView.topAnchor.constraint(equalTo: content.topAnchor, constant: 20),
             scrollView.leadingAnchor.constraint(equalTo: content.leadingAnchor, constant: 20),
             scrollView.trailingAnchor.constraint(equalTo: content.trailingAnchor, constant: -20),
             scrollView.bottomAnchor.constraint(equalTo: links.topAnchor, constant: -16),
@@ -86,45 +79,28 @@ final class HelpWindowController: NSWindowController {
         return url
     }
 
-    @objc private func changeSection(_ sender: NSSegmentedControl) { updateText() }
     @objc private func openPrivacy() {
         if let url = Self.configuredURL("KeepAwakePrivacyPolicyURL") { NSWorkspace.shared.open(url) }
     }
     @objc private func openSupport() {
         if let url = Self.configuredURL("KeepAwakeSupportURL") { NSWorkspace.shared.open(url) }
     }
-    @objc private func openLicense() {
-        NSWorkspace.shared.open(URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
-    }
 
     private func updateText() {
-        let paragraphs: [String]
-        switch sections.selectedSegment {
-        case 1:
-            paragraphs = [
-                L10n.text("Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."),
-                L10n.text("Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."),
-                L10n.text("System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."),
-                L10n.text("Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.")
-            ]
-        case 2:
-            paragraphs = [
-                L10n.text("Keep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer."),
-                L10n.text("Your display preference is stored on this Mac. Login items are managed by macOS. Operation errors may appear in local system logs; the app does not upload them."),
-                L10n.text("Apple handles App Store purchases, downloads, and purchase verification under its own privacy policy. The developer does not receive your payment card details. Purchase verification may contact Apple."),
-                L10n.text("Opening a support or privacy website uses your browser. Information you choose to send to support is handled separately from the app.")
-            ]
-        default:
-            let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
-            let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
-            paragraphs = [
-                "Keep Awake",
-                L10n.format("Version %@ (%@)", version, build),
-                L10n.text("A small menu bar utility that keeps your Mac awake during long tasks."),
-                L10n.text("One purchase. All features. No subscription or in-app purchases."),
-                Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String ?? ""
-            ].filter { !$0.isEmpty }
-        }
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
+        let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
+        let paragraphs = [
+            "Keep Awake",
+            L10n.format("Version %@ (%@)", version, build),
+            Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String ?? "",
+            L10n.text("Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."),
+            L10n.text("Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."),
+            L10n.text("System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."),
+            L10n.text("Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply."),
+            L10n.text("Keep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer."),
+            L10n.text("Your display preference is stored on this Mac. Login items are managed by macOS. Operation errors may appear in local system logs; the app does not upload them."),
+            L10n.text("Opening a support or privacy website uses your browser. Information you choose to send to support is handled separately from the app.")
+        ].filter { !$0.isEmpty }
         textView.string = paragraphs.joined(separator: "\n\n")
         textView.setAccessibilityLabel(L10n.text("About & Help"))
         textView.scrollToBeginningOfDocument(nil)
