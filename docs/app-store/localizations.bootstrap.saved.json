@@ -1,0 +1,30 @@
+{
+  "status": "Saved draft fields verified after reloading App Store Connect; not a full metadata review or submission",
+  "date": "2026-10-25",
+  "appId": "6826764680",
+  "appStoreConnectURL": "https://appstoreconnect.apple.com/apps/6826764680/distribution/macos/version/inflight",
+  "localizedLanguageCount": 11,
+  "localizations": {
+    "ru": {
+      "name": "Без автосна: Долгие задачи",
+      "subtitle": "Система и экран — раздельно",
+      "description": "Небольшая утилита в строке меню для предотвращения автоматического сна во время загрузок, рендеринга и долгих задач агента. Один щелчок по чашке включает или выключает режим. Экран может засыпать независимо от системы.\n\nРучной переход компьютера в сон завершает текущий сеанс. После пробуждения режим остаётся выключенным. Приложение работает локально, без аккаунта.",
+      "keywords": "экран,меню,загрузки,рендеринг,агент",
+      "verifiedAfterReload": true
+    },
+    "it": {
+      "name": "Niente stop: Download e agenti",
+      "subtitle": "Sistema e schermo separati",
+      "description": "Una piccola utility nella barra dei menu che evita lo stop automatico durante download, rendering e attività lunghe degli agenti. Un clic sulla tazza attiva o disattiva il sistema di mantenimento in attività. Lo schermo può andare in stop separatamente dal sistema.\n\nLo stop manuale del computer termina la sessione. Al risveglio il modo resta disattivato. Funziona in locale, senza account.",
+      "keywords": "schermo,barra,menu,download,rendering,agenti",
+      "verifiedAfterReload": true
+    },
+    "es-ES": {
+      "name": "Evita reposo: Sistema activo",
+      "subtitle": "Sistema y pantalla a tu gusto",
+      "description": "Una pequeña utilidad en la barra de menús que evita el reposo automático durante descargas, renderizados y tareas largas de agentes. Un clic en la taza activa o desactiva el modo. La pantalla puede entrar en reposo independientemente del sistema.\n\nEl reposo manual del ordenador termina la sesión. Al despertar, el modo sigue desactivado. Funciona localmente y no requiere una cuenta.",
+      "keywords": "pantalla,barra,menús,descargas,renderizado,agentes",
+      "verifiedAfterReload": true
+    }
+  }
+}

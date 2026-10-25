@@ -1,0 +1,541 @@
+{
+  "date": "2026-10-25",
+  "renderer": "Scripts/GenerateStoreScreenshot.swift",
+  "copy": "docs/app-store/screenshot-copy.json",
+  "size": [
+    2560,
+    1600
+  ],
+  "colorSpace": "sRGB",
+  "chineseComparison": "SHA-256 matches all five user-confirmed PNG files",
+  "englishReview": "Layout inspected; awaiting user approval",
+  "files": [
+    {
+      "file": "zh-Hans/01-keep-awake.png",
+      "sha256": "f74bdddbba4b1b0208954e8ec9c3991d82ecb74f3a7e1655a3251f408ca76d9f",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB",
+      "confirmedChineseSHA256": "f74bdddbba4b1b0208954e8ec9c3991d82ecb74f3a7e1655a3251f408ca76d9f",
+      "matchesConfirmedChinese": true
+    },
+    {
+      "file": "zh-Hans/02-display-sleep.png",
+      "sha256": "215f1f9ca8fc698bea240e63994ac18650c0f81f318150b4c571e2094915c744",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB",
+      "confirmedChineseSHA256": "215f1f9ca8fc698bea240e63994ac18650c0f81f318150b4c571e2094915c744",
+      "matchesConfirmedChinese": true
+    },
+    {
+      "file": "zh-Hans/03-manual-sleep.png",
+      "sha256": "e95b755574d1c96b329a00da66ca07b2e5a055b12fa25182b0aafb06e9632a23",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB",
+      "confirmedChineseSHA256": "e95b755574d1c96b329a00da66ca07b2e5a055b12fa25182b0aafb06e9632a23",
+      "matchesConfirmedChinese": true
+    },
+    {
+      "file": "zh-Hans/04-simple.png",
+      "sha256": "b6587f122b4129669af366de3aa343c82775ebe27abc3b7377eedc135b4ce700",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB",
+      "confirmedChineseSHA256": "b6587f122b4129669af366de3aa343c82775ebe27abc3b7377eedc135b4ce700",
+      "matchesConfirmedChinese": true
+    },
+    {
+      "file": "zh-Hans/05-open-source.png",
+      "sha256": "2d708611c14ef1ec49a4873b9364bdc216c59ddc0309472d9c5ba3604f86cef4",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB",
+      "confirmedChineseSHA256": "2d708611c14ef1ec49a4873b9364bdc216c59ddc0309472d9c5ba3604f86cef4",
+      "matchesConfirmedChinese": true
+    },
+    {
+      "file": "en-US/01-keep-awake.png",
+      "sha256": "091889d2e282d33c7331f6ee1de548e2afc683c501b1f320c24e831e00543df6",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "en-US/02-display-sleep.png",
+      "sha256": "fe52d9eab30346414a5143f1cfbcc1e4a88ca15393e56035e4d6513f2dc4d92c",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "en-US/03-manual-sleep.png",
+      "sha256": "e35fe601251a32dd63494b891c7416701ca80d150ee87db6b704c294e4731c48",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "en-US/04-simple.png",
+      "sha256": "d9529be98be6161cdb2c8afc37b9ee822f3f141fbb76953c2d491d7340a04484",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "en-US/05-open-source.png",
+      "sha256": "13815504f2944de8f437c0b3ec9db1f9af0e5c4144fc87e1879d90f4e1659524",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "zh-Hant/01-keep-awake.png",
+      "sha256": "e165a128eaa654bdccc931163a260e3d5487b46507e33bb7424dcdf530a7601a",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "zh-Hant/02-display-sleep.png",
+      "sha256": "f8abda69cf9a18dd58c3725d09860573242c458d44bc228f1359c8dab433bb44",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "zh-Hant/03-manual-sleep.png",
+      "sha256": "67e5869bcaa6985b9c6417b3d997930b24c56f38d5641aef85c69fbc960418c6",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "zh-Hant/04-simple.png",
+      "sha256": "2fa2f0a08323729ef05286e3de636d22c303bea2397aa922591d11191b8830ed",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "zh-Hant/05-open-source.png",
+      "sha256": "9178b51cfa525983c67aaa198efc0801fa4d9a182d66bec7ac94c121cadca457",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ja/01-keep-awake.png",
+      "sha256": "c24c33a5fbb674765532387e5d2fb2f4dd68150f8f1342f81193bd99cda43cea",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ja/02-display-sleep.png",
+      "sha256": "261eefd94ef23952850ccd52185f1ad77e1dc49913be35da4e6be5cd0b6fc14e",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ja/03-manual-sleep.png",
+      "sha256": "adb3e4fa002d231364c76d63ab0bb04bbab285aa0d0b266e19ef60b0a89ebfc4",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ja/04-simple.png",
+      "sha256": "bd674d0f97f33f23497f9a9fc1e479d3ad5875b79a5e45fb742a4e3308ee1668",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ja/05-open-source.png",
+      "sha256": "7c728c333d28dc40796de2d8aed807274abf83834437be286014b1359d97683a",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ko/01-keep-awake.png",
+      "sha256": "4080138f36eb202ca0c25ac3fdac26e0a714dfac5b65f9d9eef546275dbcc82a",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ko/02-display-sleep.png",
+      "sha256": "17bf3bb7edff6069788cb064cec9e90951ef47e506ab3e7f52ef92e2555c408e",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ko/03-manual-sleep.png",
+      "sha256": "efe95745cbe7b042d574f752811b36493578211179b542df462cdca0c6f0c8d5",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ko/04-simple.png",
+      "sha256": "d190e99d6637c05f54d98fc41f12fbaef996be83818b33d7d62e658438559d98",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ko/05-open-source.png",
+      "sha256": "83625f3c371a4e168327cc01115235939353804c7907bdd642eb08cc8224caba",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "de-DE/01-keep-awake.png",
+      "sha256": "566978ec226da030c589ce127bda3cbe8c274734da1cd631d079a188a381e71b",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "de-DE/02-display-sleep.png",
+      "sha256": "90825dc1a71db0666229144f5b478eb47108438870f74dbf8fd206345ed6e491",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "de-DE/03-manual-sleep.png",
+      "sha256": "deba0bff99d69a3a613f97b473ce2808e6481657c7f7721e6f70413cc6916ca2",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "de-DE/04-simple.png",
+      "sha256": "f9122494eaef26ffd9b679a5a9d86afb308bb12c72c048b49cc8a354f20244b6",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "de-DE/05-open-source.png",
+      "sha256": "dc8f699eb7b88f5ccd32e7ad099ba29dc56dd9d3336a7b949aacb9655d90689a",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "fr-FR/01-keep-awake.png",
+      "sha256": "0f9f34686b5326d5318be2f9f360784f68a5e4d551dc6197a277055a7e50ec9d",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "fr-FR/02-display-sleep.png",
+      "sha256": "f00cbcf91c7c93ce02c62c02a8f67660bd9404470a69562f7419a5ad0dc9ac12",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "fr-FR/03-manual-sleep.png",
+      "sha256": "ecec428ccc7fa85ce3e2c0ac88ecfbcce98548cbe52a14df93df46e07e646908",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "fr-FR/04-simple.png",
+      "sha256": "19771d8a4fd9c6204e65ee89feddf0003f10dd5cb8ad5e77a3820964b0c704e2",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "fr-FR/05-open-source.png",
+      "sha256": "fe6c8846e89d6268ee362d43d39f790e6927dcaf169f6c0d4adfecf88ee921cd",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "es-ES/01-keep-awake.png",
+      "sha256": "c2e4fec7872453ae345823913c0c5ff23d74666c89c22c99aad19c3c13af2457",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "es-ES/02-display-sleep.png",
+      "sha256": "3b5b340600c31ada9748805ef68fced335ec96ff160ffe8c597d2e609bca703e",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "es-ES/03-manual-sleep.png",
+      "sha256": "9fede0e839abc641ece51bee11f4ffd6173128046821f2186c933f2c56ac1e33",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "es-ES/04-simple.png",
+      "sha256": "6f3ea6a33f588f9c7c11ed268e47c271e2b5e45c5b0c0e2a9ccd6b2300dee866",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "es-ES/05-open-source.png",
+      "sha256": "ad030f8be351950147acdc5a51086d73b87396abc889dc78a9d72bc9f5f0632a",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "pt-BR/01-keep-awake.png",
+      "sha256": "03190ec5b7ceca0ff4fed42900e2b2d89580b8e454e467b7b6ac3d685dc4ea40",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "pt-BR/02-display-sleep.png",
+      "sha256": "6660ed2728c1338cfdb9b91cbed870978a67a3d269fb15118f38abccc3363aea",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "pt-BR/03-manual-sleep.png",
+      "sha256": "3c59c2449f3bab2a5ee8ff82314d898cf2103796e909ddf406c4ce730454c4a1",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "pt-BR/04-simple.png",
+      "sha256": "fa4b66df098fb040c4d06b1d3587b690944c89be22223d002d62b06abf741018",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "pt-BR/05-open-source.png",
+      "sha256": "fb14b86de504991109209baa5ef30473b8d2244dfbfb05c3d6dd09720070603f",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ru/01-keep-awake.png",
+      "sha256": "8b04cbd6105de4942b9d2d3b49079327ea2099762932bd613576b9a9e9c1b226",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ru/02-display-sleep.png",
+      "sha256": "a160537a3e06cb543c6cf4076ed576c2e1cd86e0deea40d2e39ce9586e04f1d6",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ru/03-manual-sleep.png",
+      "sha256": "9706897ea923fb2cb228c081dce225a3373bfb982648f42d1a6a8efcb774a74e",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ru/04-simple.png",
+      "sha256": "5f25f71eb3637a85df754915be1720a69a773c33103e17af6c04114a184638e5",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "ru/05-open-source.png",
+      "sha256": "d9eb0d6f403a3c1b710ab7ac12e49565793bf4829ed70361c8ee783250f01767",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "it/01-keep-awake.png",
+      "sha256": "afb7dca6cdea20027b71fb1aac640abf12485ea906034ae9d65c5e9b9e7591b4",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "it/02-display-sleep.png",
+      "sha256": "a933b079737c8bf5e53c0febc23dd6ae82af3206d691742c839d915d9b7d4f29",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "it/03-manual-sleep.png",
+      "sha256": "9de0e918ed518b0c09ecef3d60dc13a329812c02bcc0b0f55725280e76875003",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "it/04-simple.png",
+      "sha256": "c49be00b32966f5f0de6635e04fd92cdf5231a2f56c67290bce30661bb391c99",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "it/05-open-source.png",
+      "sha256": "79fa2981db5b8bd254f2c688b195edee5f29fb27e597307074ea28c504e62c21",
+      "dimensions": [
+        2560,
+        1600
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "order": [
+    "01-keep-awake",
+    "02-display-sleep",
+    "03-manual-sleep",
+    "04-simple",
+    "05-open-source"
+  ],
+  "locales": [
+    "zh-Hans",
+    "en-US",
+    "zh-Hant",
+    "ja",
+    "ko",
+    "de-DE",
+    "fr-FR",
+    "es-ES",
+    "pt-BR",
+    "ru",
+    "it"
+  ],
+  "imageCount": 55,
+  "localizedReview": "All layouts inspected; localized copy available for user review"
+}

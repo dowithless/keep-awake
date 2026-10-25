@@ -37,6 +37,7 @@ python3 Scripts/check-release-readiness.py /absolute/path/KeepAwake.app
 ## 资料维护
 
 - [商店文案](../app-store/localizations.json)：直接编辑，独立于应用 String Catalog，不再由脚本覆盖。
+- [自然搜索与命名草案](../app-store/discovery-plan.md)：功能型名称候选、11 语言标题与关键词、截图和上线后验证方案；名称尚未确定。
 - [定价](../app-store/pricing-policy.md)与[参考价目表](../app-store/pricing.csv)：草案，实际价格与销售地区以后台核对为准。
 - [审核说明](../app-store/review-notes.en.md)与[截图清单](../app-store/screenshots.md)。
 - [隐私说明](../privacy/)：发布前补齐主体、联系方式和网站实际行为。

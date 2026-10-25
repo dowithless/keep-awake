@@ -1,0 +1,78 @@
+{
+  "status": "WORKING DRAFT — en-US, ru, it and es-ES names have been verified in App Store Connect; other copied metadata still needs final reconciliation; not a submission payload",
+  "namingStrategy": "Localized functional names; avoid redundant platform names; prioritize relevant search language and readability",
+  "localizations": {
+    "en": {
+      "appleLocale": "en-US",
+      "name": "Keep Awake: Prevent Sleep",
+      "subtitle": "Menu bar & display control",
+      "keywords": "screen,downloads,rendering,presentations"
+    },
+    "zh-Hans": {
+      "appleLocale": "zh-Hans",
+      "name": "保持唤醒：屏幕常亮与防休眠",
+      "subtitle": "菜单栏一键切换，系统与显示器分别控制",
+      "keywords": "下载,渲染,演示,长任务"
+    },
+    "zh-Hant": {
+      "appleLocale": "zh-Hant",
+      "name": "保持喚醒：螢幕常亮與防睡眠",
+      "subtitle": "選單列一鍵切換，系統與顯示器分別控制",
+      "keywords": "下載,算圖,簡報,長時間作業"
+    },
+    "ja": {
+      "appleLocale": "ja",
+      "name": "スリープ防止・画面常時オン",
+      "subtitle": "メニューバーからワンクリックで切り替え",
+      "keywords": "ダウンロード,レンダリング,プレゼン"
+    },
+    "ko": {
+      "appleLocale": "ko",
+      "name": "잠자기 방지: 화면 켜짐 유지",
+      "subtitle": "메뉴 막대에서 한 번의 클릭으로 전환",
+      "keywords": "다운로드,렌더링,프레젠테이션"
+    },
+    "de": {
+      "appleLocale": "de-DE",
+      "name": "Wach bleiben: Ruhezustand aus",
+      "subtitle": "Ein Klick in der Menüleiste",
+      "keywords": "bildschirm,display,download,rendern,präsentation"
+    },
+    "fr": {
+      "appleLocale": "fr-FR",
+      "name": "Anti-veille : écran allumé",
+      "subtitle": "Un clic dans la barre de menus",
+      "keywords": "téléchargement,rendu,présentation"
+    },
+    "es": {
+      "appleLocale": "es-ES",
+      "name": "Evita reposo: Sistema activo",
+      "subtitle": "Sistema y pantalla a tu gusto",
+      "keywords": "pantalla,barra,menús,descargas,renderizado,agentes",
+      "saveVerifiedDate": "2026-10-25",
+      "descriptionReference": "localizations.bootstrap.saved.json"
+    },
+    "pt-BR": {
+      "appleLocale": "pt-BR",
+      "name": "Sem repouso: Tela ligada",
+      "subtitle": "Um clique na barra de menus",
+      "keywords": "downloads,renderização,apresentação"
+    },
+    "ru": {
+      "appleLocale": "ru",
+      "name": "Без автосна: Долгие задачи",
+      "subtitle": "Система и экран — раздельно",
+      "keywords": "экран,меню,загрузки,рендеринг,агент",
+      "saveVerifiedDate": "2026-10-25",
+      "descriptionReference": "localizations.bootstrap.saved.json"
+    },
+    "it": {
+      "appleLocale": "it",
+      "name": "Niente stop: Download e agenti",
+      "subtitle": "Sistema e schermo separati",
+      "keywords": "schermo,barra,menu,download,rendering,agenti",
+      "saveVerifiedDate": "2026-10-25",
+      "descriptionReference": "localizations.bootstrap.saved.json"
+    }
+  }
+}

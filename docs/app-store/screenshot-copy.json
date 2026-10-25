@@ -1,0 +1,1465 @@
+{
+  "zh-Hans": {
+    "01-keep-awake": {
+      "eyebrow": "轻巧的菜单栏防休眠工具",
+      "headline": [
+        "一键开启",
+        "保持电脑唤醒"
+      ],
+      "description": [
+        "防止空闲休眠，从容应对",
+        "下载、渲染与 Agent 长任务。"
+      ],
+      "interaction": "轻点咖啡杯，即可开启或关闭",
+      "benefits": [
+        "下载",
+        "渲染",
+        "Agent 任务"
+      ],
+      "footnote": "无需账户 · 本机运行",
+      "menuLocale": "zh-Hans",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "系统唤醒与屏幕常亮，分别控制",
+      "headline": [
+        "屏幕休息",
+        "系统保持唤醒"
+      ],
+      "description": [
+        "不必一直亮屏，",
+        "也能防止系统空闲休眠。"
+      ],
+      "interaction": "取消勾选，允许屏幕自动休眠",
+      "benefits": [],
+      "footnote": "屏幕仍按系统设置自动休眠",
+      "menuLocale": "zh-Hans",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "系统",
+          "value": "保持唤醒",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "屏幕",
+          "value": "允许自动休眠",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "尊重你的休息，结束本次防休眠",
+      "headline": [
+        "手动休眠",
+        "自动结束防休眠"
+      ],
+      "description": [
+        "当你主动让电脑进入休眠，",
+        "本次防休眠随即结束。",
+        "唤醒后保持关闭，按需再次开启。"
+      ],
+      "interaction": "唤醒后，按需再次点击咖啡杯开启",
+      "benefits": [],
+      "footnote": "不必额外惦记关闭防休眠",
+      "menuLocale": "zh-Hans",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "唤醒后的菜单状态",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "保持唤醒"
+        },
+        {
+          "symbol": "moon",
+          "label": "手动休眠"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "唤醒后保持关闭"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "轻巧的菜单栏工具",
+      "headline": [
+        "小巧常驻",
+        "简单就够了"
+      ],
+      "description": [
+        "保持系统唤醒，按需保持屏幕常亮。",
+        "两项核心控制，都在菜单栏。"
+      ],
+      "interaction": "右键展开菜单，核心控制一目了然",
+      "benefits": [
+        "无需账户",
+        "本机运行"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "专注防休眠，恰到好处",
+      "menuLocale": "zh-Hans",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "一个开放、透明的小工具",
+      "headline": [
+        "源码公开",
+        "透明可查"
+      ],
+      "description": [
+        "采用 MIT 开源许可，",
+        "可查看源码，也可自行构建。"
+      ],
+      "interaction": "核心实现公开，可查看与自行构建",
+      "benefits": [
+        "MIT 许可",
+        "自行构建"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "zh-Hans",
+      "preventDisplaySleep": true,
+      "sceneCaption": "核心源码节选",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "en-US": {
+    "01-keep-awake": {
+      "eyebrow": "A lightweight menu bar sleep blocker",
+      "headline": [
+        "One click.",
+        "Stay awake."
+      ],
+      "description": [
+        "Prevent idle sleep during downloads,",
+        "rendering, and long-running agent tasks."
+      ],
+      "interaction": "Click the cup to turn it on or off.",
+      "benefits": [
+        "Downloads",
+        "Rendering",
+        "Agent tasks"
+      ],
+      "footnote": "No account · Runs locally",
+      "menuLocale": "en",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Separate controls for system and display",
+      "headline": [
+        "Screen off.",
+        "System awake."
+      ],
+      "description": [
+        "Keep the system awake without",
+        "keeping your display on."
+      ],
+      "interaction": "Uncheck this option to allow display sleep.",
+      "benefits": [],
+      "footnote": "Display sleep follows your system settings.",
+      "menuLocale": "en",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "System",
+          "value": "Stays awake",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Display",
+          "value": "Sleep allowed",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "Your choice to sleep ends the session",
+      "headline": [
+        "You choose Sleep.",
+        "Awake mode ends."
+      ],
+      "description": [
+        "When you put your computer to sleep,",
+        "the current stay-awake session ends.",
+        "After waking, it stays off until you enable it."
+      ],
+      "interaction": "After waking, click the cup when you need it.",
+      "benefits": [],
+      "footnote": "One less thing to remember to turn off.",
+      "menuLocale": "en",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "Menu state after waking",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Keeping awake"
+        },
+        {
+          "symbol": "moon",
+          "label": "Manual sleep"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Off after wake"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "A small utility that lives in your menu bar",
+      "headline": [
+        "Small. Simple.",
+        "Just enough."
+      ],
+      "description": [
+        "Prevent idle sleep. Keep the screen on",
+        "when needed. Two controls, one menu."
+      ],
+      "interaction": "Right-click the cup to see both controls.",
+      "benefits": [
+        "No account",
+        "Runs locally"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Focused on keeping your computer awake.",
+      "menuLocale": "en",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "A small utility, open for inspection",
+      "headline": [
+        "Open source.",
+        "See how it works."
+      ],
+      "description": [
+        "MIT licensed. Read the source code,",
+        "or build the app yourself."
+      ],
+      "interaction": "Explore the code or build it yourself.",
+      "benefits": [
+        "MIT license",
+        "Build it yourself"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "en",
+      "preventDisplaySleep": true,
+      "sceneCaption": "An excerpt from the actual source",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "zh-Hant": {
+    "01-keep-awake": {
+      "eyebrow": "輕巧的選單列防睡眠工具",
+      "headline": [
+        "一鍵開啟",
+        "保持電腦喚醒"
+      ],
+      "description": [
+        "防止閒置睡眠，從容應對",
+        "下載、算圖與 Agent 長時間作業。"
+      ],
+      "interaction": "點一下咖啡杯，即可開啟或關閉",
+      "benefits": [
+        "下載",
+        "算圖",
+        "Agent 作業"
+      ],
+      "footnote": "無需帳號 · 本機運作",
+      "menuLocale": "zh-Hant",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "系統喚醒與螢幕常亮，分別控制",
+      "headline": [
+        "螢幕休息",
+        "系統保持喚醒"
+      ],
+      "description": [
+        "不必一直亮著螢幕，",
+        "也能防止系統閒置睡眠。"
+      ],
+      "interaction": "取消勾選，允許螢幕自動睡眠",
+      "benefits": [],
+      "footnote": "螢幕仍依系統設定自動睡眠",
+      "menuLocale": "zh-Hant",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "系統",
+          "value": "保持喚醒",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "螢幕",
+          "value": "允許自動睡眠",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "尊重你的休息，結束本次防睡眠",
+      "headline": [
+        "手動睡眠",
+        "自動結束防睡眠"
+      ],
+      "description": [
+        "當你主動讓電腦進入睡眠，",
+        "本次防睡眠隨即結束。",
+        "喚醒後保持關閉，按需再次開啟。"
+      ],
+      "interaction": "喚醒後，按需再次點擊咖啡杯開啟",
+      "benefits": [],
+      "footnote": "不必額外惦記關閉防睡眠",
+      "menuLocale": "zh-Hant",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "喚醒後的選單狀態",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "保持喚醒"
+        },
+        {
+          "symbol": "moon",
+          "label": "手動睡眠"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "喚醒後保持關閉"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "輕巧的選單列工具",
+      "headline": [
+        "輕巧常駐",
+        "簡單就夠了"
+      ],
+      "description": [
+        "保持系統喚醒，按需保持螢幕常亮。",
+        "兩項核心控制，都在選單列。"
+      ],
+      "interaction": "按右鍵展開選單，核心控制一目了然",
+      "benefits": [
+        "無需帳號",
+        "本機運作"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "專注防睡眠，恰到好處",
+      "menuLocale": "zh-Hant",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "一個開放、透明的小工具",
+      "headline": [
+        "原始碼公開",
+        "透明可查"
+      ],
+      "description": [
+        "採用 MIT 開放原始碼授權，",
+        "可查看原始碼，也可自行建置。"
+      ],
+      "interaction": "核心實作公開，可查看與自行建置",
+      "benefits": [
+        "MIT 授權",
+        "自行建置"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "zh-Hant",
+      "preventDisplaySleep": true,
+      "sceneCaption": "核心原始碼節選",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "ja": {
+    "01-keep-awake": {
+      "eyebrow": "メニューバーの小さなスリープ防止ツール",
+      "headline": [
+        "ワンクリックで",
+        "スリープを防止"
+      ],
+      "description": [
+        "ダウンロード、レンダリング、",
+        "エージェントの長時間タスクで自動スリープを防止。"
+      ],
+      "interaction": "カップをクリックするだけでオン・オフ",
+      "benefits": [
+        "ダウンロード",
+        "レンダリング",
+        "エージェント"
+      ],
+      "footnote": "アカウント不要 · ローカルで動作",
+      "menuLocale": "ja",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "システムと画面のスリープを個別に制御",
+      "headline": [
+        "画面はオフに",
+        "本体は起動したまま"
+      ],
+      "description": [
+        "画面を常時点灯させずに、",
+        "システムの自動スリープを防ぎます。"
+      ],
+      "interaction": "チェックを外すと、画面のスリープを許可",
+      "benefits": [],
+      "footnote": "画面はシステム設定に従ってスリープします",
+      "menuLocale": "ja",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "システム",
+          "value": "起動したまま",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "画面",
+          "value": "スリープを許可",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "休むときは、今回のスリープ防止も終了",
+      "headline": [
+        "手動スリープで",
+        "自動的にオフ"
+      ],
+      "description": [
+        "自分でパソコンをスリープさせると、",
+        "今回のスリープ防止を終了します。",
+        "復帰後もオフ。必要なときに再度オン。"
+      ],
+      "interaction": "復帰後は、必要なときにカップをクリック",
+      "benefits": [],
+      "footnote": "オフにする手間を、ひとつ減らします",
+      "menuLocale": "ja",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "スリープから復帰した後のメニュー",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "スリープ防止中"
+        },
+        {
+          "symbol": "moon",
+          "label": "手動でスリープ"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "復帰後もオフ"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "メニューバーに常駐する小さなツール",
+      "headline": [
+        "小さく、シンプルに",
+        "必要な機能だけ"
+      ],
+      "description": [
+        "システムのスリープを防ぎ、画面の常時点灯は任意。",
+        "基本の操作は、メニューバーの２項目だけ。"
+      ],
+      "interaction": "右クリックで、２つの操作を表示",
+      "benefits": [
+        "アカウント不要",
+        "ローカルで動作"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "スリープ防止に、必要なものだけ",
+      "menuLocale": "ja",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "中身を確認できる、オープンなツール",
+      "headline": [
+        "ソースを公開",
+        "仕組みが見える"
+      ],
+      "description": [
+        "MIT ライセンスで公開。",
+        "ソースの確認も、自分でのビルドも可能です。"
+      ],
+      "interaction": "ソースを確認して、自分でビルドできます",
+      "benefits": [
+        "MIT ライセンス",
+        "自分でビルド"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "ja",
+      "preventDisplaySleep": true,
+      "sceneCaption": "実際のソースコードの一部",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "ko": {
+    "01-keep-awake": {
+      "eyebrow": "메뉴 막대의 가벼운 잠자기 방지 도구",
+      "headline": [
+        "클릭 한 번으로",
+        "잠자기 방지"
+      ],
+      "description": [
+        "다운로드, 렌더링, 에이전트의 긴 작업 중",
+        "시스템이 자동으로 잠들지 않게 합니다."
+      ],
+      "interaction": "컵 아이콘을 클릭해 켜거나 끄세요",
+      "benefits": [
+        "다운로드",
+        "렌더링",
+        "에이전트 작업"
+      ],
+      "footnote": "계정 불필요 · 기기에서 실행",
+      "menuLocale": "ko",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "시스템과 화면의 잠자기를 따로 제어",
+      "headline": [
+        "화면은 쉬어도",
+        "시스템은 깨어 있게"
+      ],
+      "description": [
+        "화면을 계속 켜 두지 않아도",
+        "시스템의 자동 잠자기를 막을 수 있습니다."
+      ],
+      "interaction": "선택을 해제하면 화면 자동 잠자기 허용",
+      "benefits": [],
+      "footnote": "화면은 시스템 설정에 따라 잠자기로 전환",
+      "menuLocale": "ko",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "시스템",
+          "value": "깨어 있음",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "화면",
+          "value": "자동 잠자기 허용",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "직접 잠자기로 전환하면 현재 세션 종료",
+      "headline": [
+        "직접 잠자기 실행",
+        "깨어 있기 종료"
+      ],
+      "description": [
+        "직접 컴퓨터를 잠자기로 전환하면",
+        "현재 깨어 있기 세션이 종료됩니다.",
+        "다시 깨워도 꺼진 상태로, 필요할 때 다시 켜세요."
+      ],
+      "interaction": "깨운 뒤 필요할 때 컵 아이콘을 다시 클릭",
+      "benefits": [],
+      "footnote": "끄는 것을 따로 기억할 필요가 없어요",
+      "menuLocale": "ko",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "잠자기에서 깨어난 뒤의 메뉴",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "깨어 있기"
+        },
+        {
+          "symbol": "moon",
+          "label": "직접 잠자기"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "깨운 뒤에도 꺼짐"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "메뉴 막대에 머무는 작은 도구",
+      "headline": [
+        "작고 간결하게",
+        "필요한 기능만"
+      ],
+      "description": [
+        "시스템은 깨어 있게, 화면 켜짐은 필요에 따라.",
+        "핵심 제어 두 가지를 메뉴 막대에서 사용하세요."
+      ],
+      "interaction": "오른쪽 클릭으로 두 가지 제어를 한눈에",
+      "benefits": [
+        "계정 불필요",
+        "기기에서 실행"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "잠자기 방지에 필요한 기능만",
+      "menuLocale": "ko",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "내부를 살펴볼 수 있는 열린 도구",
+      "headline": [
+        "소스 코드 공개",
+        "투명하게 확인"
+      ],
+      "description": [
+        "MIT 라이선스로 공개됩니다.",
+        "소스를 살펴보거나 직접 빌드할 수 있습니다."
+      ],
+      "interaction": "핵심 소스를 살펴보거나 직접 빌드하세요",
+      "benefits": [
+        "MIT 라이선스",
+        "직접 빌드"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "ko",
+      "preventDisplaySleep": true,
+      "sceneCaption": "실제 핵심 소스 코드 일부",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "de-DE": {
+    "01-keep-awake": {
+      "eyebrow": "Ein schlankes Tool für die Menüleiste",
+      "headline": [
+        "Ein Klick.",
+        "Wach bleiben."
+      ],
+      "description": [
+        "Verhindert automatischen Ruhezustand bei",
+        "Downloads, Rendering und langen Agent-Aufgaben."
+      ],
+      "interaction": "Ein Klick auf die Tasse schaltet ein oder aus.",
+      "benefits": [
+        "Downloads",
+        "Rendering",
+        "Agent-Aufgaben"
+      ],
+      "footnote": "Ohne Konto · Läuft lokal",
+      "menuLocale": "de",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "System und Display getrennt steuern",
+      "headline": [
+        "Bildschirm aus.",
+        "System wach."
+      ],
+      "description": [
+        "Das System bleibt wach,",
+        "auch wenn das Display schlafen darf."
+      ],
+      "interaction": "Häkchen entfernen: Das Display darf schlafen.",
+      "benefits": [],
+      "footnote": "Display-Ruhezustand gemäß Systemeinstellungen",
+      "menuLocale": "de",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "System",
+          "value": "Bleibt wach",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Display",
+          "value": "Darf schlafen",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "Manueller Ruhezustand beendet die Sitzung",
+      "headline": [
+        "Manuell schlafen.",
+        "Automatisch aus."
+      ],
+      "description": [
+        "Wenn du den Computer manuell schlafen legst,",
+        "endet die aktuelle Wachhalte-Sitzung.",
+        "Nach dem Aufwachen bleibt der Modus aus."
+      ],
+      "interaction": "Nach dem Aufwachen bei Bedarf wieder einschalten.",
+      "benefits": [],
+      "footnote": "Ein Ausschalten weniger, an das du denken musst.",
+      "menuLocale": "de",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "Menü nach dem Aufwachen",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Wach halten"
+        },
+        {
+          "symbol": "moon",
+          "label": "Manuell schlafen"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Bleibt aus"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Ein kleines Tool direkt in der Menüleiste",
+      "headline": [
+        "Klein. Einfach.",
+        "Alles Nötige."
+      ],
+      "description": [
+        "System wach halten, Display bei Bedarf auch.",
+        "Zwei Funktionen, direkt in der Menüleiste."
+      ],
+      "interaction": "Rechtsklick auf die Tasse zeigt beide Funktionen.",
+      "benefits": [
+        "Ohne Konto",
+        "Läuft lokal"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Nur das Nötige, um den Computer wach zu halten.",
+      "menuLocale": "de",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Ein offenes Tool mit einsehbarem Code",
+      "headline": [
+        "Quelloffen.",
+        "Nachvollziehbar."
+      ],
+      "description": [
+        "Unter der MIT-Lizenz: Code ansehen",
+        "oder die App selbst kompilieren."
+      ],
+      "interaction": "Code ansehen oder die App selbst kompilieren.",
+      "benefits": [
+        "MIT-Lizenz",
+        "Selbst bauen"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "de",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Auszug aus dem tatsächlichen Quellcode",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "fr-FR": {
+    "01-keep-awake": {
+      "eyebrow": "Un petit outil dans la barre des menus",
+      "headline": [
+        "Un clic.",
+        "Restez éveillé."
+      ],
+      "description": [
+        "Évitez la veille automatique pendant les téléchargements,",
+        "les rendus et les longues tâches des agents."
+      ],
+      "interaction": "Un clic sur la tasse pour activer ou désactiver.",
+      "benefits": [
+        "Téléchargements",
+        "Rendus",
+        "Tâches d’agent"
+      ],
+      "footnote": "Sans compte · Fonctionne localement",
+      "menuLocale": "fr",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Contrôlez le système et l’écran séparément",
+      "headline": [
+        "Écran au repos.",
+        "Système éveillé."
+      ],
+      "description": [
+        "Gardez le système éveillé",
+        "sans garder l’écran allumé."
+      ],
+      "interaction": "Décochez pour autoriser la veille de l’écran.",
+      "benefits": [],
+      "footnote": "La veille de l’écran suit les réglages du système.",
+      "menuLocale": "fr",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Système",
+          "value": "Reste éveillé",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Écran",
+          "value": "Veille autorisée",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "La veille manuelle met fin à la session",
+      "headline": [
+        "Veille manuelle.",
+        "Le mode s’arrête."
+      ],
+      "description": [
+        "Lorsque vous mettez l’ordinateur en veille,",
+        "la session de maintien en éveil se termine.",
+        "Au réveil, le mode reste désactivé jusqu’à sa réactivation."
+      ],
+      "interaction": "Au réveil, réactivez le mode selon vos besoins.",
+      "benefits": [],
+      "footnote": "Une chose de moins à penser à désactiver.",
+      "menuLocale": "fr",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "Le menu après le réveil",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Mode actif"
+        },
+        {
+          "symbol": "moon",
+          "label": "Veille manuelle"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Reste désactivé"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Un petit outil dans votre barre des menus",
+      "headline": [
+        "Petit. Simple.",
+        "Juste l’essentiel."
+      ],
+      "description": [
+        "Système éveillé, écran allumé selon vos besoins.",
+        "Deux commandes, dans la barre des menus."
+      ],
+      "interaction": "Un clic droit sur la tasse affiche les deux commandes.",
+      "benefits": [
+        "Sans compte",
+        "En local"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "L’essentiel pour garder votre ordinateur éveillé.",
+      "menuLocale": "fr",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Un petit outil ouvert et transparent",
+      "headline": [
+        "Code ouvert.",
+        "Tout est visible."
+      ],
+      "description": [
+        "Sous licence MIT : consultez le code",
+        "ou compilez l’app vous-même."
+      ],
+      "interaction": "Consultez le code ou compilez l’app vous-même.",
+      "benefits": [
+        "Licence MIT",
+        "Compiler soi-même"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "fr",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Extrait du code source réel",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "es-ES": {
+    "01-keep-awake": {
+      "eyebrow": "Una pequeña utilidad en la barra de menús",
+      "headline": [
+        "Un clic.",
+        "Sigue despierto."
+      ],
+      "description": [
+        "Evita el reposo automático durante descargas,",
+        "renderizados y tareas largas de agentes."
+      ],
+      "interaction": "Un clic en la taza para activar o desactivar.",
+      "benefits": [
+        "Descargas",
+        "Renderizados",
+        "Tareas de agente"
+      ],
+      "footnote": "Sin cuenta · Se ejecuta localmente",
+      "menuLocale": "es",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Controla el sistema y la pantalla por separado",
+      "headline": [
+        "Pantalla apagada.",
+        "Sistema despierto."
+      ],
+      "description": [
+        "Mantén el sistema despierto",
+        "sin mantener la pantalla encendida."
+      ],
+      "interaction": "Desmarca para permitir el reposo de la pantalla.",
+      "benefits": [],
+      "footnote": "La pantalla sigue los ajustes de reposo del sistema.",
+      "menuLocale": "es",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Sistema",
+          "value": "Despierto",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Pantalla",
+          "value": "Reposo permitido",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "El reposo manual pone fin a la sesión",
+      "headline": [
+        "Reposo manual.",
+        "El modo se apaga."
+      ],
+      "description": [
+        "Si eliges el reposo manual, esta sesión termina.",
+        "Al despertar, el modo sigue desactivado.",
+        "Vuelve a activarlo cuando lo necesites."
+      ],
+      "interaction": "Al despertar, actívalo de nuevo si lo necesitas.",
+      "benefits": [],
+      "footnote": "Una cosa menos que recordar desactivar.",
+      "menuLocale": "es",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "El menú después de despertar",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Modo activo"
+        },
+        {
+          "symbol": "moon",
+          "label": "Reposo manual"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Sigue apagado"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Una pequeña utilidad en tu barra de menús",
+      "headline": [
+        "Pequeña. Simple.",
+        "Solo lo esencial."
+      ],
+      "description": [
+        "Sistema despierto y pantalla encendida si lo necesitas.",
+        "Dos controles, en la barra de menús."
+      ],
+      "interaction": "Un clic derecho en la taza muestra los controles.",
+      "benefits": [
+        "Sin cuenta",
+        "En tu equipo"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Solo lo necesario para mantener el equipo despierto.",
+      "menuLocale": "es",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Una utilidad abierta y transparente",
+      "headline": [
+        "Código abierto.",
+        "Todo a la vista."
+      ],
+      "description": [
+        "Con licencia MIT: consulta el código",
+        "o compila la app por tu cuenta."
+      ],
+      "interaction": "Consulta el código o compila la app por tu cuenta.",
+      "benefits": [
+        "Licencia MIT",
+        "Compila la app"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "es",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Fragmento del código fuente real",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "pt-BR": {
+    "01-keep-awake": {
+      "eyebrow": "Um pequeno utilitário na barra de menus",
+      "headline": [
+        "Um clique.",
+        "Evite o repouso."
+      ],
+      "description": [
+        "Evite o repouso automático em downloads,",
+        "renderizações e tarefas longas de agentes."
+      ],
+      "interaction": "Clique na xícara para ativar ou desativar.",
+      "benefits": [
+        "Downloads",
+        "Renderização",
+        "Tarefas de agente"
+      ],
+      "footnote": "Sem conta · Executado localmente",
+      "menuLocale": "pt-BR",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Controle o sistema e a tela separadamente",
+      "headline": [
+        "Tela apagada.",
+        "Sistema ativo."
+      ],
+      "description": [
+        "Mantenha o sistema ativo",
+        "sem deixar a tela sempre acesa."
+      ],
+      "interaction": "Desmarque para permitir o repouso da tela.",
+      "benefits": [],
+      "footnote": "A tela segue os ajustes de repouso do sistema.",
+      "menuLocale": "pt-BR",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Sistema",
+          "value": "Continua ativo",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Tela",
+          "value": "Repouso permitido",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "O repouso manual encerra a sessão atual",
+      "headline": [
+        "Repouso manual.",
+        "O modo desliga."
+      ],
+      "description": [
+        "Ao colocar o computador em repouso manualmente,",
+        "a sessão que o mantém ativo termina.",
+        "Ao despertar, o modo continua desligado até você ativá-lo."
+      ],
+      "interaction": "Ao despertar, ative novamente quando precisar.",
+      "benefits": [],
+      "footnote": "Uma coisa a menos para lembrar de desligar.",
+      "menuLocale": "pt-BR",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "O menu após despertar",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Sistema ativo"
+        },
+        {
+          "symbol": "moon",
+          "label": "Repouso manual"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Segue desligado"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Um pequeno utilitário na sua barra de menus",
+      "headline": [
+        "Pequeno. Simples.",
+        "Só o essencial."
+      ],
+      "description": [
+        "Sistema ativo e tela acesa quando você precisar.",
+        "Dois controles, direto na barra de menus."
+      ],
+      "interaction": "Clique com o botão direito para ver os controles.",
+      "benefits": [
+        "Sem conta",
+        "Execução local"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Só o necessário para manter o computador ativo.",
+      "menuLocale": "pt-BR",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Um utilitário aberto e transparente",
+      "headline": [
+        "Código aberto.",
+        "Tudo às claras."
+      ],
+      "description": [
+        "Com licença MIT: consulte o código",
+        "ou compile o app por conta própria."
+      ],
+      "interaction": "Consulte o código ou compile o app você mesmo.",
+      "benefits": [
+        "Licença MIT",
+        "Compile você mesmo"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "pt-BR",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Trecho do código-fonte real",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "ru": {
+    "01-keep-awake": {
+      "eyebrow": "Небольшая утилита в строке меню",
+      "headline": [
+        "Один клик.",
+        "Без автосна."
+      ],
+      "description": [
+        "Защита от автосна при загрузках,",
+        "рендеринге и долгих задачах агента."
+      ],
+      "interaction": "Щёлкните чашку, чтобы включить или выключить.",
+      "benefits": [
+        "Загрузки",
+        "Рендеринг",
+        "Задачи агента"
+      ],
+      "footnote": "Без аккаунта · Работает локально",
+      "menuLocale": "ru",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Отдельное управление системой и экраном",
+      "headline": [
+        "Экран отдыхает.",
+        "Система работает."
+      ],
+      "description": [
+        "Система не засыпает,",
+        "даже когда экрану разрешено гаснуть."
+      ],
+      "interaction": "Снимите галочку, чтобы экран мог засыпать.",
+      "benefits": [],
+      "footnote": "Экран засыпает согласно настройкам системы.",
+      "menuLocale": "ru",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Система",
+          "value": "Не спит",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Экран",
+          "value": "Можно гасить",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "Ручной переход в сон завершает сеанс",
+      "headline": [
+        "Сон вручную.",
+        "Режим выключен."
+      ],
+      "description": [
+        "Когда вы вручную переводите компьютер в сон,",
+        "текущий сеанс предотвращения сна завершается.",
+        "После пробуждения режим остаётся выключенным."
+      ],
+      "interaction": "После пробуждения включите режим по необходимости.",
+      "benefits": [],
+      "footnote": "Не нужно помнить о выключении режима.",
+      "menuLocale": "ru",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "Меню после пробуждения",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Не спит"
+        },
+        {
+          "symbol": "moon",
+          "label": "Сон вручную"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Остаётся выкл."
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Небольшая утилита прямо в строке меню",
+      "headline": [
+        "Просто. Легко.",
+        "Ничего лишнего."
+      ],
+      "description": [
+        "Система не спит, экран включён по желанию.",
+        "Две основные функции в строке меню."
+      ],
+      "interaction": "Правый щелчок по чашке открывает меню.",
+      "benefits": [
+        "Без аккаунта",
+        "Локально"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Только нужное для предотвращения сна.",
+      "menuLocale": "ru",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Открытая утилита с доступным кодом",
+      "headline": [
+        "Открытый код.",
+        "Всё прозрачно."
+      ],
+      "description": [
+        "Лицензия MIT: изучайте исходный код",
+        "или собирайте приложение самостоятельно."
+      ],
+      "interaction": "Изучайте исходный код или собирайте приложение.",
+      "benefits": [
+        "Лицензия MIT",
+        "Собрать самому"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "ru",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Фрагмент настоящего исходного кода",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  },
+  "it": {
+    "01-keep-awake": {
+      "eyebrow": "Una piccola utility nella barra dei menu",
+      "headline": [
+        "Un clic.",
+        "Evita lo stop."
+      ],
+      "description": [
+        "Evita lo stop automatico durante download,",
+        "rendering e attività lunghe degli agenti."
+      ],
+      "interaction": "Un clic sulla tazza per attivare o disattivare.",
+      "benefits": [
+        "Download",
+        "Rendering",
+        "Attività agenti"
+      ],
+      "footnote": "Senza account · Funziona in locale",
+      "menuLocale": "it",
+      "preventDisplaySleep": true
+    },
+    "02-display-sleep": {
+      "eyebrow": "Controlla sistema e schermo separatamente",
+      "headline": [
+        "Schermo spento.",
+        "Sistema attivo."
+      ],
+      "description": [
+        "Mantieni attivo il sistema",
+        "senza tenere lo schermo sempre acceso."
+      ],
+      "interaction": "Deseleziona per consentire lo stop dello schermo.",
+      "benefits": [],
+      "footnote": "Lo schermo segue le impostazioni di stop del sistema.",
+      "menuLocale": "it",
+      "preventDisplaySleep": false,
+      "statusCards": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Sistema",
+          "value": "Resta attivo",
+          "active": true
+        },
+        {
+          "symbol": "display",
+          "label": "Schermo",
+          "value": "Stop consentito",
+          "active": false
+        }
+      ]
+    },
+    "03-manual-sleep": {
+      "eyebrow": "Lo stop manuale termina la sessione attuale",
+      "headline": [
+        "Stop manuale.",
+        "Si disattiva da sé."
+      ],
+      "description": [
+        "Quando metti il computer in stop manualmente,",
+        "la sessione che lo tiene attivo termina.",
+        "Al risveglio resta disattiva, finché la riattivi."
+      ],
+      "interaction": "Al risveglio, riattivala quando ti serve.",
+      "benefits": [],
+      "footnote": "Una cosa in meno da ricordare di disattivare.",
+      "menuLocale": "it",
+      "preventDisplaySleep": false,
+      "isEnabled": false,
+      "sceneCaption": "Il menu dopo il risveglio",
+      "steps": [
+        {
+          "symbol": "cup.and.saucer.fill",
+          "label": "Sistema attivo"
+        },
+        {
+          "symbol": "moon",
+          "label": "Stop manuale"
+        },
+        {
+          "symbol": "cup.and.saucer",
+          "label": "Resta disattivo"
+        }
+      ]
+    },
+    "04-simple": {
+      "eyebrow": "Una piccola utility nella barra dei menu",
+      "headline": [
+        "Piccola. Semplice.",
+        "Solo l’essenziale."
+      ],
+      "description": [
+        "Sistema attivo e schermo acceso solo se serve.",
+        "Due controlli, direttamente nella barra dei menu."
+      ],
+      "interaction": "Clic destro sulla tazza per vedere i controlli.",
+      "benefits": [
+        "Senza account",
+        "In locale"
+      ],
+      "benefitSymbols": [
+        "checkmark.circle",
+        "desktopcomputer"
+      ],
+      "footnote": "Solo ciò che serve per evitare lo stop.",
+      "menuLocale": "it",
+      "preventDisplaySleep": true
+    },
+    "05-open-source": {
+      "eyebrow": "Una piccola utility aperta e trasparente",
+      "headline": [
+        "Codice aperto.",
+        "Tutto trasparente."
+      ],
+      "description": [
+        "Con licenza MIT: consulta il codice",
+        "oppure compila l’app per conto tuo."
+      ],
+      "interaction": "Consulta il codice oppure compila l’app.",
+      "benefits": [
+        "Licenza MIT",
+        "Compila tu"
+      ],
+      "benefitSymbols": [
+        "curlybraces",
+        "hammer"
+      ],
+      "footnote": "github.com/dowithless/keep-awake",
+      "menuLocale": "it",
+      "preventDisplaySleep": true,
+      "sceneCaption": "Estratto del vero codice sorgente",
+      "repositoryURL": "https://github.com/dowithless/keep-awake"
+    }
+  }
+}
