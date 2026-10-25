@@ -7,7 +7,7 @@ Keep Awake is a macOS menu bar utility. Its main experience is the cup icon in t
 3. With Keep Awake on, toggle Keep Display Awake to independently allow/prevent idle display sleep.
 4. The optional Launch at Login item is off until explicitly enabled by the user. macOS may require approval in System Settings. Launching at login does not automatically activate keep-awake mode.
 5. System sleep ends the current session. After waking, the app remains running with keep-awake mode off.
-6. About & Help opens a small native window containing version information and help. Privacy and support buttons open the public pages in the browser after their actual URLs are configured for the release.
+6. About & Help opens a small native window containing version information, capabilities, features and limitations. Privacy and support buttons open the public pages in the browser after their actual URLs are configured for the release.
 
 Business model: paid App Store download, all features included. No subscriptions, IAP products, developer account or developer backend. The source is available separately for users to build. Both distributions offer the same features; the app has no purchase verification, license keys or developer login.
 

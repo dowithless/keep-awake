@@ -1279,77 +1279,6 @@
         }
       }
     },
-    "Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake 不阻止主动睡眠或主动锁屏，不会解锁 Mac，也不保证合盖后继续运行。系统和组织的安全策略仍然适用。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake 不會阻止手動睡眠或手動鎖定，不會解鎖 Mac，也不保證闔上螢幕後繼續運作。系統和組織的安全政策仍然適用。"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake は手動のスリープやロックを防がず、Mac のロックを解除しません。蓋を閉じた状態での動作は保証しません。システムや組織のセキュリティポリシーは引き続き適用されます。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake는 수동 잠자기나 수동 잠금을 막거나 Mac의 잠금을 해제하지 않으며, 덮개를 닫은 상태의 작동을 보장하지 않습니다. 시스템 및 조직의 보안 정책은 계속 적용됩니다."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake verhindert weder manuelles Sperren noch manuellen Ruhezustand, entsperrt den Mac nicht und garantiert keinen Betrieb mit geschlossenem Deckel. Sicherheitsrichtlinien des Systems und deiner Organisation gelten weiterhin."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake n’empêche pas la veille ou le verrouillage manuels, ne déverrouille pas votre Mac et ne garantit pas le fonctionnement couvercle fermé. Les règles de sécurité du système et de votre organisation restent applicables."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake no impide el reposo o bloqueo manual, no desbloquea tu Mac ni garantiza el funcionamiento con la tapa cerrada. Las políticas de seguridad del sistema y de tu organización siguen vigentes."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "O Keep Awake não impede o repouso ou bloqueio manual, não desbloqueia o Mac e não garante o funcionamento com a tampa fechada. As políticas de segurança do sistema e da organização continuam válidas."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake не препятствует ручному переходу в сон и блокировке, не разблокирует Mac и не гарантирует работу с закрытой крышкой. Политики безопасности системы и организации продолжают действовать."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keep Awake non impedisce lo stop o il blocco manuali, non sblocca il Mac e non garantisce il funzionamento con il coperchio chiuso. Restano valide le politiche di sicurezza del sistema e dell’organizzazione."
-          }
-        }
-      }
-    },
     "Keep Awake: %@": {
       "extractionState": "manual",
       "localizations": {
@@ -1563,73 +1492,73 @@
         }
       }
     },
-    "Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake.": {
+    "Keep your Mac awake for long tasks; let the display sleep independently.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."
+            "value": "Keep your Mac awake for long tasks; let the display sleep independently."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "“同时保持屏幕常亮”还会阻止显示器空闲休眠。关闭该选项后，Mac 继续保持唤醒，显示器可休眠。"
+            "value": "长时间任务，让 Mac 保持唤醒；屏幕可单独休眠。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "「同時保持螢幕常亮」也會阻止顯示器閒置睡眠。關閉後，Mac 繼續保持喚醒，顯示器可進入睡眠。"
+            "value": "長時間工作，讓 Mac 保持喚醒；螢幕可獨立睡眠。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "「画面のスリープも防止」は、無操作時の画面スリープも防ぎます。オフにすると、Mac を動作させたまま画面をスリープできます。"
+            "value": "長時間の作業中も Mac を起動状態に保ち、画面だけをスリープできます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "'디스플레이도 깨어 있게 유지'는 유휴 상태의 디스플레이 잠자기도 방지합니다. 끄면 Mac은 깨어 있는 상태에서 디스플레이가 잠자기할 수 있습니다."
+            "value": "긴 작업 동안 Mac을 깨어 있게 유지하고 화면만 잠자기 상태로 둘 수 있습니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "„Display ebenfalls wach halten“ verhindert auch den Display-Ruhezustand bei Inaktivität. Ist die Option aus, darf das Display schlafen, während der Mac wach bleibt."
+            "value": "Hält deinen Mac bei langen Aufgaben wach; der Bildschirm darf unabhängig ruhen."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "« Garder aussi l’écran éveillé » empêche également la veille de l’écran en cas d’inactivité. Désactivez cette option pour laisser l’écran se mettre en veille tout en gardant le Mac éveillé."
+            "value": "Gardez votre Mac éveillé pendant les tâches longues, tout en laissant l’écran en veille."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "«Mantener también la pantalla despierta» impide el reposo de la pantalla por inactividad. Desactívalo para permitir que la pantalla repose mientras el Mac sigue despierto."
+            "value": "Mantén tu Mac despierto durante tareas largas y permite que la pantalla repose por separado."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "“Manter a Tela Desperta Também” impede o repouso da tela por inatividade. Desative a opção para deixar a tela repousar enquanto o Mac continua desperto."
+            "value": "Mantenha o Mac acordado em tarefas longas e permita que a tela repouse separadamente."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "«Не выключать дисплей» также предотвращает сон дисплея при бездействии. Отключите эту опцию, чтобы дисплей мог спать, пока Mac продолжает работать."
+            "value": "Не даёт Mac уснуть во время долгих задач; экран может спать отдельно."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "“Mantieni attivo anche lo schermo” impedisce anche lo stop dello schermo per inattività. Disattivalo per consentire lo stop dello schermo mentre il Mac resta attivo."
+            "value": "Mantieni attivo il Mac durante le attività lunghe e lascia che lo schermo vada in stop separatamente."
           }
         }
       }
@@ -1847,73 +1776,73 @@
         }
       }
     },
-    "Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu.": {
+    "Native menu bar app. Works locally, with no account or subscription.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."
+            "value": "Native menu bar app. Works locally, with no account or subscription."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "左键点击菜单栏咖啡杯可切换保持唤醒。右键或 Control＋点击打开菜单。"
+            "value": "原生菜单栏工具，本机运行，无账户、无订阅。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "以滑鼠左鍵按一下選單列咖啡杯可切換保持喚醒。按右鍵或按住 Control 點按可開啟選單。"
+            "value": "原生選單列工具，在本機執行，無帳號、無訂閱。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "メニューバーのカップを左クリックするとスリープ防止を切り替えます。右クリックまたは Control＋クリックでメニューを開きます。"
+            "value": "ネイティブのメニューバーアプリ。Mac 内で動作し、アカウントもサブスクリプションも不要です。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "메뉴 막대의 컵을 왼쪽 클릭하여 깨어 있기를 전환하세요. 오른쪽 클릭 또는 Control-클릭으로 메뉴를 엽니다."
+            "value": "기본 메뉴 막대 앱으로, 계정이나 구독 없이 Mac에서 로컬로 작동합니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klicke mit der linken Maustaste auf die Tasse in der Menüleiste, um die Wachhaltefunktion umzuschalten. Rechtsklick oder Control-Klick öffnet das Menü."
+            "value": "Native Menüleisten-App. Arbeitet lokal, ohne Konto oder Abonnement."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cliquez avec le bouton gauche sur la tasse dans la barre des menus pour activer ou désactiver le maintien en éveil. Un clic droit ou Contrôle-clic ouvre le menu."
+            "value": "Application native de barre des menus. Fonctionne localement, sans compte ni abonnement."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Haz clic izquierdo en la taza de la barra de menús para activar o desactivar la función. Un clic derecho o Control-clic abre el menú."
+            "value": "App nativa de la barra de menús. Funciona localmente, sin cuenta ni suscripción."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clique com o botão esquerdo na xícara da barra de menus para ativar ou desativar a função. Clique com o botão direito ou com Control para abrir o menu."
+            "value": "App nativo da barra de menus. Funciona localmente, sem conta ou assinatura."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Нажмите левой кнопкой на чашку в строке меню, чтобы переключить предотвращение сна. Правая кнопка или Control-нажатие открывает меню."
+            "value": "Нативное приложение в строке меню. Работает локально, без аккаунта и подписки."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fai clic sinistro sulla tazza nella barra dei menu per attivare o disattivare la funzione. Un clic destro o Ctrl-clic apre il menu."
+            "value": "App nativa della barra dei menu. Funziona in locale, senza account o abbonamento."
           }
         }
       }
@@ -2273,6 +2202,77 @@
         }
       }
     },
+    "Prevents idle sleep only. Does not prevent manual sleep or locking, or guarantee closed-lid operation.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prevents idle sleep only. Does not prevent manual sleep or locking, or guarantee closed-lid operation."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅防空闲休眠；不阻止手动睡眠或锁屏，不保证合盖运行。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅防止閒置睡眠；不阻止手動睡眠或鎖定，不保證闔蓋執行。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "防止するのは未使用時のスリープのみです。手動のスリープやロックは防げず、蓋を閉じた状態での動作は保証しません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유휴 잠자기만 방지합니다. 수동 잠자기나 잠금은 막지 않으며, 덮개를 닫은 상태의 작동은 보장하지 않습니다."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verhindert nur den Ruhezustand bei Inaktivität. Kein Schutz vor manuellem Ruhezustand oder Sperren, keine Garantie bei geschlossenem Deckel."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empêche uniquement la veille pour inactivité. Ne bloque ni la veille manuelle ni le verrouillage, et ne garantit pas le fonctionnement capot fermé."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo evita el reposo por inactividad. No impide el reposo manual ni el bloqueo, ni garantiza el funcionamiento con la tapa cerrada."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impede apenas o repouso por inatividade. Não impede o repouso manual ou o bloqueio, nem garante o funcionamento com a tampa fechada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предотвращает только сон при бездействии. Не мешает ручному переходу в сон или блокировке и не гарантирует работу с закрытой крышкой."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impedisce solo lo stop per inattività. Non impedisce lo stop manuale o il blocco e non garantisce il funzionamento a coperchio chiuso."
+          }
+        }
+      }
+    },
     "Privacy Policy": {
       "extractionState": "manual",
       "localizations": {
@@ -2415,73 +2415,73 @@
         }
       }
     },
-    "System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically.": {
+    "System sleep ends the session; it stays off after waking.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."
+            "value": "System sleep ends the session; it stays off after waking."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "系统睡眠会结束本次保持唤醒。电脑唤醒后，需要时请重新开启。登录启动不会自动开启保持唤醒。"
+            "value": "系统睡眠后自动结束，唤醒后按需重新开启。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "系統睡眠會結束本次保持喚醒。Mac 喚醒後，需要時請重新開啟。登入啟動不會自動開啟保持喚醒。"
+            "value": "系統睡眠後自動結束，喚醒後按需重新開啟。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "システムがスリープすると現在のセッションは終了します。復帰後、必要に応じて再度オンにしてください。ログイン時の起動でセッションが自動開始されることはありません。"
+            "value": "Mac のスリープで終了し、復帰後は必要に応じて再度オンにします。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "시스템 잠자기는 현재 세션을 종료합니다. 깨어난 후 필요할 때 다시 켜세요. 로그인 시 실행은 세션을 자동으로 시작하지 않습니다."
+            "value": "Mac이 잠자기 상태가 되면 종료되며, 깨어난 뒤 필요할 때 다시 켭니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Der Ruhezustand beendet die aktuelle Sitzung. Aktiviere die Wachhaltefunktion nach dem Aufwachen bei Bedarf erneut. Der Start beim Anmelden beginnt nie automatisch eine Sitzung."
+            "value": "Der Ruhezustand beendet die Sitzung; danach bei Bedarf erneut einschalten."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "La veille du système termine la session en cours. Après le réveil, réactivez le maintien en éveil si nécessaire. L’ouverture à la connexion ne démarre jamais de session automatiquement."
+            "value": "La veille du Mac termine la session ; réactivez-la au besoin après le réveil."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "El reposo del sistema termina la sesión actual. Al despertar, activa de nuevo la función cuando la necesites. Abrir al iniciar sesión nunca inicia una sesión automáticamente."
+            "value": "El reposo del Mac termina la sesión; vuelve a activarla cuando la necesites."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "O repouso do sistema encerra a sessão atual. Após despertar, ative a função novamente quando precisar. Abrir ao iniciar sessão nunca começa uma sessão automaticamente."
+            "value": "O repouso do Mac encerra a sessão; reative quando precisar após despertar."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Сон системы завершает текущий сеанс. После пробуждения при необходимости включите предотвращение сна снова. Запуск при входе никогда не начинает сеанс автоматически."
+            "value": "Сон Mac завершает сеанс; после пробуждения включите снова при необходимости."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lo stop del sistema termina la sessione attuale. Al risveglio, riattiva la funzione quando serve. L’apertura al login non avvia mai una sessione automaticamente."
+            "value": "Lo stop del Mac termina la sessione; al risveglio, riattivala quando serve."
           }
         }
       }

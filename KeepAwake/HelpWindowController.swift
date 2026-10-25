@@ -6,12 +6,12 @@ final class HelpWindowController: NSWindowController {
 
     init() {
         let window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 560, height: 520),
+            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
             styleMask: [.titled, .closable, .miniaturizable, .resizable],
             backing: .buffered, defer: false
         )
         window.title = L10n.text("About & Help")
-        window.minSize = NSSize(width: 420, height: 360)
+        window.minSize = NSSize(width: 420, height: 260)
         window.isReleasedWhenClosed = false
         super.init(window: window)
 
@@ -89,16 +89,18 @@ final class HelpWindowController: NSWindowController {
     private func updateText() {
         let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
         let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
-        let paragraphs = [
+        let header = [
             "Keep Awake",
             L10n.format("Version %@ (%@)", version, build),
-            Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String ?? "",
-            L10n.text("Left-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu."),
-            L10n.text("Keep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake."),
-            L10n.text("System sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically."),
-            L10n.text("Keep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.")
-        ].filter { !$0.isEmpty }
-        textView.string = paragraphs.joined(separator: "\n\n")
+            Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String ?? ""
+        ].filter { !$0.isEmpty }.joined(separator: "\n")
+        let details = [
+            L10n.text("Keep your Mac awake for long tasks; let the display sleep independently."),
+            L10n.text("Native menu bar app. Works locally, with no account or subscription."),
+            L10n.text("System sleep ends the session; it stays off after waking."),
+            L10n.text("Prevents idle sleep only. Does not prevent manual sleep or locking, or guarantee closed-lid operation.")
+        ].map { "• \($0)" }.joined(separator: "\n")
+        textView.string = header + "\n\n" + details
         textView.setAccessibilityLabel(L10n.text("About & Help"))
         textView.scrollToBeginningOfDocument(nil)
     }
