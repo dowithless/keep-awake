@@ -4,7 +4,7 @@
 
 macOS 原生菜单栏防休眠工具。无第三方依赖、账户、订阅、内购或常驻子进程。
 
-项目计划开源，同时在 Mac App Store 提供一次性付费下载。自行构建与商店版本功能一致，应用不校验购买凭证、不主动联网。商店尚未上线。
+项目已开源，计划在 Mac App Store 提供一次性付费下载。自行构建与商店版本功能一致，应用不校验购买凭证、不主动联网。商店尚未上线。
 
 ## 使用
 
@@ -65,6 +65,12 @@ bash Scripts/verify-live-assertions.sh
 图标资源已包含；需要重新生成时运行 `xcrun swift -module-cache-path build/ModuleCache Scripts/GenerateAppIcon.swift`。
 
 商店签名、发布检查与商店资料维护见 [发布说明](docs/release/README.md)。
+
+## 支持与隐私
+
+问题与建议请通过 [GitHub Issues](https://github.com/dowithless/keep-awake/issues)反馈。隐私请求请发送至 [neo.dowithless@gmail.com](mailto:neo.dowithless@gmail.com)。公开 Issue 对所有人可见，私人信息请通过邮箱联系。
+
+开发者：Neo。本机数据、支持信息及删除请求的处理方式见[隐私政策](docs/privacy/privacy-policy.zh-Hans.md)（[English](docs/privacy/privacy-policy.en.md)）。
 
 ## 许可证
 

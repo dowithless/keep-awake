@@ -4,7 +4,7 @@ English | [简体中文](README.zh-CN.md)
 
 A native macOS menu bar utility that prevents idle sleep. No third-party dependencies, accounts, subscriptions, in-app purchases, or persistent helper processes.
 
-The project is planned for open-source distribution, with a one-time paid download on the Mac App Store. Self-built and App Store versions offer the same features. The app does not verify purchase receipts or initiate network connections. The App Store version is not yet available.
+The project is open source, with a one-time paid download planned for the Mac App Store. Self-built and App Store versions offer the same features. The app does not verify purchase receipts or initiate network connections. The App Store version is not yet available.
 
 ## Usage
 
@@ -65,6 +65,12 @@ The app is built with Xcode; `Package.swift` is used only for core tests. After 
 Icon assets are included. To regenerate them, run `xcrun swift -module-cache-path build/ModuleCache Scripts/GenerateAppIcon.swift`.
 
 See the [release guide](docs/release/README.md) for App Store signing, release checks, and store metadata maintenance.
+
+## Support and privacy
+
+Report problems or feature requests through [GitHub Issues](https://github.com/dowithless/keep-awake/issues). For privacy requests, email [neo.dowithless@gmail.com](mailto:neo.dowithless@gmail.com). Public issues are visible to everyone; use email for private information.
+
+Developer: Neo. Read the [Privacy Policy](docs/privacy/privacy-policy.en.md) ([简体中文](docs/privacy/privacy-policy.zh-Hans.md)) for local app behavior, support information and deletion requests.
 
 ## License
 
