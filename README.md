@@ -1,26 +1,28 @@
 # Keep Awake
 
-macOS 原生菜单栏防休眠工具。无第三方依赖、账户、订阅、内购或常驻子进程。
+English | [简体中文](README.zh-CN.md)
 
-项目计划开源，同时在 Mac App Store 提供一次性付费下载。自行构建与商店版本功能一致，应用不校验购买凭证、不主动联网。商店尚未上线。
+A native macOS menu bar utility that prevents idle sleep. No third-party dependencies, accounts, subscriptions, in-app purchases, or persistent helper processes.
 
-## 使用
+The project is planned for open-source distribution, with a one-time paid download on the Mac App Store. Self-built and App Store versions offer the same features. The app does not verify purchase receipts or initiate network connections. The App Store version is not yet available.
 
-- 左键点击咖啡杯切换保持唤醒；实心杯表示开启，轮廓杯表示关闭。
-- 右键或 Control＋点击打开系统原生菜单，选择后正常收起。
-- “同时保持屏幕常亮”默认开启；取消后 Mac 保持唤醒，显示器可按系统策略关闭。总开关关闭时该选项置灰，偏好会保存。
-- 每次启动默认关闭保持唤醒。系统睡眠结束当前会话，唤醒后需手动开启；锁屏、屏保和显示器休眠不结束会话。
-- “登录时启动”由用户主动启用，状态以 macOS 为准；退出应用不注销登录项。
-- “关于与帮助”提供版本、核心能力、产品特点和能力边界；配置公开地址后显示“隐私政策”和“联系支持”按钮，在浏览器中打开对应网页。无 Dock 图标或设置窗口。
-- 支持英文、简繁中文、日文、韩文、德文、法文、西班牙文、巴西葡萄牙文、俄文、意大利文，跟随系统或单独 App 语言设置，英文回退。
+## Usage
 
-仅阻止**空闲睡眠**，不阻止主动睡眠或锁屏，不解锁桌面，不保证合盖运行，不覆盖系统或组织安全策略。
+- Left-click the coffee cup to toggle keep-awake mode. A filled cup means it is on; an outlined cup means it is off.
+- Right-click or Control-click to open the native menu, which closes normally after selecting an item.
+- “Keep Display Awake” is enabled by default. Turn it off to keep your Mac awake while allowing the display to sleep according to system settings. This option is disabled while keep-awake mode is off, and your preference is saved.
+- Keep-awake mode is off every time the app launches. System sleep ends the current session; enable it again manually after waking. Locking the screen, starting the screen saver, or putting only the display to sleep does not end the session.
+- “Launch at Login” is enabled only at your request, with its status managed by macOS. Quitting the app does not unregister the login item.
+- “About & Help” shows the version, core capabilities, features, and limitations. Once public URLs are configured, “Privacy Policy” and “Contact Support” buttons open the corresponding pages in your browser. The app has no Dock icon or settings window.
+- Supports English, Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French, Spanish, Brazilian Portuguese, Russian, and Italian. It follows system or per-app language preferences, with English as the fallback.
 
-## 构建
+Keep Awake prevents **idle sleep** only. It does not prevent manual sleep or screen locking, unlock your desktop, guarantee operation with the lid closed, or override system or organizational security policies.
 
-运行要求 macOS 13 或更新版本。当前工程使用 Xcode 26.3 验证。打开 `KeepAwake.xcodeproj`，选择 `KeepAwake` scheme 开发。
+## Build
 
-无需开发者账户的本地临时签名构建：
+Requires macOS 13 or later. The project has been verified with Xcode 26.3. Open `KeepAwake.xcodeproj` and select the `KeepAwake` scheme for development.
+
+Build and launch locally with ad hoc signing, without a developer account:
 
 ```sh
 xcodebuild -project KeepAwake.xcodeproj -scheme KeepAwake \
@@ -30,16 +32,16 @@ xcodebuild -project KeepAwake.xcodeproj -scheme KeepAwake \
 open build/DerivedData/Build/Products/Release/KeepAwake.app
 ```
 
-需要个人签名时，将 `Config/Local.xcconfig.example` 复制为 `Config/Local.xcconfig`，填写自己的团队；该文件由三个构建配置自动加载，已被 Git 忽略。日常使用建议将应用放在“应用程序”后启用登录启动。
+For personal signing, copy `Config/Local.xcconfig.example` to `Config/Local.xcconfig` and enter your team settings. All three build configurations load this file automatically, and Git ignores it. For everyday use, move the app to Applications before enabling Launch at Login.
 
-## 测试
+## Tests
 
 ```sh
 bash Scripts/test.sh
 python3 Scripts/verify-localizations.py
 ```
 
-对构建产物进一步验证：
+To further verify a built app:
 
 ```sh
 python3 Scripts/verify-localizations.py --app build/DerivedData/Build/Products/Release/KeepAwake.app
@@ -47,23 +49,23 @@ python3 Scripts/verify-language-selection.py build/DerivedData/Build/Products/Re
 bash Scripts/verify-live-assertions.sh
 ```
 
-测试缓存位于 `build/`。单元测试注入模拟电源／登录项 API；真实 IOKit 探针短暂申请并释放自身断言，不让电脑睡眠或注销。检查范围与实机验收见 [VALIDATION.md](VALIDATION.md)。
+Test caches are stored in `build/`. Unit tests inject mock power and login-item APIs. The live IOKit probe briefly acquires and releases its own assertions without putting the computer to sleep or logging out. See [VALIDATION.md](VALIDATION.md) for automated checks and manual acceptance steps.
 
-## 代码结构
+## Code Structure
 
-- `KeepAwakeApp.swift`：AppKit 菜单栏、菜单和操作反馈。
-- `SleepAssertionManager.swift`：两类 IOKit 断言、屏幕偏好、失败回滚和释放重试。
-- `SystemSleepMonitor.swift`：系统睡眠时结束会话，唤醒后仅重试失败清理。
-- `LoginItemManager.swift`：原生登录项注册、注销与系统状态读取。
-- `HelpWindowController.swift`：单页原生帮助窗口。
-- `L10n.swift`、`Localizable.xcstrings`：应用内文案与 11 种语言。
+- `KeepAwakeApp.swift`: AppKit menu bar interface, menus, and action feedback.
+- `SleepAssertionManager.swift`: Both IOKit assertion types, display preferences, failure rollback, and release retries.
+- `SystemSleepMonitor.swift`: Ends the session on system sleep and retries failed cleanup only after waking.
+- `LoginItemManager.swift`: Native login-item registration, unregistration, and system status checks.
+- `HelpWindowController.swift`: A single-page native help window.
+- `L10n.swift` and `Localizable.xcstrings`: App copy in 11 languages.
 
-应用由 Xcode 构建；`Package.swift` 仅用于核心测试。界面变更后同步更新 String Catalog 并运行本地化检查。
+The app is built with Xcode; `Package.swift` is used only for core tests. After changing the interface, update the String Catalog and run the localization checks.
 
-图标资源已包含；需要重新生成时运行 `xcrun swift -module-cache-path build/ModuleCache Scripts/GenerateAppIcon.swift`。
+Icon assets are included. To regenerate them, run `xcrun swift -module-cache-path build/ModuleCache Scripts/GenerateAppIcon.swift`.
 
-商店签名、发布检查与商店资料维护见 [发布说明](docs/release/README.md)。
+See the [release guide](docs/release/README.md) for App Store signing, release checks, and store metadata maintenance.
 
-## 许可证
+## License
 
-源码采用 [MIT License](LICENSE)。
+The source code is available under the [MIT License](LICENSE).
