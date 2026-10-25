@@ -1,0 +1,71 @@
+{
+  "status": "DRAFT — Chinese product fields saved and reload-verified; awaiting user review; not submitted",
+  "date": "2026-10-25",
+  "sourceLocale": "zh-Hans",
+  "primaryLocaleUnchanged": "en-US",
+  "appId": "6826764680",
+  "version": "1.0",
+  "fields": {
+    "name": "一键防休眠：屏幕常亮独立开关",
+    "subtitle": "下载、渲染与AI长任务，轻巧常驻菜单栏",
+    "promotionalText": "一键开启，保持电脑唤醒。下载、渲染或运行 AI Agent 长任务时，防止系统因闲置进入休眠。屏幕常亮独立控制；手动让电脑休眠后自动结束本次防休眠，唤醒后保持关闭。轻巧常驻菜单栏，无需账户，本机运行。",
+    "description": "一键防止电脑空闲休眠，适合下载、渲染和 AI Agent 长任务。轻巧常驻 macOS 菜单栏，点击咖啡杯即可开启或关闭保持唤醒。\n\n两项核心控制\n• 保持系统唤醒：开启后，防止电脑因长时间无人操作而自动休眠。\n• 屏幕常亮可选：开启“同时保持屏幕常亮”可防止显示器空闲休眠；关闭该选项后，系统仍保持唤醒，屏幕可以按系统设置自动休眠。\n\n手动休眠，自动结束防休眠\n当你主动让电脑进入休眠，本次防休眠随即结束。唤醒后保持关闭，按需再次开启，不必额外惦记关闭防休眠。仅让屏幕休眠或锁屏，不会结束本次保持唤醒。\n\n简单使用\n• 左键点击咖啡杯：开启或关闭保持唤醒。\n• 右键或 Control＋点击：展开菜单，调整屏幕常亮等选项。\n• 可选“登录时启动”：由你主动启用；应用启动后不会自动开启保持唤醒。\n\n本机运行，轻巧专注\n无需账户，无广告。应用不向开发者上传个人数据或使用统计。一次购买包含全部功能，无订阅或应用内购买。\n\n适用范围\n仅防止空闲休眠，不阻止手动休眠或锁屏，不保证合盖后继续运行。适用于 macOS 13 或更新版本。",
+    "keywords": "不睡眠,防睡眠,显示器,熄屏,后台运行,文件传输,演示,编程,Agent",
+    "reviewNotes": "本应用是 macOS 菜单栏防休眠工具，无需登录，也不需要测试账号。启动后只显示菜单栏咖啡杯图标，不显示 Dock 图标或自动打开主窗口。\n\n审核操作：\n1. 左键点击菜单栏咖啡杯，开启或关闭保持唤醒；实心杯表示开启，轮廓杯表示关闭。\n2. 右键或 Control＋点击咖啡杯，打开原生菜单。\n3. 开启保持唤醒后，可勾选或取消“同时保持屏幕常亮”。取消时系统仍保持唤醒，显示器可按系统策略休眠。\n4. 用户手动让电脑进入系统休眠后，本次保持唤醒结束。唤醒后应用仍在运行，但保持唤醒维持关闭，不会自动重新开启。锁屏或仅显示器休眠不会结束本次会话。\n5. “登录时启动”为用户可选功能；macOS 可能要求在系统设置中批准。即使随登录启动，也不会自动开启保持唤醒。\n6. “关于与帮助”窗口显示版本、核心功能说明及使用范围。\n\n实现及范围：使用公开 IOKit 电源管理接口，仅防止空闲休眠。不模拟键盘鼠标输入，不解锁电脑，不阻止手动休眠或锁屏，也不保证合盖运行。\n\n商业模式：一次性付费下载，全部功能包含在内，无订阅、应用内购买、开发者登录或开发者后端。应用不校验购买凭证或访问交易记录。\n\n数据处理：应用在本机运行，不向开发者上传个人数据、使用统计或广告标识符。屏幕常亮偏好仅保存在本机；登录项由 macOS 管理。\n\n支持英文、简体中文、繁体中文、日语、韩语、德语、法语、西班牙语、巴西葡萄牙语、俄语和意大利语，跟随系统或单独 App 语言设置，英文作为回退语言。"
+  },
+  "pending": {
+    "supportUrl": "正式支持页尚未提供；须有可用联系方式",
+    "marketingUrl": "可选；公开仓库目前为空，不作为营销页填写",
+    "copyright": "实际版权人或主体名称及年份待确认",
+    "reviewContact": "审核联系人姓名、邮箱、电话待提供；缺少这些字段时，后台不允许更新审核备注",
+    "privacyPolicyUrl": "本地政策仍为含待填写字段的草案，未发布",
+    "build": "版本页面尚未关联构建版本",
+    "openSource": "公开仓库为空，使用开源截图前须上传源码与 MIT 许可证",
+    "pricingAndAvailability": "价格与销售范围需在上架前确认"
+  },
+  "sharedFields": [
+    "reviewNotes",
+    "copyright",
+    "reviewContact",
+    "build",
+    "releaseMethod"
+  ],
+  "unchanged": {
+    "name": "一键防休眠：屏幕常亮独立开关",
+    "requiresSignIn": false,
+    "releaseMethod": "MANUAL"
+  },
+  "verification": {
+    "appInfoSubtitleReloadVerified": true,
+    "versionFieldsReloadVerified": true,
+    "reviewNotesOriginalPreserved": true,
+    "privacyDraftReloadVerified": true
+  },
+  "originalVersionFields": {
+    "copyright": "",
+    "description": "在长时间任务期间让 Mac 保持唤醒的轻量菜单栏工具。\n\n左键点击菜单栏咖啡杯可切换保持唤醒。右键或 Control＋点击打开菜单。\n\n“同时保持屏幕常亮”还会阻止显示器空闲休眠。关闭该选项后，Mac 继续保持唤醒，显示器可休眠。\n\n系统睡眠会结束本次保持唤醒。电脑唤醒后，需要时请重新开启。登录启动不会自动开启保持唤醒。\n\nKeep Awake 不阻止主动睡眠或主动锁屏，不会解锁 Mac，也不保证合盖后继续运行。系统和组织的安全策略仍然适用。\n\n一次购买，完整功能，无订阅或应用内购买。\n\nKeep Awake 在本机运行，无需账户。应用不会向开发者发送个人数据、使用统计或广告标识符。",
+    "keywords": "下载,渲染,演示,长任务",
+    "marketingUrl": "",
+    "notes": "Keep Awake: Prevent Sleep is a macOS menu bar utility. Its main experience is the cup icon in the menu bar; no Dock icon or main window appears on launch.\n\n1. Locate the cup icon at the top of the screen. Left-click it to turn keep-awake mode on or off.\n2. Right-click or Control-click the cup to open the native menu.\n3. With Keep Awake on, toggle Keep Display Awake to independently allow/prevent idle display sleep.\n4. The optional Launch at Login item is off until explicitly enabled by the user. macOS may require approval in System Settings. Launching at login does not automatically activate keep-awake mode.\n5. System sleep ends the current session. After waking, the app remains running with keep-awake mode off.\n6. About & Help opens a small native window containing version information, capabilities, features and limitations. Privacy and support buttons open the public pages in the browser after their actual URLs are configured for the release.\n\nBusiness model: paid App Store download, all features included. No subscriptions, IAP products, developer account or developer backend. The source is available separately for users to build. Both distributions offer the same features; the app has no purchase verification, license keys or developer login.\n\nPower behavior: public IOKit power assertions prevent idle sleep only. The app does not simulate input, unlock the Mac, alter security settings, prevent manual sleep/locking or guarantee closed-lid operation.\n\nSupported languages: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French, Spanish, Brazilian Portuguese, Russian, Italian. The app follows system/per-app language preferences with English fallback.",
+    "promotionalText": "",
+    "supportUrl": ""
+  },
+  "fieldStatus": {
+    "name": "existing saved value retained",
+    "subtitle": "saved and reload-verified",
+    "promotionalText": "saved and reload-verified",
+    "description": "saved and reload-verified",
+    "keywords": "saved and reload-verified",
+    "reviewNotes": "LOCAL DRAFT ONLY — updating shared review notes requires complete review contact; original English notes preserved"
+  },
+  "privacy": {
+    "dataCollection": "NO_DATA_COLLECTED",
+    "state": "saved draft, NOT published",
+    "basis": "docs/privacy/data-inventory.md",
+    "privacyPolicyUrl": "not supplied"
+  },
+  "evidence": [
+    "build/app-store/evidence/zh-Hans-baseline-saved.png",
+    "build/app-store/evidence/privacy-draft-saved.png"
+  ]
+}
