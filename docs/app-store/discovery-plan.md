@@ -1,11 +1,11 @@
 # 自然搜索获客与本地化命名草案
 
-日期：2026-10-25。目标：多地区发布，通过 Mac App Store 自然搜索获取一次性付费下载，不投放广告。命名优先采用用户会搜索的功能表达，不创造品牌词。本文为待讨论方案，不代表名称已确定、已预留或收益预测。
+更新日期：2026-10-26。目标：多地区发布，通过 Mac App Store 自然搜索获取一次性付费下载，不投放广告。命名优先采用用户会搜索的功能表达，不创造品牌词。本文保留命名候选与获客方案；11 种语言的已保存名称以 [localizations.json](localizations.json) 为准，方案不构成收益预测。
 
 ## 当前事实与定位
 
 - App Store Connect 已实际拒绝 `Keep Awake`（英语／美国），提示名称已被使用。Bundle ID `neo.dowithless.KeepAwake` 已注册；后续已创建应用记录，应用 ID 为 `6826764680`，见[后台保存记录](localizations.bootstrap.saved.json)。
-- 已有 11 种应用语言及商店资料。本地 `localizations.json` 中的名称仍为 `Keep Awake`；命名草案记录英语、俄语、意大利语和西班牙语名称已在后台验证，其他资料仍待最终核对，尚未合并为正式提交内容。
+- 已有 11 种应用语言及商店资料。各语言功能型名称及完整文案已保存并重新载入核对，当前内容见 [localizations.json](localizations.json)，验收记录见 [localizations.saved.json](localizations.saved.json)；尚未提交审核。
 - 美国商店公开页面中的 [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) 和 [Stay Awake](https://apps.apple.com/us/app/stay-awake/id6736730576?mt=12) 均显示免费。简单、本地运行也有竞品提供，因此不能当作独有优势。
 - 我们可以明确表达的价值：左键一键切换、菜单栏操作、系统与显示器空闲休眠分别控制、原生本地运行、一次购买无内购。付费转化是否成立，必须由实际销售验证。
 
@@ -19,7 +19,7 @@
 | Keep Mac Awake | 简短，直接说明让 Mac 保持唤醒 | 显示器控制需由副标题补充；可用性待验证 |
 | Prevent Sleep: Screen Control | 强调防休眠与显示器控制 | 不含 awake，可由副标题或关键词补充；可用性待验证 |
 
-`Keep Awake` 单独作为英语名称已被拒绝，但这不代表所有包含该词组的完整标题都不可用，也不能保证增加描述词后就可用。最终按选定的完整标题、语言在 App Store Connect 校验。功能型名称仍须有可区分的完整标题，避免与现有应用混淆；不依赖大小写、空格或标点差异。已保存名称及验证进度以[命名草案](discovery-localizations.draft.json)和[后台保存记录](localizations.bootstrap.saved.json)为准。
+`Keep Awake` 单独作为英语名称已被拒绝，但这不代表所有包含该词组的完整标题都不可用，也不能保证增加描述词后就可用。最终按选定的完整标题、语言在 App Store Connect 校验。功能型名称仍须有可区分的完整标题，避免与现有应用混淆；不依赖大小写、空格或标点差异。已保存名称及验证进度以[当前商店资料](localizations.json)和[后台保存记录](localizations.saved.json)为准；上表保留原候选及当时的判断。
 
 ## 名称、副标题与关键词分工
 
@@ -33,7 +33,7 @@
 
 ## 首发本地化范围
 
-先完成现有 11 种语言的完整资料与人工校对。草案见 [discovery-localizations.draft.json](discovery-localizations.draft.json)：各语言采用功能型标题，主要包含名称、副标题及关键词，不是可直接提交的完整元数据。英语、俄语、意大利语和西班牙语名称已记录后台验证进度，其余名称待验证；草案不声称各词的实际搜索热度。
+现有 11 种语言的完整资料已保存并重新载入核对，发布前仍需人工校对。[discovery-localizations.draft.json](discovery-localizations.draft.json) 已与当前资料对齐：各语言采用功能型标题，主要包含名称、副标题及关键词，完整元数据见 [localizations.json](localizations.json)；草案不声称各词的实际搜索热度。
 
 | 语言 | 功能描述方向 |
 | --- | --- |

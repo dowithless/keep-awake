@@ -1,5 +1,5 @@
 {
-  "status": "Saved draft fields verified after reloading App Store Connect; not a full metadata review or submission",
+  "status": "Historical bootstrap save record from 2026-10-25; superseded by localizations.json and localizations.saved.json",
   "date": "2026-10-25",
   "appId": "6826764680",
   "appStoreConnectURL": "https://appstoreconnect.apple.com/apps/6826764680/distribution/macos/version/inflight",
@@ -26,5 +26,6 @@
       "keywords": "pantalla,barra,menús,descargas,renderizado,agentes",
       "verifiedAfterReload": true
     }
-  }
+  },
+  "supersededBy": "localizations.saved.json"
 }

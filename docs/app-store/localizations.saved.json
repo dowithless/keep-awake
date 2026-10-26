@@ -1,0 +1,320 @@
+{
+  "status": "Saved and reload-verified in App Store Connect; not submitted for review",
+  "date": "2026-10-26",
+  "appId": "6826764680",
+  "sourceLocale": "zh-Hans",
+  "primaryLocale": "en-US",
+  "localizedLanguageCount": 11,
+  "updatedLanguageCount": 10,
+  "canonicalMetadata": "localizations.json",
+  "localizations": {
+    "en": {
+      "appleLocale": "en-US",
+      "language": "英语（美国）",
+      "name": "Keep Awake: Prevent Sleep",
+      "subtitle": "Downloads, renders & AI tasks",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 25,
+        "subtitle": 29,
+        "promotionalText": 150,
+        "description": 1547,
+        "keywordsUTF8Bytes": 89
+      },
+      "fieldSHA256": {
+        "name": "d0db0446a3cb0e3550c05e6df763134eebc141c23304f4e407c3d731c6eb2a69",
+        "subtitle": "987b688972ddac6d8589a4da0e23b156cd3a5447fbeeae75ba1580f0d3dfea9d",
+        "promotionalText": "f3f842ae793c08f6eea9ec724774088738d4b2245e636c938555c521392e8b33",
+        "description": "f86bfac47ce68dadc8bed83c27e8e068d3e6f1e2fcca03243506ab0a5fab4601",
+        "keywords": "63b0af3d881fd9df4ae47c6ff3d9b75a49a051f9ffafc71dbfced59df5b1adcc",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "zh-Hans": {
+      "appleLocale": "zh-Hans",
+      "language": "简体中文",
+      "name": "一键防休眠：屏幕常亮独立开关",
+      "subtitle": "下载、渲染与AI长任务，轻巧常驻菜单栏",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.zh-Hans.md",
+      "lengths": {
+        "name": 14,
+        "subtitle": 19,
+        "promotionalText": 100,
+        "description": 545,
+        "keywordsUTF8Bytes": 82
+      },
+      "fieldSHA256": {
+        "name": "8756c697570ac29141316754d3449cf6422d24965def2605d0910daf6c1917c3",
+        "subtitle": "a6a102c30c4f9c30f3dd0b9ec99812af5af55729c825c613cbdcf95b0fd00f5d",
+        "promotionalText": "ca983943953fab6fdca17b5963e454a6e23de05b0bb6092fd176708fe2db2927",
+        "description": "fcd3b3fb20c0494cdfc1c3cc471264bdca73d867675ff2015ada9ca3ac668d9f",
+        "keywords": "b388d9fa0e243d4f478a382e4b5759b36509abea5c14253496e0d9575d9da0b0",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "6c0114aa811806536925dda9ea2a9e4410adff3e9fcc24787efc90fc6e80caf9"
+      }
+    },
+    "zh-Hant": {
+      "appleLocale": "zh-Hant",
+      "language": "繁体中文",
+      "name": "防睡眠開關：保持喚醒與螢幕常亮",
+      "subtitle": "下載、算圖與AI長任務，輕巧常駐選單列",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.zh-Hans.md",
+      "lengths": {
+        "name": 15,
+        "subtitle": 19,
+        "promotionalText": 101,
+        "description": 563,
+        "keywordsUTF8Bytes": 82
+      },
+      "fieldSHA256": {
+        "name": "91bec6cc08b448cf4122f68deab46abde98a20c62f4c6ee5bab39c690ddd751a",
+        "subtitle": "5b3575cfa9f193f05d22efc97210ba0e3df676e0a70b49c0eb2d770069a569b8",
+        "promotionalText": "d171a16cbebc267b33a13a647fd39c35030977498f396d7197d8b7edf9f6f99e",
+        "description": "862bb0ef23359bdfe443baca9b7828b52412cad88a7bc0b7f38d3133e14f051c",
+        "keywords": "179edc124dd271ee30b40ffa3dacc6a2b4d242b55077d9221913616c7f579414",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "6c0114aa811806536925dda9ea2a9e4410adff3e9fcc24787efc90fc6e80caf9"
+      }
+    },
+    "ja": {
+      "appleLocale": "ja",
+      "language": "日语",
+      "name": "スリープ防止・画面常時オン",
+      "subtitle": "ダウンロード・レンダリング・AI作業に",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 13,
+        "subtitle": 19,
+        "promotionalText": 95,
+        "description": 785,
+        "keywordsUTF8Bytes": 83
+      },
+      "fieldSHA256": {
+        "name": "c28de947a25c364d8a027f53cae6fa7cd09520391f271bb24c110ec03ae9c103",
+        "subtitle": "e78fb2917daade58a9199e6be200ec17d6dba83679e3228f19ff5fd1a631cf64",
+        "promotionalText": "57a767b59b8855e2b1bf12c103dc208a7ac55de9294e80e2272706e633a9ecf4",
+        "description": "16df14f32fad596c3806c5c6e5e899cd4dbd16ee35824f41e640e362aadb41a0",
+        "keywords": "772bf3892a2d4a1fc58696b9989cb4caf24b2d4bf3ee3350506b8afc0acba73d",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "ko": {
+      "appleLocale": "ko",
+      "language": "韩语",
+      "name": "잠자기 방지 스위치: 화면 켜짐 유지",
+      "subtitle": "다운로드·렌더링·AI 작업용 메뉴 막대 도구",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 20,
+        "subtitle": 24,
+        "promotionalText": 119,
+        "description": 901,
+        "keywordsUTF8Bytes": 84
+      },
+      "fieldSHA256": {
+        "name": "ba3fdf0e86af5e915ebdd71e579cf4107f1b722cca8a3571ef42b1fe1d783529",
+        "subtitle": "6ef3e0e625b6011e6674ad6171be849148215882e21f2fe0143e8269c1ffc84f",
+        "promotionalText": "eeaadc5b60f332003574f591eb2b0de38368c8caf4cdac2d8f7b601a895bb133",
+        "description": "85828117d08a03c706888c5602f9dc2c8827195229c2b40c4536c21f45c8f43f",
+        "keywords": "21f120cb57f2c67e7ea52c08220da26dc96a6bea7a347a91d74d1492a1123614",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "de": {
+      "appleLocale": "de-DE",
+      "language": "德语",
+      "name": "Wach halten: Display-Schalter",
+      "subtitle": "Für Downloads, Rendering & KI",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 29,
+        "subtitle": 29,
+        "promotionalText": 163,
+        "description": 1865,
+        "keywordsUTF8Bytes": 94
+      },
+      "fieldSHA256": {
+        "name": "5cb030770e1919b31482dcb44956baed4040a7181637e0823959624ef028a62b",
+        "subtitle": "d3d9dd7cf0cc39dcf341c108bac6dc5301ddee16d870f27b377501d1df72813a",
+        "promotionalText": "797ba70a14f4797b0b8f008b8da3cd35dd74df43bc46e38c72e39ca3b5bc28b7",
+        "description": "5bd45e607c5ddb76b483898e58e94d9cfdf70628340ac86722c6fba0c891a08a",
+        "keywords": "55c0ddb8a0c02a5b15b9e78add094abb0fc79971b00bb3de1db431464646d7e0",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "fr": {
+      "appleLocale": "fr-FR",
+      "language": "法语",
+      "name": "Anti-veille : écran allumé",
+      "subtitle": "Téléchargements, rendu et IA",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 26,
+        "subtitle": 28,
+        "promotionalText": 164,
+        "description": 1836,
+        "keywordsUTF8Bytes": 85
+      },
+      "fieldSHA256": {
+        "name": "ccf1b4544c34a83688e539286cf6d7428abca24fc64b0b6cab743f30e9d1bd7c",
+        "subtitle": "73f70a40e6fa799078aa4dba2ef7572386dbf1565868f8ca20d0bd9ddc9c595d",
+        "promotionalText": "13a204fc3a083b3d8875050a0241ae8b5c0ea6d11d2c52aae21f5ec77e67e19e",
+        "description": "46d777bc742abd8ee9efcac5e814781167158ed4156834da99541831c9999e9f",
+        "keywords": "6a313f835b3acdce12cf9cfa1868ba52d9d253e49e2bd885200a6070a200a5b9",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "es": {
+      "appleLocale": "es-ES",
+      "language": "西班牙语（西班牙）",
+      "name": "Evita reposo: Sistema activo",
+      "subtitle": "Descargas, renderizado e IA",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 28,
+        "subtitle": 27,
+        "promotionalText": 153,
+        "description": 1789,
+        "keywordsUTF8Bytes": 84
+      },
+      "fieldSHA256": {
+        "name": "c2c63559f248af05a9d48638eb441d5450e334be01301c4f784346bf01595bd6",
+        "subtitle": "f62ec9d9986e5d9a728016526034e062c5ce957980f0b62cc5c104967311baab",
+        "promotionalText": "dc69e28575bc71139c38c141c4871fa80322bc3ec1be5f5212ee112718218cd5",
+        "description": "6d007c817c6540dd4ef4b0d074c6bcf73a70bfe3d7f7a1fc5ad896460ae416c0",
+        "keywords": "abad8caa9cbb8ee7433a22984aadcd9e434b301c8d848293320c386effbcf661",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "pt-BR": {
+      "appleLocale": "pt-BR",
+      "language": "葡萄牙语（巴西）",
+      "name": "Tela acesa: Impedir repouso",
+      "subtitle": "Downloads, renderização e IA",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 27,
+        "subtitle": 28,
+        "promotionalText": 142,
+        "description": 1753,
+        "keywordsUTF8Bytes": 86
+      },
+      "fieldSHA256": {
+        "name": "e8de2fc60c07073d70a09831b2373f05057ec84f39e5f7f0c984b81da79add1d",
+        "subtitle": "066849d5a70d349ca3049a80c66e880e436d28d58d2e1faa354c33e592b5088a",
+        "promotionalText": "be95f7f60f282429c8e3d96fd6233a988981000a3dd1d782afc2fdcaf863c8cd",
+        "description": "74a5293b890863c3f4cf3e463868f2993677d5ad32370534b9c8b14d909660cf",
+        "keywords": "ed3992a0dcb0fe8ad48a45e0c421d5e7ac44da481468f5dc1b916a87371cfbd1",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "ru": {
+      "appleLocale": "ru",
+      "language": "俄语",
+      "name": "Без автосна: Долгие задачи",
+      "subtitle": "Загрузки, рендеринг и ИИ",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 26,
+        "subtitle": 24,
+        "promotionalText": 159,
+        "description": 1670,
+        "keywordsUTF8Bytes": 92
+      },
+      "fieldSHA256": {
+        "name": "a0d71e88e8d9610a842c2d8660d7871f2d0c047ba2817c5cc82c662ffa8db72d",
+        "subtitle": "6b85f476c3cc77e84c853107b78e4d34c795c105e16b941cad63b1ef04c721c6",
+        "promotionalText": "a0d2e184408aef43f6ca446b590194d7a3f80521793cd5bfd8d8cc1204553283",
+        "description": "84b287d5fbabcfc0def1f6e78ccfa6156c688c67b1908f5af143aac3f5d2e9a0",
+        "keywords": "c462b9240250c23a0c1f407f087bc4913f4449e48007c44ae802a091c4fb6866",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    },
+    "it": {
+      "appleLocale": "it",
+      "language": "意大利语",
+      "name": "Niente stop: Download e agenti",
+      "subtitle": "Per rendering e lavori lunghi",
+      "appInfoReloadVerified": true,
+      "productFieldsReloadVerified": true,
+      "privacyURLReloadVerified": true,
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md",
+      "lengths": {
+        "name": 30,
+        "subtitle": 29,
+        "promotionalText": 163,
+        "description": 1751,
+        "keywordsUTF8Bytes": 82
+      },
+      "fieldSHA256": {
+        "name": "95502d2fcbd9424334522d87dbc0f469edc090b3ef838a7709216cef050b1f70",
+        "subtitle": "7a8adac9135a3aed115f19260f33286c5ce8e1d5200ae41dfc4f883cc611d416",
+        "promotionalText": "be1a71e0cd0c1dc690187f3df09597c6abf106cbcc72d3ce9b6f976046289894",
+        "description": "42e0751ada40c8d20a4cdd15402098cdcc104082f3e2b7752dcf37d406687253",
+        "keywords": "c3d761bbc571998ad9f3df97317032b5275f95ce673c15a958995bf40498ee80",
+        "supportUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "marketingUrl": "37ca53395f43e865f665b90580dfc081838da45b500ed06d158bbbd7f932dae2",
+        "privacyPolicyUrl": "8ea9b9c77240a3a4f00173d82349b9fa176a3ff4535ea4d0bb9e86a48f1e1ea0"
+      }
+    }
+  },
+  "sharedFieldsVerified": {
+    "build": "1.0 (1) remains associated",
+    "reviewNotes": "approved Chinese shared notes retained",
+    "releaseMethod": "MANUAL",
+    "requiresSignIn": false
+  },
+  "privacyDeclaration": "NO_DATA_COLLECTED published by developer; verified 2026-10-26",
+  "evidence": [
+    "build/app-store/evidence/localizations-en-saved.png",
+    "build/app-store/evidence/localizations-zh-Hans-final.png"
+  ]
+}

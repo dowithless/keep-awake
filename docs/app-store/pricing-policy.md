@@ -1,31 +1,24 @@
 # 付费下载与地区定价
 
-已确认：Mac App Store 付费下载，一次购买，完整功能永久使用，无订阅、无内购。价格不是应用代码里的货币换算规则；最终由每个商店的价格计划决定。
+已确认：Mac App Store 付费下载，一次购买，完整功能永久使用，无订阅、无内购。
 
-## 规则
+## 当前规则
 
-1. 使用该 App Store storefront 实际采用的结算货币。
-2. 可选择当地结算货币的 1 单位时，设为准确的 1；包括可用的 $1.00、€1.00 等整数档位。
-3. 无法设置 1 时，选择当时后台提供的最低非零档位，保持低门槛。
-4. 所有销售地区采用手动价格，不能只设中国 ¥1 后直接接受 Apple 的汇率换算价。手动管理地区后由开发者维护其价格。
-5. 同币种的多个 storefront 仍须逐一核对与设置。界面语言与商店定价互不绑定。
+1. 以中国大陆为基准地区，初始价格为人民币 ¥1.00。
+2. 其他 174 个国家或地区采用 Apple 自动换算价格，不设置手动地区价格。Apple 可根据税费和汇率变化调整非基准地区价格。
+3. 2026-10-26 用户决定使用此自动定价方案，取代原先“各地本币 1 单位，否则最低非零档位”的草案。
+4. 销售范围选择全部 175 个国家或地区，并包含 Apple 将来新增的国家或地区。实际可售仍取决于应用发布、有效协议和地区合规要求。
+5. 界面语言与销售地区互相独立，不因本地化语言数量限制销售范围。
 
-[pricing.csv](pricing.csv) 是重点市场的初始草案，新增俄语对应的俄罗斯参考价 15 RUB；俄罗斯的购买和付款可用性需额外核对。支持俄语并不代表只在俄罗斯销售。其余可售地区按照同一规则在后台补齐；当前未登录 App Store Connect，不声称已验证全量商店档位。
+## 后台保存结果
 
-价格参考来自 Apple 公布的价格体系表（2022/2023 年升级资料），不是已认证的 2026 年后台最低价。最低价变化时更新 CSV；不要将草案直接当作可导入后台的 API payload。表内人民币金额是 2026-10-23 参考汇率的估算，仅用于比较用户价格，不是实际分成收入；俄罗斯暂未计算。
+2026-10-26 已保存并重新载入核对：基准地区为中国大陆，当前价格覆盖 175 个国家或地区，价格调整方式显示“可能进行自动调整”，供应情况显示“175 个可用”。应用仍为“准备提交”，未提交审核或发布。
 
-## 后台操作
+[pricing.csv](pricing.csv) 记录本次保存后从后台读取的全部 175 个地区用户价格，不是未来固定价格承诺。例如：中国大陆 ¥1.00、美国 $0.99、德国 €0.99、日本 ¥150、韩国 ₩1,100。价格为用户购买价，不代表开发者实际收入。
 
-- 账户持有人接受有效 Paid Apps Agreement，完成银行、税务和税务分类资料。
-- 创建或选择 Bundle ID 对应的 macOS 应用，确认应用名称可用。
-- Pricing and Availability 中选择基准地区（建议中国大陆），选择 ¥1。
-- 展开额外价格档位，逐一覆写其他商店；核对每个地区的用户价格、销售可用性、生效日期及开发者 proceeds。
-- 导出／记录后台最终价目表、核对日期和选择的价格点 ID，再替换本草案。
-- 发布前检查 app 本身为付费，而不是误创建非消耗型内购产品；本项目没有 IAP product ID。
+[自动定价凭证](../../build/app-store/evidence/pricing-automatic-saved.png)与[供应范围凭证](../../build/app-store/evidence/availability-175-saved.png)位于被 Git 忽略的 build/ 中。后续调整基准价格时，应重新导出并核对价目表。
 
 ## 来源
 
 - [Apple：Set a price](https://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price/)
-- [Apple 公开价格档位参考 PDF](https://www.apple.com/newsroom/pdfs/App-Store-Pricing-Update.pdf)
-- [ECB：参考汇率](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
-- [新台币参考汇率](https://www.unitdo.cc/en/currency/)
+- [Apple：Manage availability](https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store/)

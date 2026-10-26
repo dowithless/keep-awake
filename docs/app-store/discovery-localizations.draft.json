@@ -1,78 +1,94 @@
 {
-  "status": "WORKING DRAFT — en-US, ru, it and es-ES names have been verified in App Store Connect; other copied metadata still needs final reconciliation; not a submission payload",
+  "status": "Reconciled with App Store Connect on 2026-10-26; canonical saved metadata is localizations.json; not a submission payload",
   "namingStrategy": "Localized functional names; avoid redundant platform names; prioritize relevant search language and readability",
   "localizations": {
     "en": {
       "appleLocale": "en-US",
       "name": "Keep Awake: Prevent Sleep",
-      "subtitle": "Menu bar & display control",
-      "keywords": "screen,downloads,rendering,presentations"
+      "subtitle": "Downloads, renders & AI tasks",
+      "keywords": "display,screen,agent,background,transfer,presentation,programming,automation,idle,standby",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "zh-Hans": {
       "appleLocale": "zh-Hans",
-      "name": "保持唤醒：屏幕常亮与防休眠",
-      "subtitle": "菜单栏一键切换，系统与显示器分别控制",
-      "keywords": "下载,渲染,演示,长任务"
+      "name": "一键防休眠：屏幕常亮独立开关",
+      "subtitle": "下载、渲染与AI长任务，轻巧常驻菜单栏",
+      "keywords": "不睡眠,防睡眠,显示器,熄屏,后台运行,文件传输,演示,编程,Agent",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "zh-Hant": {
       "appleLocale": "zh-Hant",
-      "name": "保持喚醒：螢幕常亮與防睡眠",
-      "subtitle": "選單列一鍵切換，系統與顯示器分別控制",
-      "keywords": "下載,算圖,簡報,長時間作業"
+      "name": "防睡眠開關：保持喚醒與螢幕常亮",
+      "subtitle": "下載、算圖與AI長任務，輕巧常駐選單列",
+      "keywords": "不睡眠,防休眠,顯示器,熄屏,背景執行,檔案傳輸,簡報,開發,Agent",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "ja": {
       "appleLocale": "ja",
       "name": "スリープ防止・画面常時オン",
-      "subtitle": "メニューバーからワンクリックで切り替え",
-      "keywords": "ダウンロード,レンダリング,プレゼン"
+      "subtitle": "ダウンロード・レンダリング・AI作業に",
+      "keywords": "自動休止,待機,バックグラウンド,転送,プレゼン,エージェント",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "ko": {
       "appleLocale": "ko",
-      "name": "잠자기 방지: 화면 켜짐 유지",
-      "subtitle": "메뉴 막대에서 한 번의 클릭으로 전환",
-      "keywords": "다운로드,렌더링,프레젠테이션"
+      "name": "잠자기 방지 스위치: 화면 켜짐 유지",
+      "subtitle": "다운로드·렌더링·AI 작업용 메뉴 막대 도구",
+      "keywords": "디스플레이,자동절전,백그라운드,파일전송,발표,코딩,에이전트",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "de": {
       "appleLocale": "de-DE",
-      "name": "Wach bleiben: Ruhezustand aus",
-      "subtitle": "Ein Klick in der Menüleiste",
-      "keywords": "bildschirm,display,download,rendern,präsentation"
+      "name": "Wach halten: Display-Schalter",
+      "subtitle": "Für Downloads, Rendering & KI",
+      "keywords": "ruhezustand,bildschirm,menüleiste,hintergrund,dateitransfer,präsentation,programmieren,agent",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "fr": {
       "appleLocale": "fr-FR",
       "name": "Anti-veille : écran allumé",
-      "subtitle": "Un clic dans la barre de menus",
-      "keywords": "téléchargement,rendu,présentation"
+      "subtitle": "Téléchargements, rendu et IA",
+      "keywords": "barre,menus,agent,arrière-plan,transfert,présentation,programmation,activité,repos",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "es": {
       "appleLocale": "es-ES",
       "name": "Evita reposo: Sistema activo",
-      "subtitle": "Sistema y pantalla a tu gusto",
-      "keywords": "pantalla,barra,menús,descargas,renderizado,agentes",
-      "saveVerifiedDate": "2026-10-25",
-      "descriptionReference": "localizations.bootstrap.saved.json"
+      "subtitle": "Descargas, renderizado e IA",
+      "keywords": "pantalla,barra,menús,agente,segundo plano,transferencia,presentación,programación",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "pt-BR": {
       "appleLocale": "pt-BR",
-      "name": "Sem repouso: Tela ligada",
-      "subtitle": "Um clique na barra de menus",
-      "keywords": "downloads,renderização,apresentação"
+      "name": "Tela acesa: Impedir repouso",
+      "subtitle": "Downloads, renderização e IA",
+      "keywords": "barra,menus,agente,segundo plano,transferência,apresentação,programação,atividade",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "ru": {
       "appleLocale": "ru",
       "name": "Без автосна: Долгие задачи",
-      "subtitle": "Система и экран — раздельно",
-      "keywords": "экран,меню,загрузки,рендеринг,агент",
-      "saveVerifiedDate": "2026-10-25",
-      "descriptionReference": "localizations.bootstrap.saved.json"
+      "subtitle": "Загрузки, рендеринг и ИИ",
+      "keywords": "экран,меню,дисплей,фон,передача,презентация,агент",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     },
     "it": {
       "appleLocale": "it",
       "name": "Niente stop: Download e agenti",
-      "subtitle": "Sistema e schermo separati",
-      "keywords": "schermo,barra,menu,download,rendering,agenti",
-      "saveVerifiedDate": "2026-10-25",
-      "descriptionReference": "localizations.bootstrap.saved.json"
+      "subtitle": "Per rendering e lavori lunghi",
+      "keywords": "schermo,display,sospensione,inattività,trasferimento,presentazione,programmazione",
+      "saveVerifiedDate": "2026-10-26",
+      "descriptionReference": "localizations.json"
     }
   }
 }

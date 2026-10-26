@@ -1,15 +1,176 @@
-storefront_or_group,currency,proposed_customer_price,rule,approx_cny_2026_10_23,status
-China mainland,CNY,1,one_unit,1.00,verify_in_App_Store_Connect
-United States,USD,1.00,one_unit,6.67,verify_in_App_Store_Connect
-EUR storefronts,EUR,1.00,one_unit,7.47,verify_each_EUR_storefront
-United Kingdom,GBP,1.00,one_unit,8.92,verify_in_App_Store_Connect
-Canada,CAD,1.00,one_unit,4.77,verify_in_App_Store_Connect
-Australia,AUD,1.00,one_unit,4.68,verify_in_App_Store_Connect
-Brazil,BRL,1.00,one_unit,1.32,verify_in_App_Store_Connect
-Japan,JPY,50,lowest_nonzero_reference,2.13,verify_current_minimum
-South Korea,KRW,400,lowest_nonzero_reference,2.01,verify_current_minimum
-Hong Kong,HKD,2,lowest_nonzero_reference,1.70,verify_current_minimum
-Taiwan,TWD,10,lowest_nonzero_reference,2.05,verify_current_minimum
-Mexico,MXN,5,lowest_nonzero_reference,1.78,verify_current_minimum
-India,INR,9,lowest_nonzero_reference,0.63,verify_current_minimum
-Russia,RUB,15,lowest_nonzero_reference,,verify_current_minimum_and_purchase_availability
+storefront,currency,customer_price_display,pricing_mode,verified_date
+中国大陆,CNY,¥1.00,base,2026-10-26
+不丹,USD,$0.99,apple_automatic,2026-10-26
+丹麦,DKK,kr 9.00,apple_automatic,2026-10-26
+乌克兰,USD,$0.99,apple_automatic,2026-10-26
+乌兹别克斯坦,USD,$0.99,apple_automatic,2026-10-26
+乌干达,USD,$0.99,apple_automatic,2026-10-26
+乌拉圭,USD,$0.99,apple_automatic,2026-10-26
+乍得,USD,$0.99,apple_automatic,2026-10-26
+也门,USD,$0.99,apple_automatic,2026-10-26
+亚美尼亚,USD,$0.99,apple_automatic,2026-10-26
+以色列,ILS,₪2.90,apple_automatic,2026-10-26
+伊拉克,USD,$0.99,apple_automatic,2026-10-26
+伯利兹,USD,$0.99,apple_automatic,2026-10-26
+佛得角,USD,$0.99,apple_automatic,2026-10-26
+俄罗斯,RUB,₽15.00,apple_automatic,2026-10-26
+保加利亚,EUR,€0.99,apple_automatic,2026-10-26
+克罗地亚,EUR,€0.99,apple_automatic,2026-10-26
+冈比亚,USD,$0.99,apple_automatic,2026-10-26
+冰岛,USD,$0.99,apple_automatic,2026-10-26
+几内亚比绍,USD,$0.99,apple_automatic,2026-10-26
+刚果共和国,USD,$0.99,apple_automatic,2026-10-26
+刚果民主共和国,USD,$0.99,apple_automatic,2026-10-26
+利比亚,USD,$0.99,apple_automatic,2026-10-26
+利比里亚,USD,$0.99,apple_automatic,2026-10-26
+加拿大,CAD,$0.99,apple_automatic,2026-10-26
+加纳,USD,$0.99,apple_automatic,2026-10-26
+加蓬,USD,$0.99,apple_automatic,2026-10-26
+匈牙利,HUF,Ft 99.00,apple_automatic,2026-10-26
+北马其顿,USD,$0.99,apple_automatic,2026-10-26
+南非,ZAR,R 3.99,apple_automatic,2026-10-26
+博茨瓦纳,USD,$0.99,apple_automatic,2026-10-26
+卡塔尔,QAR,QAR 2.99,apple_automatic,2026-10-26
+卢旺达,USD,$0.99,apple_automatic,2026-10-26
+卢森堡,EUR,€0.99,apple_automatic,2026-10-26
+印度,INR,₹9.00,apple_automatic,2026-10-26
+印度尼西亚,IDR,"Rp 3,000.00",apple_automatic,2026-10-26
+危地马拉,USD,$0.99,apple_automatic,2026-10-26
+厄瓜多尔,USD,$0.99,apple_automatic,2026-10-26
+台湾,TWD,$30.00,apple_automatic,2026-10-26
+吉尔吉斯斯坦,USD,$0.99,apple_automatic,2026-10-26
+哈萨克斯坦,KZT,₸99.00,apple_automatic,2026-10-26
+哥伦比亚,COP,$900.00,apple_automatic,2026-10-26
+哥斯达黎加,USD,$0.99,apple_automatic,2026-10-26
+喀麦隆,USD,$0.99,apple_automatic,2026-10-26
+土库曼斯坦,USD,$0.99,apple_automatic,2026-10-26
+土耳其,TRY,₺4.99,apple_automatic,2026-10-26
+圣卢西亚,USD,$0.99,apple_automatic,2026-10-26
+圣基茨和尼维斯,USD,$0.99,apple_automatic,2026-10-26
+圣多美和普林西比,USD,$0.99,apple_automatic,2026-10-26
+圣文森特和格林纳丁斯,USD,$0.99,apple_automatic,2026-10-26
+圭亚那,USD,$0.99,apple_automatic,2026-10-26
+坦桑尼亚,TZS,TZS 500.00,apple_automatic,2026-10-26
+埃及,EGP,E£4.99,apple_automatic,2026-10-26
+塔吉克斯坦,USD,$0.99,apple_automatic,2026-10-26
+塞内加尔,USD,$0.99,apple_automatic,2026-10-26
+塞尔维亚,EUR,€0.99,apple_automatic,2026-10-26
+塞拉利昂,USD,$0.99,apple_automatic,2026-10-26
+塞浦路斯,EUR,€0.99,apple_automatic,2026-10-26
+塞舌尔,USD,$0.99,apple_automatic,2026-10-26
+墨西哥,MXN,$5.00,apple_automatic,2026-10-26
+多米尼克,USD,$0.99,apple_automatic,2026-10-26
+多米尼加共和国,USD,$0.99,apple_automatic,2026-10-26
+奥地利,EUR,€0.99,apple_automatic,2026-10-26
+委内瑞拉,USD,$0.99,apple_automatic,2026-10-26
+安哥拉,USD,$0.99,apple_automatic,2026-10-26
+安圭拉,USD,$0.99,apple_automatic,2026-10-26
+安提瓜和巴布达,USD,$0.99,apple_automatic,2026-10-26
+密克罗尼西亚,USD,$0.99,apple_automatic,2026-10-26
+尼加拉瓜,USD,$0.99,apple_automatic,2026-10-26
+尼日利亚,NGN,₦200.00,apple_automatic,2026-10-26
+尼日尔,USD,$0.99,apple_automatic,2026-10-26
+尼泊尔,USD,$0.99,apple_automatic,2026-10-26
+巴哈马,USD,$0.99,apple_automatic,2026-10-26
+巴基斯坦,PKR,Rs 30.00,apple_automatic,2026-10-26
+巴巴多斯,USD,$0.99,apple_automatic,2026-10-26
+巴布亚新几内亚,USD,$0.99,apple_automatic,2026-10-26
+巴拉圭,USD,$0.99,apple_automatic,2026-10-26
+巴拿马,USD,$0.99,apple_automatic,2026-10-26
+巴林,USD,$0.99,apple_automatic,2026-10-26
+巴西,BRL,R$0.90,apple_automatic,2026-10-26
+布基纳法索,USD,$0.99,apple_automatic,2026-10-26
+希腊,EUR,€0.99,apple_automatic,2026-10-26
+帕劳,USD,$0.99,apple_automatic,2026-10-26
+开曼群岛,USD,$0.99,apple_automatic,2026-10-26
+德国,EUR,€0.99,apple_automatic,2026-10-26
+意大利,EUR,€0.99,apple_automatic,2026-10-26
+所罗门群岛,USD,$0.99,apple_automatic,2026-10-26
+拉脱维亚,EUR,€0.99,apple_automatic,2026-10-26
+挪威,NOK,kr 9.00,apple_automatic,2026-10-26
+捷克共和国,CZK,Kč 29.00,apple_automatic,2026-10-26
+摩尔多瓦,USD,$0.99,apple_automatic,2026-10-26
+摩洛哥,USD,$0.99,apple_automatic,2026-10-26
+文莱,USD,$0.99,apple_automatic,2026-10-26
+斐济,USD,$0.99,apple_automatic,2026-10-26
+斯威士兰,USD,$0.99,apple_automatic,2026-10-26
+斯洛伐克,EUR,€0.99,apple_automatic,2026-10-26
+斯洛文尼亚,EUR,€0.99,apple_automatic,2026-10-26
+斯里兰卡,USD,$0.99,apple_automatic,2026-10-26
+新加坡,SGD,$0.98,apple_automatic,2026-10-26
+新西兰,NZD,$1.99,apple_automatic,2026-10-26
+日本,JPY,¥150.00,apple_automatic,2026-10-26
+智利,CLP,$190.00,apple_automatic,2026-10-26
+柬埔寨,USD,$0.99,apple_automatic,2026-10-26
+格林纳达,USD,$0.99,apple_automatic,2026-10-26
+格鲁吉亚,USD,$0.99,apple_automatic,2026-10-26
+比利时,EUR,€0.99,apple_automatic,2026-10-26
+毛里塔尼亚,USD,$0.99,apple_automatic,2026-10-26
+毛里求斯,USD,$0.99,apple_automatic,2026-10-26
+汤加,USD,$0.99,apple_automatic,2026-10-26
+沙特阿拉伯,SAR,SAR 4.99,apple_automatic,2026-10-26
+法国,EUR,€0.99,apple_automatic,2026-10-26
+波兰,PLN,zł 0.99,apple_automatic,2026-10-26
+波斯尼亚和黑塞哥维那,EUR,€0.99,apple_automatic,2026-10-26
+泰国,THB,฿9.00,apple_automatic,2026-10-26
+津巴布韦,USD,$0.99,apple_automatic,2026-10-26
+洪都拉斯,USD,$0.99,apple_automatic,2026-10-26
+澳大利亚,AUD,$1.99,apple_automatic,2026-10-26
+澳门,USD,$0.99,apple_automatic,2026-10-26
+爱尔兰,EUR,€0.99,apple_automatic,2026-10-26
+爱沙尼亚,EUR,€0.99,apple_automatic,2026-10-26
+牙买加,USD,$0.99,apple_automatic,2026-10-26
+特克斯和凯科斯群岛,USD,$0.99,apple_automatic,2026-10-26
+特立尼达和多巴哥,USD,$0.99,apple_automatic,2026-10-26
+玻利维亚,USD,$0.99,apple_automatic,2026-10-26
+瑙鲁,USD,$0.99,apple_automatic,2026-10-26
+瑞典,SEK,kr 9.00,apple_automatic,2026-10-26
+瑞士,CHF,CHF 1.00,apple_automatic,2026-10-26
+瓦努阿图,USD,$0.99,apple_automatic,2026-10-26
+白俄罗斯,USD,$0.99,apple_automatic,2026-10-26
+百慕大,USD,$0.99,apple_automatic,2026-10-26
+科威特,USD,$0.99,apple_automatic,2026-10-26
+科特迪瓦,USD,$0.99,apple_automatic,2026-10-26
+科索沃,EUR,€0.99,apple_automatic,2026-10-26
+秘鲁,PEN,PEN 0.90,apple_automatic,2026-10-26
+突尼斯,USD,$0.99,apple_automatic,2026-10-26
+立陶宛,EUR,€0.99,apple_automatic,2026-10-26
+约旦,USD,$0.99,apple_automatic,2026-10-26
+纳米比亚,USD,$0.99,apple_automatic,2026-10-26
+缅甸,USD,$0.99,apple_automatic,2026-10-26
+罗马尼亚,RON,lei 0.99,apple_automatic,2026-10-26
+美国,USD,$0.99,apple_automatic,2026-10-26
+老挝,USD,$0.99,apple_automatic,2026-10-26
+肯尼亚,USD,$0.99,apple_automatic,2026-10-26
+芬兰,EUR,€0.99,apple_automatic,2026-10-26
+苏里南,USD,$0.99,apple_automatic,2026-10-26
+英国,GBP,£0.99,apple_automatic,2026-10-26
+英属维尔京群岛,USD,$0.99,apple_automatic,2026-10-26
+荷兰,EUR,€0.99,apple_automatic,2026-10-26
+莫桑比克,USD,$0.99,apple_automatic,2026-10-26
+菲律宾,PHP,₱9.00,apple_automatic,2026-10-26
+萨尔瓦多,USD,$0.99,apple_automatic,2026-10-26
+葡萄牙,EUR,€0.99,apple_automatic,2026-10-26
+蒙古,USD,$0.99,apple_automatic,2026-10-26
+蒙特塞拉特,USD,$0.99,apple_automatic,2026-10-26
+西班牙,EUR,€0.99,apple_automatic,2026-10-26
+贝宁,USD,$0.99,apple_automatic,2026-10-26
+赞比亚,USD,$0.99,apple_automatic,2026-10-26
+越南,VND,"₫5,000.00",apple_automatic,2026-10-26
+阿塞拜疆,USD,$0.99,apple_automatic,2026-10-26
+阿富汗,USD,$0.99,apple_automatic,2026-10-26
+阿尔及利亚,USD,$0.99,apple_automatic,2026-10-26
+阿尔巴尼亚,USD,$0.99,apple_automatic,2026-10-26
+阿拉伯联合酋长国,AED,AED 2.99,apple_automatic,2026-10-26
+阿曼,USD,$0.99,apple_automatic,2026-10-26
+阿根廷,USD,$0.99,apple_automatic,2026-10-26
+韩国,KRW,"₩1,100.00",apple_automatic,2026-10-26
+香港,HKD,$8.00,apple_automatic,2026-10-26
+马尔代夫,USD,$0.99,apple_automatic,2026-10-26
+马拉维,USD,$0.99,apple_automatic,2026-10-26
+马来西亚,MYR,RM 0.90,apple_automatic,2026-10-26
+马耳他,EUR,€0.99,apple_automatic,2026-10-26
+马达加斯加,USD,$0.99,apple_automatic,2026-10-26
+马里,USD,$0.99,apple_automatic,2026-10-26
+黎巴嫩,USD,$0.99,apple_automatic,2026-10-26
+黑山,EUR,€0.99,apple_automatic,2026-10-26

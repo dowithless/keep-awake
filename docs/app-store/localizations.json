@@ -1,82 +1,131 @@
 {
-  "status": "DRAFT — verify name availability and obtain native-language review before publishing",
+  "status": "SAVED — all 11 locales verified after reloading App Store Connect; names preserved; not submitted for review",
+  "date": "2026-10-26",
+  "appId": "6826764680",
+  "sourceLocale": "zh-Hans",
+  "primaryLocale": "en-US",
   "localizations": {
     "en": {
       "appleLocale": "en-US",
-      "name": "Keep Awake",
-      "subtitle": "Keep your Mac awake",
-      "keywords": "sleep,display,screen,utility,menubar,work",
-      "description": "A small menu bar utility that keeps your Mac awake during long tasks.\n\nLeft-click the menu bar cup to toggle Keep Awake. Right-click or Control-click to open the menu.\n\nKeep Display Awake also prevents idle display sleep. Turn it off to let the display sleep while the Mac stays awake.\n\nSystem sleep ends the current session. After waking, turn Keep Awake on again when needed. Launch at login never starts a session automatically.\n\nKeep Awake does not prevent manual sleep or manual locking, unlock your Mac, or guarantee operation with the lid closed. System and organization security policies still apply.\n\nOne purchase. All features. No subscription or in-app purchases.\n\nKeep Awake works locally without an account. The app does not send personal data, usage analytics, or advertising identifiers to the developer."
+      "name": "Keep Awake: Prevent Sleep",
+      "subtitle": "Downloads, renders & AI tasks",
+      "promotionalText": "Stay awake for downloads, renders and AI agent tasks. Control display sleep separately. Manual system sleep ends the session; it stays off after wake.",
+      "description": "Prevent idle sleep with one click during downloads, rendering and long-running AI agent tasks. A lightweight utility in the macOS menu bar: click the coffee cup to turn keep-awake mode on or off.\n\nTwo core controls\n• Keep the system awake: prevent automatic sleep caused by inactivity.\n• Optional display wake: enable “Keep Display Awake” to prevent idle display sleep too. Turn it off to keep the system awake while allowing the display to sleep according to your settings.\n\nManual sleep ends the session\nWhen you manually put the computer to sleep, the current keep-awake session ends. It stays off after waking; turn it on again when needed. You do not need to remember to switch it off separately. Locking the screen or putting only the display to sleep does not end the session.\n\nSimple to use\n• Left-click the cup to turn keep-awake mode on or off.\n• Right-click or Control-click to open the menu and adjust options.\n• “Launch at Login” is optional. Launching the app does not automatically enable keep-awake mode.\n\nLocal, lightweight and focused\nNo account or ads. The app does not upload personal data or usage analytics to the developer. One purchase includes every feature, with no subscriptions or in-app purchases.\n\nOpen source and transparent\nThe source code is available under the MIT License so you can see how the app works.\nhttps://github.com/dowithless/keep-awake\n\nScope\nPrevents idle sleep only. It does not prevent manual sleep or screen locking, and operation with the lid closed is not guaranteed. Requires macOS 13 or later.",
+      "keywords": "display,screen,agent,background,transfer,presentation,programming,automation,idle,standby",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "zh-Hans": {
       "appleLocale": "zh-Hans",
-      "name": "Keep Awake",
-      "subtitle": "轻量菜单栏防休眠工具",
-      "keywords": "防休眠,屏幕常亮,菜单栏,效率,工作",
-      "description": "在长时间任务期间让 Mac 保持唤醒的轻量菜单栏工具。\n\n左键点击菜单栏咖啡杯可切换保持唤醒。右键或 Control＋点击打开菜单。\n\n“同时保持屏幕常亮”还会阻止显示器空闲休眠。关闭该选项后，Mac 继续保持唤醒，显示器可休眠。\n\n系统睡眠会结束本次保持唤醒。电脑唤醒后，需要时请重新开启。登录启动不会自动开启保持唤醒。\n\nKeep Awake 不阻止主动睡眠或主动锁屏，不会解锁 Mac，也不保证合盖后继续运行。系统和组织的安全策略仍然适用。\n\n一次购买，完整功能，无订阅或应用内购买。\n\nKeep Awake 在本机运行，无需账户。应用不会向开发者发送个人数据、使用统计或广告标识符。"
+      "name": "一键防休眠：屏幕常亮独立开关",
+      "subtitle": "下载、渲染与AI长任务，轻巧常驻菜单栏",
+      "promotionalText": "一键开启，保持电脑唤醒。下载、渲染或运行 AI Agent 长任务时，防止系统因闲置进入休眠。屏幕常亮独立控制；手动让电脑休眠后自动结束本次防休眠，唤醒后保持关闭。轻巧常驻菜单栏，无需账户，本机运行。",
+      "description": "一键防止电脑空闲休眠，适合下载、渲染和 AI Agent 长任务。轻巧常驻 macOS 菜单栏，点击咖啡杯即可开启或关闭保持唤醒。\n\n两项核心控制\n• 保持系统唤醒：开启后，防止电脑因长时间无人操作而自动休眠。\n• 屏幕常亮可选：开启“同时保持屏幕常亮”可防止显示器空闲休眠；关闭该选项后，系统仍保持唤醒，屏幕可以按系统设置自动休眠。\n\n手动休眠，自动结束防休眠\n当你主动让电脑进入休眠，本次防休眠随即结束。唤醒后保持关闭，按需再次开启，不必额外惦记关闭防休眠。仅让屏幕休眠或锁屏，不会结束本次保持唤醒。\n\n简单使用\n• 左键点击咖啡杯：开启或关闭保持唤醒。\n• 右键或 Control＋点击：展开菜单，调整屏幕常亮等选项。\n• 可选“登录时启动”：由你主动启用；应用启动后不会自动开启保持唤醒。\n\n本机运行，轻巧专注\n无需账户，无广告。应用不向开发者上传个人数据或使用统计。一次购买包含全部功能，无订阅或应用内购买。\n\n代码开源，透明可查\n源代码以 MIT 许可证公开，方便你了解应用如何工作。\nhttps://github.com/dowithless/keep-awake\n\n适用范围\n仅防止空闲休眠，不阻止手动休眠或锁屏，不保证合盖后继续运行。适用于 macOS 13 或更新版本。",
+      "keywords": "不睡眠,防睡眠,显示器,熄屏,后台运行,文件传输,演示,编程,Agent",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.zh-Hans.md"
     },
     "zh-Hant": {
       "appleLocale": "zh-Hant",
-      "name": "Keep Awake",
-      "subtitle": "輕量選單列防睡眠工具",
-      "keywords": "防睡眠,螢幕常亮,選單列,效率,工作",
-      "description": "在長時間工作期間讓 Mac 保持喚醒的輕量選單列工具。\n\n以滑鼠左鍵按一下選單列咖啡杯可切換保持喚醒。按右鍵或按住 Control 點按可開啟選單。\n\n「同時保持螢幕常亮」也會阻止顯示器閒置睡眠。關閉後，Mac 繼續保持喚醒，顯示器可進入睡眠。\n\n系統睡眠會結束本次保持喚醒。Mac 喚醒後，需要時請重新開啟。登入啟動不會自動開啟保持喚醒。\n\nKeep Awake 不會阻止手動睡眠或手動鎖定，不會解鎖 Mac，也不保證闔上螢幕後繼續運作。系統和組織的安全政策仍然適用。\n\n一次購買，完整功能，無訂閱或 App 內購買。\n\nKeep Awake 在本機運作，無需帳號。應用程式不會向開發者傳送個人資料、使用統計或廣告識別碼。"
+      "name": "防睡眠開關：保持喚醒與螢幕常亮",
+      "subtitle": "下載、算圖與AI長任務，輕巧常駐選單列",
+      "promotionalText": "一鍵開啟，讓電腦保持喚醒。下載、算圖或執行 AI Agent 長任務時，防止系統因閒置進入睡眠。螢幕常亮獨立控制；手動讓電腦睡眠後自動結束本次防睡眠，喚醒後維持關閉。輕巧常駐選單列，無需帳號，本機運作。",
+      "description": "一鍵防止電腦閒置睡眠，適合下載、算圖和 AI Agent 長任務。輕巧常駐 macOS 選單列，點按咖啡杯即可開啟或關閉保持喚醒。\n\n兩項核心控制\n• 保持系統喚醒：開啟後，防止電腦因長時間無人操作而自動睡眠。\n• 螢幕常亮可選：開啟「同時保持螢幕常亮」可防止顯示器閒置睡眠；關閉此選項後，系統仍保持喚醒，螢幕可依系統設定自動睡眠。\n\n手動睡眠，自動結束防睡眠\n當你主動讓電腦進入睡眠，本次防睡眠隨即結束。喚醒後維持關閉，按需再次開啟，不必額外惦記關閉防睡眠。僅讓螢幕睡眠或鎖定螢幕，不會結束本次保持喚醒。\n\n簡單使用\n• 左鍵點按咖啡杯：開啟或關閉保持喚醒。\n• 右鍵或按住 Control 點按：展開選單，調整螢幕常亮等選項。\n• 可選「登入時啟動」：由你主動啟用；應用程式啟動後不會自動開啟保持喚醒。\n\n本機運作，輕巧專注\n無需帳號，無廣告。應用程式不會向開發者上傳個人資料或使用統計。一次購買包含全部功能，無訂閱或 App 內購買。\n\n程式碼開源，透明可查\n原始碼採用 MIT 授權條款公開，方便你了解應用程式如何運作。\nhttps://github.com/dowithless/keep-awake\n\n適用範圍\n僅防止閒置睡眠，不阻止手動睡眠或鎖定螢幕，不保證闔蓋後繼續運作。適用於 macOS 13 或更新版本。",
+      "keywords": "不睡眠,防休眠,顯示器,熄屏,背景執行,檔案傳輸,簡報,開發,Agent",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.zh-Hans.md"
     },
     "ja": {
       "appleLocale": "ja",
-      "name": "Keep Awake",
-      "subtitle": "Mac のスリープを手軽に防止",
-      "keywords": "スリープ,画面,作業,メニューバー",
-      "description": "長時間の作業中も Mac をスリープさせない、軽量なメニューバーツールです。\n\nメニューバーのカップを左クリックするとスリープ防止を切り替えます。右クリックまたは Control＋クリックでメニューを開きます。\n\n「画面のスリープも防止」は、無操作時の画面スリープも防ぎます。オフにすると、Mac を動作させたまま画面をスリープできます。\n\nシステムがスリープすると現在のセッションは終了します。復帰後、必要に応じて再度オンにしてください。ログイン時の起動でセッションが自動開始されることはありません。\n\nKeep Awake は手動のスリープやロックを防がず、Mac のロックを解除しません。蓋を閉じた状態での動作は保証しません。システムや組織のセキュリティポリシーは引き続き適用されます。\n\n一度の購入ですべての機能。サブスクリプションやアプリ内課金はありません。\n\nKeep Awake はアカウント不要でローカルに動作します。個人データ、使用状況の統計、広告識別子を開発者に送信しません。"
+      "name": "スリープ防止・画面常時オン",
+      "subtitle": "ダウンロード・レンダリング・AI作業に",
+      "promotionalText": "ワンクリックで無操作時のスリープを防止。ダウンロード、レンダリング、AIエージェントの長時間作業に。画面のスリープは個別に設定でき、手動で本体をスリープさせると終了。復帰後もオフのままです。",
+      "description": "ダウンロード、レンダリング、AIエージェントの長時間作業中に、ワンクリックで無操作時のスリープを防止。macOSのメニューバーに常駐する軽量なツールです。カップをクリックするだけで、スリープ防止のオン／オフを切り替えられます。\n\n2つのシンプルな操作\n• 本体のスリープを防止：操作していない間にシステムが自動でスリープするのを防ぎます。\n• 画面の常時オンは選択可能：「画面のスリープも防止」をオンにすると、画面の無操作時スリープも防ぎます。オフにすると、本体を動作させたまま、システム設定に従って画面をスリープさせられます。\n\n手動スリープで自動終了\n自分で本体をスリープさせると、その時点でスリープ防止が終了します。復帰後もオフのままなので、必要なときだけ再びオンにしてください。別途オフにすることを覚えておく必要はありません。画面だけのスリープや画面ロックでは終了しません。\n\n使い方\n• カップを左クリック：スリープ防止をオン／オフ。\n• 右クリックまたはControl＋クリック：メニューを開き、画面の設定などを変更。\n• 「ログイン時に起動」は任意で有効にできます。アプリの起動だけでスリープ防止が自動的にオンになることはありません。\n\n軽量でローカルに動作\nアカウント不要、広告なし。個人データや使用状況の統計を開発者に送信しません。一度の購入ですべての機能を利用でき、サブスクリプションやアプリ内課金はありません。\n\nオープンソース\nMITライセンスでソースコードを公開しています。アプリの仕組みをご自身で確認できます。\nhttps://github.com/dowithless/keep-awake\n\n動作範囲\n防ぐのは無操作時のスリープのみです。手動スリープや画面ロックは妨げず、蓋を閉じた状態での動作は保証しません。macOS 13以降に対応。",
+      "keywords": "自動休止,待機,バックグラウンド,転送,プレゼン,エージェント",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "ko": {
       "appleLocale": "ko",
-      "name": "Keep Awake",
-      "subtitle": "Mac을 깨어 있게 유지하세요",
-      "keywords": "잠자기,화면,메뉴막대,작업,유틸리티",
-      "description": "긴 작업 중에도 Mac을 깨어 있게 유지하는 가벼운 메뉴 막대 도구입니다.\n\n메뉴 막대의 컵을 왼쪽 클릭하여 깨어 있기를 전환하세요. 오른쪽 클릭 또는 Control-클릭으로 메뉴를 엽니다.\n\n'디스플레이도 깨어 있게 유지'는 유휴 상태의 디스플레이 잠자기도 방지합니다. 끄면 Mac은 깨어 있는 상태에서 디스플레이가 잠자기할 수 있습니다.\n\n시스템 잠자기는 현재 세션을 종료합니다. 깨어난 후 필요할 때 다시 켜세요. 로그인 시 실행은 세션을 자동으로 시작하지 않습니다.\n\nKeep Awake는 수동 잠자기나 수동 잠금을 막거나 Mac의 잠금을 해제하지 않으며, 덮개를 닫은 상태의 작동을 보장하지 않습니다. 시스템 및 조직의 보안 정책은 계속 적용됩니다.\n\n한 번 구매로 모든 기능을 사용하세요. 구독이나 앱 내 구입이 없습니다.\n\nKeep Awake는 계정 없이 이 Mac에서 작동합니다. 앱은 개인 데이터, 사용 통계 또는 광고 식별자를 개발자에게 전송하지 않습니다."
+      "name": "잠자기 방지 스위치: 화면 켜짐 유지",
+      "subtitle": "다운로드·렌더링·AI 작업용 메뉴 막대 도구",
+      "promotionalText": "클릭 한 번으로 유휴 상태의 잠자기를 방지하세요. 다운로드, 렌더링, AI 에이전트의 긴 작업에 유용합니다. 화면은 별도로 제어하며, 컴퓨터를 수동으로 잠자기에 넣으면 기능이 종료되고 깨어난 후에도 꺼져 있습니다.",
+      "description": "다운로드, 렌더링, AI 에이전트의 긴 작업 중에 클릭 한 번으로 유휴 상태의 잠자기를 방지하세요. macOS 메뉴 막대에 상주하는 가벼운 도구입니다. 컵 아이콘을 클릭해 깨어 있기를 켜거나 끌 수 있습니다.\n\n두 가지 핵심 제어\n• 시스템 깨어 있기: 오랫동안 조작하지 않아도 컴퓨터가 자동으로 잠자기에 들어가지 않도록 합니다.\n• 화면 켜짐은 선택 사항: '디스플레이도 깨어 있게 유지'를 켜면 유휴 상태의 화면 잠자기도 방지합니다. 끄면 시스템은 깨어 있는 상태에서 화면이 시스템 설정에 따라 잠자기에 들어갈 수 있습니다.\n\n수동 잠자기로 자동 종료\n컴퓨터를 직접 잠자기에 넣으면 현재 깨어 있기 세션이 종료됩니다. 컴퓨터가 깨어난 후에도 꺼진 상태를 유지하므로 필요할 때 다시 켜세요. 별도로 끄는 일을 기억할 필요가 없습니다. 화면만 잠자기에 넣거나 화면을 잠그는 것으로는 세션이 종료되지 않습니다.\n\n간단한 사용법\n• 컵을 왼쪽 클릭: 깨어 있기를 켜거나 끕니다.\n• 오른쪽 클릭 또는 Control-클릭: 메뉴를 열어 화면 켜짐 등의 옵션을 조절합니다.\n• '로그인 시 실행'은 원하는 경우에만 켤 수 있습니다. 앱이 실행되어도 깨어 있기가 자동으로 켜지지는 않습니다.\n\n가볍고 로컬에서 작동\n계정이나 광고가 없습니다. 앱은 개인 데이터나 사용 통계를 개발자에게 업로드하지 않습니다. 한 번 구매로 모든 기능을 사용하며 구독이나 앱 내 구입이 없습니다.\n\n투명한 오픈 소스\n소스 코드는 MIT 라이선스로 공개되어 앱의 작동 방식을 직접 확인할 수 있습니다.\nhttps://github.com/dowithless/keep-awake\n\n사용 범위\n유휴 상태의 잠자기만 방지합니다. 수동 잠자기나 화면 잠금을 막지 않으며 덮개를 닫은 상태의 작동을 보장하지 않습니다. macOS 13 이상이 필요합니다.",
+      "keywords": "디스플레이,자동절전,백그라운드,파일전송,발표,코딩,에이전트",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "de": {
       "appleLocale": "de-DE",
-      "name": "Keep Awake",
-      "subtitle": "Deinen Mac wach halten",
-      "keywords": "ruhezustand,display,bildschirm,menüleiste,arbeit",
-      "description": "Ein kleines Menüleistenprogramm, das deinen Mac bei langen Aufgaben wach hält.\n\nKlicke mit der linken Maustaste auf die Tasse in der Menüleiste, um die Wachhaltefunktion umzuschalten. Rechtsklick oder Control-Klick öffnet das Menü.\n\n„Display ebenfalls wach halten“ verhindert auch den Display-Ruhezustand bei Inaktivität. Ist die Option aus, darf das Display schlafen, während der Mac wach bleibt.\n\nDer Ruhezustand beendet die aktuelle Sitzung. Aktiviere die Wachhaltefunktion nach dem Aufwachen bei Bedarf erneut. Der Start beim Anmelden beginnt nie automatisch eine Sitzung.\n\nKeep Awake verhindert weder manuelles Sperren noch manuellen Ruhezustand, entsperrt den Mac nicht und garantiert keinen Betrieb mit geschlossenem Deckel. Sicherheitsrichtlinien des Systems und deiner Organisation gelten weiterhin.\n\nEin Kauf. Alle Funktionen. Kein Abo und keine In-App-Käufe.\n\nKeep Awake arbeitet lokal ohne Benutzerkonto. Die App sendet keine personenbezogenen Daten, Nutzungsanalysen oder Werbekennungen an den Entwickler."
+      "name": "Wach halten: Display-Schalter",
+      "subtitle": "Für Downloads, Rendering & KI",
+      "promotionalText": "Für Downloads, Rendering und lange KI-Aufgaben wach bleiben. Display separat steuern. Manueller Ruhezustand beendet die Sitzung; nach dem Aufwachen bleibt sie aus.",
+      "description": "Verhindere mit einem Klick den Ruhezustand bei Inaktivität – für Downloads, Rendering und lange Aufgaben mit KI-Agenten. Die kleine App sitzt in der macOS-Menüleiste. Ein Klick auf die Tasse schaltet die Wachhaltefunktion ein oder aus.\n\nZwei zentrale Einstellungen\n• System wach halten: Verhindert, dass der Computer bei längerer Inaktivität automatisch in den Ruhezustand wechselt.\n• Display optional wach halten: „Display ebenfalls wach halten“ verhindert auch den Ruhezustand des Displays bei Inaktivität. Ist die Option aus, bleibt das System wach und das Display darf gemäß den Systemeinstellungen schlafen.\n\nManueller Ruhezustand beendet die Sitzung\nVersetzt du den Computer selbst in den Ruhezustand, endet die aktuelle Wachhaltesitzung. Nach dem Aufwachen bleibt die Funktion aus. Schalte sie bei Bedarf erneut ein, ohne an ein separates Ausschalten denken zu müssen. Eine Bildschirmsperre oder nur der Ruhezustand des Displays beendet die Sitzung nicht.\n\nEinfache Bedienung\n• Linksklick auf die Tasse: Wachhaltefunktion ein- oder ausschalten.\n• Rechtsklick oder Control-Klick: Menü öffnen und Optionen wie das Display-Verhalten einstellen.\n• „Beim Anmelden starten“ ist optional. Beim App-Start wird die Wachhaltefunktion nicht automatisch eingeschaltet.\n\nLokal, klein und konzentriert\nKein Konto und keine Werbung. Die App überträgt keine personenbezogenen Daten oder Nutzungsstatistiken an den Entwickler. Ein Kauf umfasst alle Funktionen, ohne Abo oder In-App-Käufe.\n\nOffener Quellcode\nDer Quellcode ist unter der MIT-Lizenz öffentlich einsehbar, damit du die Funktionsweise prüfen kannst.\nhttps://github.com/dowithless/keep-awake\n\nFunktionsumfang\nVerhindert nur den Ruhezustand bei Inaktivität. Manueller Ruhezustand und Bildschirmsperren werden nicht verhindert. Der Betrieb bei geschlossenem Deckel ist nicht garantiert. Benötigt macOS 13 oder neuer.",
+      "keywords": "ruhezustand,bildschirm,menüleiste,hintergrund,dateitransfer,präsentation,programmieren,agent",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "fr": {
       "appleLocale": "fr-FR",
-      "name": "Keep Awake",
-      "subtitle": "Gardez votre Mac éveillé",
-      "keywords": "veille,écran,utilitaire,menus,travail",
-      "description": "Un petit utilitaire de barre des menus qui garde votre Mac éveillé pendant les tâches longues.\n\nCliquez avec le bouton gauche sur la tasse dans la barre des menus pour activer ou désactiver le maintien en éveil. Un clic droit ou Contrôle-clic ouvre le menu.\n\n« Garder aussi l’écran éveillé » empêche également la veille de l’écran en cas d’inactivité. Désactivez cette option pour laisser l’écran se mettre en veille tout en gardant le Mac éveillé.\n\nLa veille du système termine la session en cours. Après le réveil, réactivez le maintien en éveil si nécessaire. L’ouverture à la connexion ne démarre jamais de session automatiquement.\n\nKeep Awake n’empêche pas la veille ou le verrouillage manuels, ne déverrouille pas votre Mac et ne garantit pas le fonctionnement couvercle fermé. Les règles de sécurité du système et de votre organisation restent applicables.\n\nUn seul achat. Toutes les fonctions. Aucun abonnement ni achat intégré.\n\nKeep Awake fonctionne localement sans compte. L’app n’envoie au développeur aucune donnée personnelle, analyse d’utilisation ni identifiant publicitaire."
+      "name": "Anti-veille : écran allumé",
+      "subtitle": "Téléchargements, rendu et IA",
+      "promotionalText": "Gardez l’ordinateur éveillé pour les téléchargements, rendus et tâches d’agents IA. Écran indépendant. La veille manuelle arrête la session, sans reprise au réveil.",
+      "description": "Évitez la veille automatique en un clic pendant les téléchargements, les rendus et les longues tâches d’agents IA. Cet utilitaire léger reste dans la barre des menus de macOS. Cliquez sur la tasse pour activer ou désactiver le maintien en éveil.\n\nDeux réglages essentiels\n• Garder le système éveillé : empêche l’ordinateur de se mettre automatiquement en veille en cas d’inactivité.\n• Écran allumé au choix : « Garder aussi l’écran éveillé » empêche également la veille de l’écran en cas d’inactivité. Désactivez cette option pour garder le système éveillé tout en laissant l’écran suivre les réglages de veille du système.\n\nLa veille manuelle termine la session\nLorsque vous mettez vous-même l’ordinateur en veille, la session de maintien en éveil se termine. La fonction reste désactivée au réveil : réactivez-la selon vos besoins, sans devoir penser à l’arrêter séparément. Le verrouillage ou la mise en veille de l’écran seul ne termine pas la session.\n\nUtilisation simple\n• Clic gauche sur la tasse : activer ou désactiver le maintien en éveil.\n• Clic droit ou Contrôle-clic : ouvrir le menu et ajuster les options de l’écran.\n• « Ouvrir à la connexion » est facultatif. Le lancement de l’app n’active jamais automatiquement le maintien en éveil.\n\nLocale, légère et ciblée\nSans compte ni publicité. L’app n’envoie au développeur aucune donnée personnelle ni statistique d’utilisation. Un achat inclut toutes les fonctions, sans abonnement ni achat intégré.\n\nCode source ouvert\nLe code est publié sous licence MIT pour vous permettre de comprendre le fonctionnement de l’app.\nhttps://github.com/dowithless/keep-awake\n\nLimites\nEmpêche uniquement la veille due à l’inactivité. Ne bloque ni la veille manuelle ni le verrouillage de l’écran. Le fonctionnement couvercle fermé n’est pas garanti. Nécessite macOS 13 ou version ultérieure.",
+      "keywords": "barre,menus,agent,arrière-plan,transfert,présentation,programmation,activité,repos",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "es": {
       "appleLocale": "es-ES",
-      "name": "Keep Awake",
-      "subtitle": "Mantén tu Mac despierto",
-      "keywords": "reposo,pantalla,utilidad,menú,trabajo",
-      "description": "Una pequeña utilidad de la barra de menús que mantiene tu Mac despierto durante tareas largas.\n\nHaz clic izquierdo en la taza de la barra de menús para activar o desactivar la función. Un clic derecho o Control-clic abre el menú.\n\n«Mantener también la pantalla despierta» impide el reposo de la pantalla por inactividad. Desactívalo para permitir que la pantalla repose mientras el Mac sigue despierto.\n\nEl reposo del sistema termina la sesión actual. Al despertar, activa de nuevo la función cuando la necesites. Abrir al iniciar sesión nunca inicia una sesión automáticamente.\n\nKeep Awake no impide el reposo o bloqueo manual, no desbloquea tu Mac ni garantiza el funcionamiento con la tapa cerrada. Las políticas de seguridad del sistema y de tu organización siguen vigentes.\n\nUna compra. Todas las funciones. Sin suscripciones ni compras dentro de la app.\n\nKeep Awake funciona localmente sin una cuenta. La app no envía al desarrollador datos personales, análisis de uso ni identificadores publicitarios."
+      "name": "Evita reposo: Sistema activo",
+      "subtitle": "Descargas, renderizado e IA",
+      "promotionalText": "Evita el reposo por inactividad durante descargas, renderizados y tareas de IA. Control de pantalla independiente. El reposo manual desactiva la función.",
+      "description": "Evita el reposo por inactividad con un clic durante descargas, renderizados y tareas largas de agentes de IA. Una utilidad ligera en la barra de menús de macOS: haz clic en la taza para activar o desactivar la función de mantener despierto el ordenador.\n\nDos controles esenciales\n• Mantener el sistema despierto: impide que el ordenador entre automáticamente en reposo por falta de actividad.\n• Pantalla encendida opcional: activa «Mantener también la pantalla despierta» para evitar también el reposo de la pantalla por inactividad. Desactívalo para que el sistema siga despierto y la pantalla repose según los ajustes del sistema.\n\nEl reposo manual termina la sesión\nCuando pones el ordenador en reposo manualmente, termina la sesión actual. La función permanece desactivada al despertar; vuelve a activarla cuando la necesites, sin tener que recordar apagarla por separado. Bloquear la pantalla o poner solo la pantalla en reposo no termina la sesión.\n\nUso sencillo\n• Clic izquierdo en la taza: activar o desactivar la función.\n• Clic derecho o Control-clic: abrir el menú y ajustar las opciones de la pantalla.\n• «Abrir al iniciar sesión» es opcional. Abrir la app nunca activa automáticamente la función de mantener despierto el ordenador.\n\nLocal, ligera y centrada\nSin cuenta ni anuncios. La app no envía al desarrollador datos personales ni estadísticas de uso. Una compra incluye todas las funciones, sin suscripciones ni compras dentro de la app.\n\nCódigo abierto\nEl código fuente está publicado con licencia MIT para que puedas ver cómo funciona la app.\nhttps://github.com/dowithless/keep-awake\n\nAlcance\nSolo evita el reposo por inactividad. No impide el reposo manual ni el bloqueo de pantalla, y no garantiza el funcionamiento con la tapa cerrada. Requiere macOS 13 o posterior.",
+      "keywords": "pantalla,barra,menús,agente,segundo plano,transferencia,presentación,programación",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "pt-BR": {
       "appleLocale": "pt-BR",
-      "name": "Keep Awake",
-      "subtitle": "Mantenha seu Mac desperto",
-      "keywords": "repouso,tela,utilitário,menu,trabalho",
-      "description": "Um pequeno utilitário da barra de menus que mantém o Mac desperto durante tarefas longas.\n\nClique com o botão esquerdo na xícara da barra de menus para ativar ou desativar a função. Clique com o botão direito ou com Control para abrir o menu.\n\n“Manter a Tela Desperta Também” impede o repouso da tela por inatividade. Desative a opção para deixar a tela repousar enquanto o Mac continua desperto.\n\nO repouso do sistema encerra a sessão atual. Após despertar, ative a função novamente quando precisar. Abrir ao iniciar sessão nunca começa uma sessão automaticamente.\n\nO Keep Awake não impede o repouso ou bloqueio manual, não desbloqueia o Mac e não garante o funcionamento com a tampa fechada. As políticas de segurança do sistema e da organização continuam válidas.\n\nUma compra. Todos os recursos. Sem assinatura ou compras dentro do app.\n\nO Keep Awake funciona localmente, sem conta. O app não envia dados pessoais, análises de uso ou identificadores de publicidade ao desenvolvedor."
+      "name": "Tela acesa: Impedir repouso",
+      "subtitle": "Downloads, renderização e IA",
+      "promotionalText": "Evite o repouso por inatividade em downloads, renderizações e tarefas de IA. Controle a tela separadamente. O repouso manual encerra a sessão.",
+      "description": "Evite o repouso por inatividade com um clique durante downloads, renderizações e tarefas longas de agentes de IA. Um utilitário leve que fica na barra de menus do macOS: clique na xícara para ativar ou desativar o modo de manter o computador desperto.\n\nDois controles essenciais\n• Manter o sistema desperto: impede que o computador entre automaticamente em repouso por falta de atividade.\n• Tela acesa opcional: ative “Manter a Tela Desperta Também” para impedir também o repouso da tela por inatividade. Desative essa opção para manter o sistema desperto e deixar a tela entrar em repouso conforme os ajustes do sistema.\n\nO repouso manual encerra a sessão\nQuando você coloca o computador em repouso manualmente, a sessão atual é encerrada. O modo continua desativado ao despertar; ative-o novamente quando precisar, sem ter que lembrar de desligá-lo separadamente. Bloquear a tela ou colocar apenas a tela em repouso não encerra a sessão.\n\nUso simples\n• Clique com o botão esquerdo na xícara: ativar ou desativar o modo.\n• Clique com o botão direito ou com Control: abrir o menu e ajustar as opções da tela.\n• “Abrir ao Iniciar Sessão” é opcional. Abrir o app não ativa automaticamente o modo de manter o computador desperto.\n\nLocal, leve e focado\nSem conta nem anúncios. O app não envia dados pessoais ou estatísticas de uso ao desenvolvedor. Uma compra inclui todos os recursos, sem assinatura ou compras dentro do app.\n\nCódigo aberto\nO código-fonte está disponível sob a licença MIT para você conhecer o funcionamento do app.\nhttps://github.com/dowithless/keep-awake\n\nLimites\nImpede apenas o repouso por inatividade. Não impede o repouso manual nem o bloqueio de tela, e não garante o funcionamento com a tampa fechada. Requer macOS 13 ou posterior.",
+      "keywords": "barra,menus,agente,segundo plano,transferência,apresentação,programação,atividade",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "ru": {
       "appleLocale": "ru",
-      "name": "Keep Awake",
-      "subtitle": "Не давайте Mac заснуть",
-      "keywords": "сон,экран,работа,меню,утилита",
-      "description": "Небольшая утилита строки меню, которая не даёт Mac заснуть во время длительных задач.\n\nНажмите левой кнопкой на чашку в строке меню, чтобы переключить предотвращение сна. Правая кнопка или Control-нажатие открывает меню.\n\n«Не выключать дисплей» также предотвращает сон дисплея при бездействии. Отключите эту опцию, чтобы дисплей мог спать, пока Mac продолжает работать.\n\nСон системы завершает текущий сеанс. После пробуждения при необходимости включите предотвращение сна снова. Запуск при входе никогда не начинает сеанс автоматически.\n\nKeep Awake не препятствует ручному переходу в сон и блокировке, не разблокирует Mac и не гарантирует работу с закрытой крышкой. Политики безопасности системы и организации продолжают действовать.\n\nОдна покупка. Все функции. Без подписок и встроенных покупок.\n\nKeep Awake работает локально без учётной записи. Приложение не отправляет разработчику личные данные, статистику использования или рекламные идентификаторы."
+      "name": "Без автосна: Долгие задачи",
+      "subtitle": "Загрузки, рендеринг и ИИ",
+      "promotionalText": "Не давайте компьютеру заснуть при загрузках, рендеринге и задачах ИИ. Экран управляется отдельно. Ручной сон завершает сеанс; после пробуждения режим выключен.",
+      "description": "Одним щелчком предотвращайте сон при бездействии во время загрузок, рендеринга и длительных задач ИИ-агентов. Небольшая утилита работает в строке меню macOS. Нажмите на чашку, чтобы включить или выключить режим бодрствования.\n\nДва основных переключателя\n• Система остаётся активной: компьютер не переходит автоматически в сон из-за отсутствия действий.\n• Экран включён по желанию: опция «Не выключать дисплей» также предотвращает сон экрана при бездействии. Отключите её, чтобы система продолжала работать, а экран засыпал согласно системным настройкам.\n\nРучной сон завершает сеанс\nКогда вы сами переводите компьютер в сон, текущий сеанс бодрствования завершается. После пробуждения режим остаётся выключенным. Включайте его снова по необходимости, не беспокоясь об отдельном отключении. Блокировка экрана или сон только дисплея не завершают сеанс.\n\nПростое управление\n• Щелчок левой кнопкой по чашке: включить или выключить режим.\n• Правая кнопка или Control-нажатие: открыть меню и изменить настройки экрана.\n• «Открывать при входе» — необязательная настройка. Запуск приложения не включает режим бодрствования автоматически.\n\nЛокально и без лишнего\nБез учётной записи и рекламы. Приложение не передаёт разработчику персональные данные или статистику использования. Одна покупка включает все функции, без подписок и встроенных покупок.\n\nОткрытый исходный код\nКод опубликован под лицензией MIT, чтобы вы могли изучить, как работает приложение.\nhttps://github.com/dowithless/keep-awake\n\nОграничения\nПредотвращает только сон при бездействии. Не блокирует ручной переход в сон или блокировку экрана и не гарантирует работу с закрытой крышкой. Требуется macOS 13 или новее.",
+      "keywords": "экран,меню,дисплей,фон,передача,презентация,агент",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     },
     "it": {
       "appleLocale": "it",
-      "name": "Keep Awake",
-      "subtitle": "Mantieni attivo il tuo Mac",
-      "keywords": "stop,schermo,utility,menu,lavoro",
-      "description": "Una piccola utility della barra dei menu che mantiene attivo il Mac durante le attività lunghe.\n\nFai clic sinistro sulla tazza nella barra dei menu per attivare o disattivare la funzione. Un clic destro o Ctrl-clic apre il menu.\n\n“Mantieni attivo anche lo schermo” impedisce anche lo stop dello schermo per inattività. Disattivalo per consentire lo stop dello schermo mentre il Mac resta attivo.\n\nLo stop del sistema termina la sessione attuale. Al risveglio, riattiva la funzione quando serve. L’apertura al login non avvia mai una sessione automaticamente.\n\nKeep Awake non impedisce lo stop o il blocco manuali, non sblocca il Mac e non garantisce il funzionamento con il coperchio chiuso. Restano valide le politiche di sicurezza del sistema e dell’organizzazione.\n\nUn acquisto. Tutte le funzioni. Nessun abbonamento o acquisto in-app.\n\nKeep Awake funziona localmente senza account. L’app non invia allo sviluppatore dati personali, analisi di utilizzo o identificatori pubblicitari."
+      "name": "Niente stop: Download e agenti",
+      "subtitle": "Per rendering e lavori lunghi",
+      "promotionalText": "Evita lo stop per inattività durante download, rendering e attività IA. Controlla lo schermo separatamente. Lo stop manuale termina la sessione, senza riattivarla.",
+      "description": "Evita lo stop per inattività con un clic durante download, rendering e attività lunghe degli agenti IA. Una piccola utility nella barra dei menu di macOS: fai clic sulla tazza per attivare o disattivare la funzione che mantiene attivo il computer.\n\nDue controlli essenziali\n• Mantieni attivo il sistema: impedisci lo stop automatico dovuto all’inattività.\n• Schermo acceso facoltativo: attiva “Mantieni attivo anche lo schermo” per impedire anche lo stop dello schermo per inattività. Disattiva l’opzione per mantenere attivo il sistema e lasciare che lo schermo vada in stop secondo le impostazioni di sistema.\n\nLo stop manuale termina la sessione\nQuando metti manualmente il computer in stop, la sessione attuale termina. Al risveglio la funzione resta disattivata: riattivala quando serve, senza doverti ricordare di spegnerla separatamente. Bloccare lo schermo o mettere in stop solo lo schermo non termina la sessione.\n\nUso semplice\n• Clic sinistro sulla tazza: attiva o disattiva la funzione.\n• Clic destro o Control-clic: apri il menu e regola le opzioni dello schermo.\n• “Apri al login” è facoltativo. L’avvio dell’app non attiva automaticamente la funzione che mantiene attivo il computer.\n\nLocale, leggera ed essenziale\nNessun account né pubblicità. L’app non invia allo sviluppatore dati personali o statistiche d’uso. Un acquisto include tutte le funzioni, senza abbonamenti né acquisti in-app.\n\nCodice aperto\nIl codice sorgente è pubblicato con licenza MIT per permetterti di vedere come funziona l’app.\nhttps://github.com/dowithless/keep-awake\n\nLimiti\nImpedisce solo lo stop per inattività. Non impedisce lo stop manuale o il blocco dello schermo e non garantisce il funzionamento con il coperchio chiuso. Richiede macOS 13 o successivo.",
+      "keywords": "schermo,display,sospensione,inattività,trasferimento,presentazione,programmazione",
+      "supportUrl": "https://github.com/dowithless/keep-awake",
+      "marketingUrl": "https://github.com/dowithless/keep-awake",
+      "privacyPolicyUrl": "https://github.com/dowithless/keep-awake/blob/main/docs/privacy/privacy-policy.en.md"
     }
-  }
+  },
+  "saveVerifiedDate": "2026-10-26"
 }
